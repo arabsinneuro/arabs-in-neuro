@@ -1,14 +1,18 @@
-import RootLayout from '../../app/layout';
+import { useState, useContext } from "react";
+import LanguageContext from '../../context/LanguageContext';
 
 function HomePage() {
+
+  const languageContext = useContext(LanguageContext);
+  const { preferredLanguage, currentContent } = languageContext;
+  const { title, paragraph } = currentContent.home;
   return (
-    <div>
-        <h1>Root</h1>
-        <p>Welcome to the home page!</p>
+    <div className=" px-4">
+      <h1>{title}</h1>
+      <p>{paragraph}</p>
     </div>
-  )
+  );
 }
 
-HomePage.Layout = RootLayout;
 
 export default HomePage;
