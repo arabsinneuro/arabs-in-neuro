@@ -1,18 +1,35 @@
 {
-    "navbar": {
-      "home": "Home",
-      "about": "About",
-      "summerSchool": "Summer School",
-      "faq": "FAQ",
-      "team": "Team",
-      "opportunities": "Opportunities"
-    },
-    "home": {
-      "title": "Home",
-      "paragraph": "Welcome to the home page!"
-    },
-    "about": {
-      "title": "About",
-      "paragraph": "This is the about page."
-    }
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "summerSchool": "Summer School",
+    "faq": "FAQ",
+    "team": "Team",
+    "opportunities": "Opportunities"
+  },
+  "home": {
+    "title": "Home",
+    "paragraph": "Welcome to the home page!"
+  },
+  "about": {
+    "title": "About",
+    "aboutUs": "About Us",
+    "empoweringNeuroscientists": "Empowering Arab neuroscientists to shape the future of brain science",
+    "aboutText": "We are a community of Arab speakers interested in Neuroscience, cognitive science, and psychiatry. Aimed for aspiring Arab neuroscientists to connect, collaborate, and contribute. We aim to engage Arabic-speaking neuroscientists in hands-on experience to kick start their careers.",
+    "aiNStart": "How did AiN start?",
+    "teamBehindAiN": "The Team Behind AiN",
+    "teamLeads": "Team Leads",
+    "volunteers": "Volunteers"
+  },
+  "contact": {
+      "connectWithUs": "Connect with Us!",
+      "embarkJourney": "Embark on a journey through the intricacies of the mind with us.",
+      "virtualDoorsOpen": "Whether you have questions, seek guidance, or simply want to delve deeper into the fascinating world of neuroscience tutorials, our virtual doors are always open.",
+      "exploreWonders": "Connect with us and let the exploration of the brain's wonders begin.",
+      "sharedCuriosity": "Your inquiries are the sparks that fuel our shared curiosity."
+    
+  },
+  "footer": {
+    "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!"
   }
+}

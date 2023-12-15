@@ -1,15 +1,18 @@
 import RootLayout from "../../app/layout";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import LanguageContext from "../../context/LanguageContext";
+import Overview from "./components/overview"; 
+import Journey from "./components/journey"; 
+import Team from "./components/team"; 
 
 function AboutPage() {
   const languageContext = useContext(LanguageContext);
-  const { preferredLanguage, currentContent } = languageContext;
-  const { title, paragraph } = currentContent.about;
+
   return (
-    <div className="p-5 bg-cRedLight border border-cN300">
-      <h1>{title}</h1>
-      <p>{paragraph}</p>
+    <div className="p-4 lg:p-8">
+    <Overview languageContext={languageContext} />
+    <Journey languageContext={languageContext} />
+    <Team languageContext={languageContext} />
     </div>
   );
 }

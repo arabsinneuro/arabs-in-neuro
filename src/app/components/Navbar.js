@@ -17,16 +17,15 @@ function Navbar({ setPreferredLanguage }) {
   const links = [
     { href: "/", label: currentContent.navbar.home },
     { href: "/about", label: currentContent.navbar.about },
-    { href: "/school", label: currentContent.navbar.summerSchool },
-    { href: "/faq", label: currentContent.navbar.faq },
-    { href: "/team", label: currentContent.navbar.team },
-    { href: "/opportunities", label: currentContent.navbar.opportunities },
+    // { href: "/school", label: currentContent.navbar.summerSchool },
+    // { href: "/faq", label: currentContent.navbar.faq },
+    // { href: "/opportunities", label: currentContent.navbar.opportunities },
   ];
 
   const router = useRouter();
 
   return (
-    <nav className="fixed top-0 left-0 w-full p-5 bg-cwhite text-black shadow-md">
+    <nav className="fixed top-0 left-0 w-full p-5 bg-cWhite text-black shadow-md">
       <div className="flex items-center justify-between">
         <Link href="/">
           <img
@@ -51,11 +50,12 @@ function Navbar({ setPreferredLanguage }) {
             ))}
           </div>
 
-          <Link href="/contact">
+          <Link key="/contact" href="/contact">
             <div className="mx-1 cursor-pointer px-2 py-1 bg-cRed rounded-full shadow-sm hover:bg-cRedLight">
-              <FontAwesomeIcon icon={faPhone} className="text-white" />
+              <FontAwesomeIcon icon={faPhone} className="text-cWhite" />
             </div>
-          </Link>
+          </Link> 
+          
 
           <LanguageSwitcher
             setPreferredLanguage={setPreferredLanguage}
