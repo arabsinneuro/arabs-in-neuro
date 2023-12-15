@@ -6,7 +6,7 @@ const Overview = ({ languageContext }) => {
   const { aiNStart } = languageContext.currentContent.about;
 
   return (
-    <div>
+    <div className="p-4 lg:p-8">
       <div className="hidden lg:flex full-width items-center justify-center mb-8">
         {/* desktop */}
         <div className="lg:w-1/2 bg-cWhite shadow-md p-8 rounded-md mx-auto flex-col items-center">

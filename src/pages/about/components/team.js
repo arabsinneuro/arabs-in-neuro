@@ -6,9 +6,9 @@ const Team = ({ languageContext }) => {
     languageContext.currentContent.about;
 
   return (
-    <div className="mt-20 mb-20">
+    <div className="p-4 lg:p-8 mt-20 mb-20">
       <div className="flex items-center justify-center mt-20 mb-20">
-        <h1 className="bg-cWhite text-cGreen-500 px-20 py-4 rounded-md inline-block text-center shadow-md text-xl font-bold">
+        <h1 className="bg-cWhite text-cGreen px-20 py-4 rounded-md inline-block text-center shadow-md text-xl font-bold">
           {teamBehindAiN}
         </h1>
       </div>

@@ -11,6 +11,7 @@ function ContactPage() {
   const { preferredLanguage, currentContent } = languageContext;
   const { connectWithUs,embarkJourney,virtualDoorsOpen,exploreWonders,sharedCuriosity } = currentContent.contact;
   return (
+    <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/contact.svg')] " >
     <div className="px-4 my-20">
       {/* first div: overview*/}
       <div className="lg:flex lg:space-x-8">
@@ -28,6 +29,7 @@ function ContactPage() {
   
       {/* third div: social media links*/}
       <SocialMediaLinksComponent />
+    </div>
     </div>
   );
 }

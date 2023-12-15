@@ -4,7 +4,7 @@ const Journey = ({ languageContext }) => {
   const { aiNStart } = languageContext.currentContent.about;
 
   return (
-    <div>
+    <div className="p-4 lg:p-8">
       {/* desktop */}
       <div className="hidden lg:flex items-center mx-auto mt-20 mb-20">
         <div className="lg:w-1/2 flex items-center justify-center">
