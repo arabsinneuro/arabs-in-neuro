@@ -8,23 +8,33 @@ const FormComponent = () => {
     <div>
       <p id="thanks"></p>
       <div className="publications">
-        <script type="text/javascript">var submitted=false;</script>
+        <script type="text/javascript">var submitted = false;</script>
+
         <iframe
           name="hidden_iframe"
           id="hidden_iframe"
           style={{ display: "none" }}
-          onLoad="if(submitted) {window.location='?submitted=true';}"
+          onLoad={() => {
+            if (window.submitted) {
+              window.location = "?submitted=true";
+            }
+          }}
         ></iframe>
+
         <form
           id="contactform"
           action="https://docs.google.com/forms/d/e/1FAIpQLSdF6btSqvrYiskbvssC3O74JIVhe-hpbyALAcNN9sf2eZRjCA/formResponse"
           method="post"
           target="hidden_iframe"
-          onSubmit="submitted=true;"
+          onSubmit={() => {
+            submitted = true;
+          }}
         >
           <div className="grid">
             <div className="cell cell--2">
-              <label htmlFor="name"  className="font-bold">Name*</label>
+              <label htmlFor="name" className="font-bold">
+                Name*
+              </label>
             </div>
             <div className="cell cell--auto">
               <input
@@ -42,7 +52,9 @@ const FormComponent = () => {
           </div>
           <div className="grid">
             <div className="cell cell--2">
-              <label htmlFor="email"  className="font-bold">Email Address*</label>
+              <label htmlFor="email" className="font-bold">
+                Email Address*
+              </label>
             </div>
             <div className="cell cell--auto">
               <input
@@ -60,7 +72,9 @@ const FormComponent = () => {
           </div>
           <div className="grid">
             <div className="cell cell--2">
-              <label htmlFor="subject"  className="font-bold">Subject*</label>
+              <label htmlFor="subject" className="font-bold">
+                Subject*
+              </label>
             </div>
             <div className="cell cell--auto">
               <input
@@ -77,7 +91,9 @@ const FormComponent = () => {
           </div>
           <div className="grid">
             <div className="cell cell--2">
-              <label htmlFor="message"  className="font-bold">Message*</label>
+              <label htmlFor="message" className="font-bold">
+                Message*
+              </label>
             </div>
             <div className="cell cell--auto">
               <textarea
@@ -93,17 +109,14 @@ const FormComponent = () => {
             <br />
             <br />
           </div>
-          <div className="text-right">
+          <div className="flex justify-end">
             <button
-              className="bg-cGreen text-white px-4 py-2 rounded-md submit submit--primary submit--pill "
+              className="flex items-center bg-cGreen text-white px-5 py-2 rounded-md"
               type="submit"
               role="button"
             >
               Submit
-              <FontAwesomeIcon
-                icon={faPaperPlane}
-                className="text-white ml-2"
-              />
+              <img className="ml-2" src="icons/send.svg" alt="send" />
             </button>
           </div>
         </form>

@@ -12,9 +12,8 @@ function ContactPage() {
   const { connectWithUs,embarkJourney,virtualDoorsOpen,exploreWonders,sharedCuriosity } = currentContent.contact;
   return (
     <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/contact.svg')] " >
-    <div className="px-4 my-20">
-      {/* first div: overview*/}
-      <div className="lg:flex lg:space-x-8">
+    <div className="px-4">
+      <div className="lg:flex lg:space-x-8 py-20">
         <OverviewComponent
           connectWithUs={connectWithUs}
           embarkJourney={embarkJourney}
@@ -23,11 +22,9 @@ function ContactPage() {
           sharedCuriosity={sharedCuriosity}
         />
   
-        {/* second div: form */}
         <FormComponent />
       </div>
   
-      {/* third div: social media links*/}
       <SocialMediaLinksComponent />
     </div>
     </div>

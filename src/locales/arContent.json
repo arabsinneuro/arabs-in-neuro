@@ -28,6 +28,10 @@
       "exploreWonders": "تواصل معنا ولنبدأ استكشاف عجائب الدماغ.",
       "sharedCuriosity": "استفساراتك هي الشرارة التي تغذي فضولنا المشترك."
     },
+    "opportunities": {
+        "title": "صفحة الفرص",
+        "paragraph": "مرحباً بكم في صفحة الفرص!"
+    },
     "footer": {
         "shapingFutureNeuroscience": "تشكيل مستقبل علم الأعصاب في العالم العربي!"
     }

@@ -4,8 +4,6 @@ import { useState, useContext } from "react";
 import Link from "next/link";
 import LanguageContext from "../../context/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/router';
 
 function Navbar({ setPreferredLanguage }) {
@@ -19,7 +17,7 @@ function Navbar({ setPreferredLanguage }) {
     { href: "/about", label: currentContent.navbar.about },
     // { href: "/school", label: currentContent.navbar.summerSchool },
     // { href: "/faq", label: currentContent.navbar.faq },
-    // { href: "/opportunities", label: currentContent.navbar.opportunities },
+    { href: "/opportunities", label: currentContent.navbar.opportunities },
   ];
 
   const router = useRouter();
@@ -42,7 +40,7 @@ function Navbar({ setPreferredLanguage }) {
                 key={link.href}
                 href={link.href}
                 className={`mx-2 px-4 py-2 bg-white rounded shadow hover:bg-cN200 hover:no-underline ${
-                  router.pathname === link.href ? 'text-cRed' : 'text-black'
+                  router.pathname === link.href ? 'text-cRed' : 'text-cBlack'
                 }`}
               >
                 {link.label}
@@ -51,8 +49,8 @@ function Navbar({ setPreferredLanguage }) {
           </div>
 
           <Link key="/contact" href="/contact">
-            <div className="mx-1 cursor-pointer px-2 py-1 bg-cRed rounded-full shadow-sm hover:bg-cRedLight">
-              <FontAwesomeIcon icon={faPhone} className="text-cWhite" />
+            <div className="mx-1 cursor-pointer px-2 py-2 bg-cRed rounded-full shadow-sm hover:bg-cRedLight">
+              <img src="icons/phone.svg" alt="phone" />
             </div>
           </Link> 
           

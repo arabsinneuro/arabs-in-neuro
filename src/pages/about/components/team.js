@@ -6,8 +6,8 @@ const Team = ({ languageContext }) => {
     languageContext.currentContent.about;
 
   return (
-    <div className="p-4 lg:p-8 mt-20 mb-20">
-      <div className="flex items-center justify-center mt-20 mb-20">
+    <div className="p-4 lg:p-8">
+      <div className="flex items-center justify-center mb-20">
         <h1 className="bg-cWhite text-cGreen px-20 py-4 rounded-md inline-block text-center shadow-md text-xl font-bold">
           {teamBehindAiN}
         </h1>
@@ -38,9 +38,9 @@ const Team = ({ languageContext }) => {
         />
       </div>
       <br />
-      <p className="text-cN500 font-bold pl-4">{volunteers}</p>
+      <p className="text-cN500 font-bold pl-4 py-5">{volunteers}</p>
       <br />
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-4 pb-20">
         <MemberCard
           name="John Doe"
           role="Software Engineer"

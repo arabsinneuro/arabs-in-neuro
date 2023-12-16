@@ -15,7 +15,7 @@ import {
 
 const SocialMediaLinksComponent = () => {
   return (
-    <div className="flex flex-wrap justify-center my-20">
+    <div className="flex flex-wrap justify-center py-10">
       <a href={emailLink} className="flex items-center mx-2 my-2">
         <img src="assets/contact/email.svg" alt="email" />
         <span className="ml-2">{emailName}</span>
