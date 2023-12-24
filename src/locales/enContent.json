@@ -22,18 +22,29 @@
     "volunteers": "Volunteers"
   },
   "contact": {
-      "connectWithUs": "Connect with Us!",
-      "embarkJourney": "Embark on a journey through the intricacies of the mind with us.",
-      "virtualDoorsOpen": "Whether you have questions, seek guidance, or simply want to delve deeper into the fascinating world of neuroscience tutorials, our virtual doors are always open.",
-      "exploreWonders": "Connect with us and let the exploration of the brain's wonders begin.",
-      "sharedCuriosity": "Your inquiries are the sparks that fuel our shared curiosity."
-    
+    "connectWithUs": "Connect with Us!",
+    "embarkJourney": "Embark on a journey through the intricacies of the mind with us.",
+    "virtualDoorsOpen": "Whether you have questions, seek guidance, or simply want to delve deeper into the fascinating world of neuroscience tutorials, our virtual doors are always open.",
+    "exploreWonders": "Connect with us and let the exploration of the brain's wonders begin.",
+    "sharedCuriosity": "Your inquiries are the sparks that fuel our shared curiosity."
   },
   "opportunities": {
     "title": "Opportunities",
-    "paragraph": "Welcome to the Opportunities page!"
+    "paragraph": "Welcome to the Opportunities page!",
+    "volunteerToday": "Volunteer Today.",
+    "thriveTomorrow": "Thrive Tomorrow in Neuroscience!",
+    "makeNeuronDifference": "Make a neuron of difference",
+    "newVolunteeringPositions": "New Volunteering Positions Available!",
+    "applyHere": "Apply Here"
+  },
+  "faq": {
+    "faqsSection": "FAQs Section",
+    "beyondAnswers": "Beyond being answers, FAQs are solutions delicately woven in the fabric of simplicity.",
+    "collapseAll": "Collapse All",
+  "expandAll": "Expand All"
   },
   "footer": {
-    "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!"
+    "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!",
+    "connectWithAiN": "Connect with AiN"
   }
 }

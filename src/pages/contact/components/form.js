@@ -1,13 +1,13 @@
 // FormComponent.jsx
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const FormComponent = () => {
   return (
     <div>
       <p id="thanks"></p>
       <div className="publications">
+      {/* <script async defer src="https://formfacade.com/include/115584537198165427158/form/1FAIpQLSdF6btSqvrYiskbvssC3O74JIVhe-hpbyALAcNN9sf2eZRjCA/classic.js?div=ff-compose"></script> */}
+
         <script type="text/javascript">var submitted = false;</script>
 
         <iframe
