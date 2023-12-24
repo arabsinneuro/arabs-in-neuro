@@ -10,7 +10,10 @@ function MyApp({ Component, pageProps }) {
   const arContent = require("../locales/arContent.json");
   const [preferredLanguage, setPreferredLanguage] = React.useState("en");
   const currentContent = preferredLanguage === "en" ? enContent : arContent;
-  
+
+  const isArabic = preferredLanguage === "ar";
+
+  const direction = isArabic ? "rtl" : "ltr";
   const Layout = Component.Layout || (({ children }) => <>{children}</>);
 
   return (
@@ -21,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         setPreferredLanguage,
       }}
     >
-      <div className="flex flex-col min-h-screen">
+      <div dir={direction} className="flex flex-col min-h-screen">
         <Head>
           <link href="/logo/favicon.ico" />
         </Head>
@@ -38,4 +41,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-

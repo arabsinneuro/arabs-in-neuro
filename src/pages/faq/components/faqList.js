@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import LanguageContext from "../../../context/LanguageContext";
-import faqData from "../faqData";
+import faqEn from "../data/faqEn";
+import faqAr from "../data/faqAr";
 import FAQItem from "./faqItem";
 
 const FaqList = () => {
@@ -11,8 +12,10 @@ const FaqList = () => {
   };
 
   const languageContext = useContext(LanguageContext);
-  const { currentContent } = languageContext;
+  const { preferredLanguage, currentContent } = languageContext;
   const { collapseAll, expandAll } = currentContent.faq;
+
+  const data = preferredLanguage === "en" ? faqEn : faqAr;
 
   return (
     <div>
@@ -23,7 +26,7 @@ const FaqList = () => {
         {allAnswersVisible ? collapseAll : expandAll}
       </button>
       <div style={{ clear: 'both' }}>
-        {faqData.map((item, index) => (
+        {data.map((item, index) => (
           <FAQItem
             key={index}
             question={item.question}
@@ -34,8 +37,6 @@ const FaqList = () => {
       </div>
     </div>
   );
-  
-  
 };
 
 export default FaqList;

@@ -3,7 +3,7 @@ import React from 'react';
 const OverviewComponent = ({ connectWithUs, embarkJourney, virtualDoorsOpen, exploreWonders, sharedCuriosity }) => {
   return (
     <div className="flex-shrink-0 lg:w-1/2">
-      <div className="text-center lg:text-left lg:w-1/2 mx-auto">
+      <div className="text-center ltr:lg:text-left rtl:lg:text-right lg:w-1/2 mx-auto">
         <h1 className="text-xl font-bold text-cBlack">{connectWithUs}</h1>
         <br/>
         <p>{embarkJourney}</p>

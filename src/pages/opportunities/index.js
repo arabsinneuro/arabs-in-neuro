@@ -6,6 +6,7 @@ import JobData from "./jobsData";
 function OpportunitiesPage() {
   const languageContext = useContext(LanguageContext);
   const { preferredLanguage, currentContent } = languageContext;
+  
   const {
     volunteerToday,
     thriveTomorrow,
@@ -24,7 +25,7 @@ function OpportunitiesPage() {
           </p>
         </div>
 
-        <div className="w-60 bg-cGreenLight shadow-md px-4 rounded-md space-y-1 ml-auto mt-10">
+        <div className="w-60 bg-cGreenLight shadow-md px-4 rounded-md space-y-1 ltr:ml-auto rtl:mr-auto mt-10">
           <h2 className="font-extrabold text-xl py-2 text-cWhite font-bold">
             {newVolunteeringPositions}
           </h2>
@@ -38,7 +39,7 @@ function OpportunitiesPage() {
           </button>
         </div>
       </div>
-      <div className=" mx-auto pb-20 lg:px-20 px-10 lg:w-4/5">
+      <div dir="ltr" className=" mx-auto pb-20 lg:px-20 px-10 lg:w-4/5">
         <JobList jobData={JobData} />
       </div>
     </div>
