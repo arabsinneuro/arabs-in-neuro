@@ -1,7 +1,12 @@
 import React from "react";
+import { useContext } from "react";
+import LanguageContext from "../../.././context/LanguageContext";
 
-const Journey = ({ languageContext }) => {
-  const { aiNStart } = languageContext.currentContent.about;
+
+const Journey = () => {
+  const languageContext = useContext(LanguageContext);
+  const { currentContent } = languageContext;
+  const { aiNStart } = currentContent.about;
 
   return (
     <div className="p-4 lg:p-8">

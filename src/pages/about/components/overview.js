@@ -1,9 +1,13 @@
 import React from "react";
+import { useContext } from "react";
+import LanguageContext from "../../.././context/LanguageContext";
 
-const Overview = ({ languageContext }) => {
-  const { empoweringNeuroscientists, aboutText } =
-    languageContext.currentContent.about;
-  const { aiNStart } = languageContext.currentContent.about;
+
+const Overview = () => {
+  const languageContext = useContext(LanguageContext);
+  const { currentContent } = languageContext;
+  const { empoweringNeuroscientists, aboutText } = currentContent.about;
+
 
   return (
     <div className="p-4 lg:p-8">

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import LanguageContext from "../../../context/LanguageContext";
-import faqEn from "../data/faqEn";
-import faqAr from "../data/faqAr";
+import faqEn from "../../../../public/data/faq/faqEn";
+import faqAr from "../../../../public/data/faq/faqAr";
 import FAQItem from "./faqItem";
 
 const FaqList = () => {
@@ -20,7 +20,7 @@ const FaqList = () => {
   return (
     <div>
       <button
-        className="mb-8 text-cBlack text-sm float-right px-2 py-1 rounded-md border-b-2 border-cRed"
+        className="mb-8 text-cBlack text-sm ltr:float-right rtl:float-left px-2 py-1 rounded-md border-b-2 border-cRed"
         onClick={toggleAllAnswers}
       >
         {allAnswersVisible ? collapseAll : expandAll}

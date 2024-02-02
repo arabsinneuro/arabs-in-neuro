@@ -35,7 +35,7 @@ const JobCard = ({ title, description, responsibilities, competencies }) => {
 const JobList = ({ jobData }) => {
   return (
     <div>
-      {jobData.map((job, index) => (
+      {jobData && jobData.map((job, index) => (
         <JobCard key={index} {...job} />
       ))}
     </div>

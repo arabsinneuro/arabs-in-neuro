@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import LanguageContext from "../../context/LanguageContext";
 import JobList from "./components/jobCard";
-import JobData from "./jobsData";
+import JobData from "../../../public/data/opportunities/jobsData";
 
 function OpportunitiesPage() {
   const languageContext = useContext(LanguageContext);

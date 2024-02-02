@@ -1,9 +1,13 @@
 import React from "react";
+import { useContext } from "react";
 import MemberCard from "./memberCard";
+import LanguageContext from "../../.././context/LanguageContext";
 
-const Team = ({ languageContext }) => {
+const Team = () => {
+  const languageContext = useContext(LanguageContext);
+  const { currentContent } = languageContext;
   const { teamBehindAiN, teamLeads, volunteers } =
-    languageContext.currentContent.about;
+    currentContent.about;
 
   return (
     <div className="p-4 lg:p-8">
