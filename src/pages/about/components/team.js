@@ -6,8 +6,7 @@ import LanguageContext from "../../.././context/LanguageContext";
 const Team = () => {
   const languageContext = useContext(LanguageContext);
   const { currentContent } = languageContext;
-  const { teamBehindAiN, teamLeads, volunteers } =
-    currentContent.about;
+  const { teamBehindAiN, teamLeads, volunteers } = currentContent.about;
 
   return (
     <div className="p-4 lg:p-8">
@@ -20,8 +19,19 @@ const Team = () => {
       <br />
       <p className="text-cN500 font-bold pl-4">{teamLeads}</p>
       <br />
-      <div className="flex flex-wrap justify-center gap-4">
-        <MemberCard
+      
+      <iframe
+        className="airtable-embed"
+        srcDoc={`<iframe src="https://airtable.com/embed/app9zmLQ4yCvPwiCG/shrfnV7F71yckhAPn?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="470" style="background: transparent; border: 1px solid #ccc;"></iframe>`}
+      
+        width="100%"
+        height="500"
+        style={{ background: "transparent", border: "1px solid #ccc" }}
+        allowFullScreen
+        sandbox="allow-scripts allow-same-origin"
+      ></iframe>
+      {/* <div className="flex flex-wrap justify-center gap-4">
+       <MemberCard
           name="Mohammad Abdelhack"
           role="Software Engineer"
           affiliation="ABC Corporation"
@@ -39,13 +49,23 @@ const Team = () => {
           linkedinLink="https://www.linkedin.com/in/janesmith/"
           twitterLink="https://twitter.com/janesmith/"
           emailText="janesmith@example.com"
-        />
-      </div>
+        /> 
+      </div> */}
       <br />
       <p className="text-cN500 font-bold pl-4 py-5">{volunteers}</p>
       <br />
-      <div className="flex flex-wrap justify-center gap-4 pb-20">
-        <MemberCard
+      
+      <iframe
+        className="airtable-embed"
+        srcDoc={`<iframe src="https://airtable.com/embed/app9zmLQ4yCvPwiCG/shrKroFcLaFoK1NN2?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="470" style="background: transparent; border: 1px solid #ccc;"></iframe>`}
+        width="100%"
+        height="500"
+        style={{ background: "transparent", border: "1px solid #ccc" }}
+        allowFullScreen
+        sandbox="allow-scripts allow-same-origin"
+      ></iframe>
+      {/* <div className="flex flex-wrap justify-center gap-4 pb-20">
+      <MemberCard
           name="John Doe"
           role="Software Engineer"
           team='Communication'
@@ -63,8 +83,8 @@ const Team = () => {
           linkedinLink="https://www.linkedin.com/in/janesmith/"
           twitterLink="https://twitter.com/janesmith/"
           emailText="janesmith@example.com"
-        />
-      </div>
+        /> 
+     </div> */}
     </div>
   );
 };
