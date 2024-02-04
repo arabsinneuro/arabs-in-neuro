@@ -17,7 +17,7 @@ const Team = () => {
       </div>
 
       <br />
-      <p className="text-cN500 font-bold pl-4">{teamLeads}</p>
+      <p className="text-cN600 font-bold pl-4">{teamLeads}</p>
       <br />
       
       <iframe
@@ -52,7 +52,7 @@ const Team = () => {
         /> 
       </div> */}
       <br />
-      <p className="text-cN500 font-bold pl-4 py-5">{volunteers}</p>
+      <p className="text-cN600 font-bold pl-4 py-5">{volunteers}</p>
       <br />
       
       <iframe
