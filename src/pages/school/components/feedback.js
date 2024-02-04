@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
 import LanguageContext from "@/context/LanguageContext";
 import ScrollButtons from "./scrollButtons";
-import fetchData from "../utils/fetchData";
-import { addScrollListener, removeScrollListener, scroll } from "../utils/scrollUtils";
-import useExpandedCard from "../utils/feedbackCardUtil";
+import fetchData from "../../../app/utils/fetchData";
+import { addScrollListener, removeScrollListener, scroll } from "../../../app/utils/scrollUtils";
+import useExpandedCard from "../../../app/utils/feedbackCardUtil";
 
 const Feedback = () => {
   const languageContext = useContext(LanguageContext);
