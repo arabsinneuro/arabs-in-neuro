@@ -27,7 +27,7 @@ const CourseDayComponent = ({ title, description, schedule }) => {
               </tr>
             </thead>
             <tbody>
-              {schedule.map((item, index) => (
+              {schedule && schedule.map((item, index) => (
                 <tr key={index} className="border-b">
                   <td className="p-2">{item.time}</td>
                   <td className="p-2">{item.lecture}</td>
@@ -44,11 +44,11 @@ const CourseDayComponent = ({ title, description, schedule }) => {
 
 
 
-  const CourseDays = ({courseDays}) => {
+  const CourseDays = ({courseDaysData}) => {
  
     return (
       <div className="lg:px-20 px-5 space-y-10">
-        {courseDays.map((courseDay, index) => (
+        {courseDaysData && courseDaysData.map((courseDay, index) => (
           <CourseDayComponent
             key={index}
             title={courseDay.title}

@@ -109,7 +109,7 @@ function school2022() {
         <CourseOutline courseOutlineData={langauageBasedCourseOutlineData} />
 
         <DailySchedule calendarUrl={calendarUrl} />
-        <CourseDays courseDays={languageSpecificCourseDays} />
+        <CourseDays courseDaysData={languageSpecificCourseDays} />
 
         <div className="lg:px-20 px-5">
           <h1 className="mt-20 mb-10 text-2xl text-cN600 font-extrabold">

@@ -57,7 +57,7 @@ const CourseMaterials = ({
 
   const displayedData = showMoreButton
     ? materialsData
-    : materialsData.slice(0, 3);
+    : materialsData && materialsData.slice(0, 3);
 
   return (
     <div className="lg:px-20 px-5">
@@ -86,7 +86,7 @@ const CourseMaterials = ({
               </tr>
             </thead>
             <tbody>
-              {displayedData.map((data, index) => (
+              {displayedData && displayedData.map((data, index) => (
                 <MaterialRow
                   key={index}
                   topic={data.topic}

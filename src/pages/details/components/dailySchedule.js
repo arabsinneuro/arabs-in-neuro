@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 
 const DailySchedule = ({  calendarUrl  }) => {
     const languageContext = useContext(LanguageContext);
-  const { preferredLanguage, currentContent } = languageContext;
+  const { currentContent } = languageContext;
   const {
     dailySchedule, timeExplanation, timeZonesList, calendarImportInfo
   } = currentContent.details;
@@ -28,7 +28,7 @@ const DailySchedule = ({  calendarUrl  }) => {
             {timeExplanation}
           </p>
           <ul className="list-disc py-5 px-10 text-sm">
-            {timeZonesList.map((zone, index) => (
+            {timeZonesList && timeZonesList.map((zone, index) => (
               <li key={index}>{zone}</li>
             ))}
           </ul>

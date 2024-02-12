@@ -31,8 +31,8 @@ const SchoolDescription = () => {
           </div>
         </div>
         <div className="mt-12 mb-8">
-          <div className="bg-cGreenLight py-8 px-6 md:px-12 rounded-lg shadow-inner">
-            <p className="text-lg font-semibold text-center text-cWhite">{equipDescription}</p>
+          <div className="bg-cWhite py-8 px-6 md:px-12 rounded-lg shadow-lg">
+            <p className="text-lg font-semibold text-center text-cGreen">{equipDescription}</p>
           </div>
         </div>
         <div className="text-center">

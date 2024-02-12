@@ -7,7 +7,7 @@ const WeekOutline = ({ weekNb, days }) => {
       <h3 className="font-extrabold text-cGreen">{weekNb}:</h3>
       <hr className="border-t-2 border-cPinkLight w-full py-2" />
       <ul className="list-disc  px-5 py-2 text-sm space-y-4">
-        {days.map((day, index) => (
+        {days && days.map((day, index) => (
           <li key={index}>{day}</li>
         ))}
       </ul>
@@ -16,7 +16,7 @@ const WeekOutline = ({ weekNb, days }) => {
 };
 const CourseOutline = ({ courseOutlineData }) => {
   const languageContext = useContext(LanguageContext);
-  const { preferredLanguage, currentContent } = languageContext;
+  const { currentContent } = languageContext;
   const { week, courseOutline } = currentContent.details;
 
   return (
@@ -26,7 +26,7 @@ const CourseOutline = ({ courseOutlineData }) => {
       </h1>
       <div className="flex flex-wrap mx-auto">
         <div className="flex flex-wrap">
-          {courseOutlineData.map((weekData, index) => (
+          {courseOutlineData && courseOutlineData.map((weekData, index) => (
             <WeekOutline
               key={index}
               weekNb={`${week} ${weekData.nb}`}

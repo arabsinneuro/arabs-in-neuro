@@ -12,7 +12,7 @@ const InstructorsList = ({ instructors, instructorsTitle }) => {
         {instructorsTitle}
       </h1>
       <div className="flex flex-wrap">
-        {instructors.map((instructor, index) => (
+        {instructors && instructors.map((instructor, index) => (
           <InstructorCard
             key={index}
             name={instructor.name}
