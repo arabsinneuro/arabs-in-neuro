@@ -72,7 +72,7 @@ const Feedback = () => {
           feedbackList.map((feedback, index) => (
             <div
               key={index}
-              className={`flex-none bg-cGreen w-60 h-70 p-4 rounded-md text-white ${
+              className={`flex-none bg-cGreen w-60 h-70 p-4 rounded-md text-cWhite ${
                 index === expandedCardIndex ? "expanded-card" : ""
               }`}
               style={{
@@ -98,7 +98,6 @@ const Feedback = () => {
               ) : (
                 <div className="expanded-content">
                   <p className="expanded-feedback">{feedback.feedback}</p>
-                  <p className="text-sm text-right mt-1">~ {feedback.name}</p>
                 </div>
               )}
             </div>

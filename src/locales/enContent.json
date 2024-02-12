@@ -2,7 +2,8 @@
   "navbar": {
     "home": "Home",
     "about": "About",
-    "summerSchool": "Summer School",
+    "courses": "Courses",
+    "courseDetails": "Course Details",
     "faq": "FAQ",
     "team": "Team",
     "opportunities": "Opportunities"
@@ -51,6 +52,49 @@
     "summerSchoolDetails": "Summer School Details",
     "viewDetails": "View Details",
     "participantsFeedbacks": "Participants' Feedbacks"
+  },
+  "description": {
+    "title": "More Than Just Knowledge",
+    "description": "This Summer School is about igniting your passion, building a vibrant community of like-minded individuals, and empowering you to become a pioneer in the field of computational neuroscience.",
+    "connectTitle": "Connect and Collaborate",
+    "connectDescription": "No borders can limit your learning! Join fellow Arab students and professionals through Zoom, forming lasting friendships and fostering a supportive network across the region.",
+    "immerseTitle": "Immerse Yourself",
+    "immerseDescription": "Our dedicated Discord server is your 24/7 playground for brain enthusiasts. Ask questions, discuss challenges, and collaborate on projects, even after the sessions end.",
+    "rubTitle": "Rub Shoulders With the Best",
+    "rubDescription": "Learn firsthand from leading researchers in computational neuroscience, gaining insights into groundbreaking research and real-world applications.",
+    "forefrontTitle": "Stay at the Forefront",
+    "forefrontDescription": "Access the latest discoveries and trends in the field, keeping you informed and ahead in a rapidly evolving domain.",
+    "equipDescription": "Equip yourself with required skills and knowledge for a career in research, academia, or industry—where your contributions can solve critical challenges in neuroscience and beyond.",
+    "applyNow": "Apply Now"
+  },
+  "details": {
+    "courseDetails": "Course Details",
+    "instructors": "Instructors",
+    "courseMaterials": "Course Materials",
+    "participants": "Participants",
+    "courseOutline": "Course Outline",
+    "dailySchedule": "Daily Schedule",
+    "calendarImportInfo": "TO AVOID CONFUSION, you can import the above calendar to your own Google calendar. It currently shows the times according to Eastern time but if you import it, it will convert to your local time zone.",
+    "supportedByTitle": "Proudly supported by",
+    "acceptanceNotice": "We accept Arabic-speaking participants from all over the world",
+    "timeExplanation": "0:00 time here corresponds to the starting time of the day. The time is depending on your location is as follows:",
+    "timeZonesList": [
+      "(UTC +0) Morocco and Mauritania: 3:00 PM",
+      "(UTC +1) Algeria, Tunisia: 4:00 PM",
+      "(UTC +2) Libya and Sudan: 5:00 PM",
+      "(UTC +3) Palestine, Lebanon, Syria, Saudi Arabia, Iraq, and Egypt: 6:00 PM",
+      "(UTC +4) UAE, Kuwait, Oman, Bahrain, Qatar: 7:00 PM"
+    ],
+    "week": "Week",
+    "topic": "Topic",
+    "tutorial": "Tutorial",
+    "video": "Video",
+    "slides": "Slides",
+    "timeHour": "Time (Hour)",
+    "lecture": "Lecture",
+    "showLess": "Show Less",
+    "showMore": "Show More",
+    "welcomeVideo": "Welcome Video"
   },
   "footer": {
     "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!",

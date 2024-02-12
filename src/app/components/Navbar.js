@@ -13,14 +13,21 @@ function Navbar({ setPreferredLanguage }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "/", label: currentContent.navbar.home },
     { href: "/about", label: currentContent.navbar.about },
-    { href: "/school", label: currentContent.navbar.summerSchool },
+    { href: "/school", label: currentContent.navbar.courses },
+    { href: "/details/2023", label: currentContent.navbar.courseDetails },
     { href: "/faq", label: currentContent.navbar.faq },
     { href: "/opportunities", label: currentContent.navbar.opportunities },
   ];
 
   const router = useRouter();
+
+  const isActive = (href) => {
+    if (href.includes('/details')) {
+      return router.pathname.includes('/details');
+    }
+    return router.pathname === href;
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full p-5 bg-cWhite text-black shadow-md">
@@ -39,8 +46,10 @@ function Navbar({ setPreferredLanguage }) {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`mx-2 px-4 py-2 bg-white rounded shadow hover:bg-cN200 hover:no-underline ${
-                  router.pathname === link.href ? 'text-cRed' : 'text-cBlack'
+                className={`mx-2 px-4 py-2 rounded shadow hover:bg-cN200 hover:text-cRed hover:no-underline ${
+                  isActive(link.href) ? 'text-cWhite' : 'text-cBlack'
+                } ${
+                  isActive(link.href) ? 'bg-cRed' : 'bg-white'
                 }`}
               >
                 {link.label}
@@ -50,7 +59,7 @@ function Navbar({ setPreferredLanguage }) {
 
           <Link key="/contact" href="/contact">
             <div className="mx-1 cursor-pointer px-2 py-2 bg-cRed rounded-full shadow-sm hover:bg-cRedLight">
-              <img src="icons/phone.svg" alt="phone" />
+              <img src="/icons/phone.svg" alt="phone" />
             </div>
           </Link> 
           

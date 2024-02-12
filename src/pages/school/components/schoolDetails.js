@@ -11,7 +11,7 @@ const SchoolDetails = () => {
       <div className="text-2xl font-extrabold text-cBlack">
         {summerSchoolDetails} <span className="text-cRed"> 2023</span>
       </div>
-      <Link href="">
+      <Link href="/school/2023">
         <button className="bg-cRed text-cWhite py-2 px-4 my-5 rounded-md hover:bg-opacity-80 flex items-center space-x-2">
           <span>{viewDetails}</span>
           <img className="ml-2" src="icons/arrow-right.svg" alt="arrow" />

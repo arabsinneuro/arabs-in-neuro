@@ -55,19 +55,19 @@ function Footbar({ setPreferredLanguage }) {
 
           <div className="flex items-center mx-auto lg:mx-0">
             <a href={emailLink}>
-              <img src="icons/email.svg" alt={emailName} />
+              <img src="/icons/email.svg" alt={emailName} />
             </a>
             <a href={facebookLink}>
-              <img src="icons/facebook.svg" alt={facebookName} />
+              <img src="/icons/facebook.svg" alt={facebookName} />
             </a>
             <a href={linkedinLink}>
-              <img src="icons/linkedin.svg" alt={linkedinName} />
+              <img src="/icons/linkedin.svg" alt={linkedinName} />
             </a>
             <a href={instagramLink}>
-              <img src="icons/instagram.svg" alt={instagramName} />
+              <img src="/icons/instagram.svg" alt={instagramName} />
             </a>
             <a href={twiterLink}>
-              <img src="icons/twitter.svg" alt={twiterName} />
+              <img src="/icons/twitter.svg" alt={twiterName} />
             </a>
           </div>
         </div>
