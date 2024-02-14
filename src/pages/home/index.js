@@ -1,18 +1,19 @@
-import { useState, useContext } from "react";
-import LanguageContext from '../../context/LanguageContext';
+import Overview from "./components/overview";
+import Intro from "./components/intro";
+import JoinUs from "./components/joinUs";
+import WhyJoin from "./components/whyJoin";
+import WhatsAcheived from "./components/whatsAcheived";
 
 function HomePage() {
-
-  const languageContext = useContext(LanguageContext);
-  const { preferredLanguage, currentContent } = languageContext;
-  const { title, paragraph } = currentContent.home;
   return (
-    <div className=" px-4">
-      <h1>{title}</h1>
-      <p>{paragraph}</p>
+    <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/gr_red_green.svg')] ">
+      <Overview />
+      <Intro />
+      <JoinUs />
+      <WhyJoin />
+      <WhatsAcheived />
     </div>
   );
 }
-
 
 export default HomePage;

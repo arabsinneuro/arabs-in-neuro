@@ -45,7 +45,7 @@ function school2023() {
     courseOutlineData[preferredLanguage] || courseOutlineData.en;
 
   return (
-    <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/opportunities.svg')]">
+    <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/faq.svg')]">
       <div className="py-20">
         {/* <div className="flex justify-center items-center">
         <Link href="/school">

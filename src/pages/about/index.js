@@ -7,11 +7,7 @@ function AboutPage() {
   return (
     <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/gr_red_green.svg')] " >
       <Overview />
-
-      <div className="bg-contain bg-blend-soft-light bg-[url('/backgrounds/gr_red_green.svg')] ">
-        <Journey />
-      </div>
-
+      <Journey />
       <div className="lg:bg-cover bg-contain bg-cover bg-blend-soft-light bg-[url('/backgrounds/team_gr_bg.svg')] ">
         <Team />
       </div>
