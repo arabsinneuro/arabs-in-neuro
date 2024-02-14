@@ -47,14 +47,14 @@ const WhyJoin = () => {
       <h1 className="text-cBlack font-extrabold text-4xl text-center">
         {whyJoin} <span className="text-cRed"> AIN</span>?{" "}
       </h1>
-      <div className="mt-10 grid grid-cols-1 gap-8 lg:px-20">
+      <div className="mt-10 grid grid-cols-1 lg:px-20">
         {data &&
           data.map((item, index) => (
             <div
               key={index}
-              className={`shadow-lg rounded-3xl lg:max-w-[50%] ${
+              className={`shadow-lg rounded-3xl lg:max-w-[60%] ${
                 index % 2 === 0 ? "lg:mr-auto" : "lg:ml-auto"
-              } grid grid-cols-4 gap-8 py-5`}
+              } grid grid-cols-4 gap-4 py-5`}
             >
               {index % 2 === 0 && (
                 <div className="col-span-1">

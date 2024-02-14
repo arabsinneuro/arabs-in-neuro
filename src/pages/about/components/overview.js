@@ -21,7 +21,7 @@ const Overview = () => {
         </div>
 
         <img
-          src="/assets/about/intro.svg"
+          src="/assets/about/team.png"
           alt="Intro Image"
           className="lg:block lg:w-1/4 w-1/4 h-auto mx-auto lg:ml-auto"
         />
@@ -30,7 +30,7 @@ const Overview = () => {
       {/* mobile */}
       <div className="lg:hidden text-center">
         <img
-          src="/assets/about/intro.svg"
+          src="/assets/about/team.png"
           alt="Intro Image"
           className="w-full h-full object-cover rounded-md mb-4"
         />

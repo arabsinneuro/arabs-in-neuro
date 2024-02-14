@@ -21,7 +21,7 @@ const CourseOutline = ({ courseOutlineData }) => {
 
   return (
     <div className="lg:px-20 px-5">
-      <h1 className="mt-20 mb-10 text-2xl text-cN600 font-extrabold">
+      <h1 className="mt-20 mb-5 text-2xl text-cN600 font-extrabold">
         {courseOutline}
       </h1>
       <div className="flex flex-wrap mx-auto">

@@ -4,8 +4,8 @@ import React, { useContext, useState } from "react";
 const MaterialRow = ({ topic, tutorialLink, videoLink, slidesLink }) => {
   return (
     <tr className="border-b">
-      <td className="p-4">{topic}</td>
-      <td className="p-4">
+      <td className="lg:p-4">{topic}</td>
+      <td className="lg:p-4">
         {tutorialLink && (
           <a href={tutorialLink} target="_blank" rel="noopener noreferrer">
             <img
@@ -16,7 +16,7 @@ const MaterialRow = ({ topic, tutorialLink, videoLink, slidesLink }) => {
           </a>
         )}
       </td>
-      <td className="p-4">
+      <td className="lg:p-4">
         {videoLink && (
           <a href={videoLink} target="_blank" rel="noopener noreferrer">
             <img
@@ -27,7 +27,7 @@ const MaterialRow = ({ topic, tutorialLink, videoLink, slidesLink }) => {
           </a>
         )}
       </td>
-      <td className="p-4">
+      <td className="lg:p-4">
         {slidesLink && (
           <a href={slidesLink} target="_blank" rel="noopener noreferrer">
             <img
@@ -60,8 +60,8 @@ const CourseMaterials = ({
     : materialsData && materialsData.slice(0, 3);
 
   return (
-    <div className="lg:px-20 px-5">
-      <h1 className="mt-20 mb-10 text-2xl text-cN600 font-extrabold">
+    <div className="lg:px-20">
+      <h1 className="mt-20 mb-5 text-2xl text-cN600 font-extrabold px-5">
         {courseMaterialsTitle}
       </h1>
       <div className="flex grid grid-cols-1 px-4">
@@ -75,14 +75,15 @@ const CourseMaterials = ({
             {welcomeVideo}
           </a>
         </div>
+        <div className="lg:mx-auto">
         <div className="overflow-x-auto">
           <table className="text-left mt-6">
             <thead className="bg-cN100">
               <tr>
-                <th className="p-4">{topic}</th>
-                <th className="p-4">{tutorial}</th>
-                <th className="p-4">{video}</th>
-                <th className="p-4">{slides}</th>
+                <th className="lg:px-4 py-4 px-1">{topic}</th>
+                <th className="lg:px-4 py-4 px-1">{tutorial}</th>
+                <th className="lg:px-4 py-4 px-1">{video}</th>
+                <th className="lg:px-4 py-4 px-1">{slides}</th>
               </tr>
             </thead>
             <tbody>
@@ -106,6 +107,7 @@ const CourseMaterials = ({
               </tr>
             </tbody>
           </table>
+        </div>
         </div>
       </div>
     </div>

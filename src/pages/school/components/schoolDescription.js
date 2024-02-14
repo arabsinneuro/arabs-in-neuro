@@ -13,19 +13,19 @@ const SchoolDescription = () => {
         <h2 className="text-3xl font-extrabold text-center mb-8 text-cRed">{title}</h2>
         <p className="text-xl mb-10 text-center text-cN800">{description}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="bg-cN100 p-8 rounded-lg shadow-lg">
+          <div className="bg-cWhite p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-cRed">{connectTitle}</h3>
             <p className="text-md text-cN800">{connectDescription}</p>
           </div>
-          <div className="bg-cN100 p-8 rounded-lg shadow-lg">
+          <div className="bg-cWhite p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-cRed">{immerseTitle}</h3>
             <p className="text-md text-cN800">{immerseDescription}</p>
           </div>
-          <div className="bg-cN100 p-8 rounded-lg shadow-lg">
+          <div className="bg-cWhite p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-cRed">{rubTitle}</h3>
             <p className="text-md text-cN800">{rubDescription}</p>
           </div>
-          <div className="bg-cN100 p-8 rounded-lg shadow-lg">
+          <div className="bg-cWhite p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-cRed">{forefrontTitle}</h3>
             <p className="text-md text-cN800">{forefrontDescription}</p>
           </div>

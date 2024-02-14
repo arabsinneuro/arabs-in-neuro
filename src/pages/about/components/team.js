@@ -11,7 +11,7 @@ const Team = () => {
   return (
     <div className="p-4 lg:p-8">
       <div className="flex items-center justify-center mb-20">
-        <h1 className="bg-cWhite text-cGreen px-20 py-4 rounded-md inline-block text-center shadow-md text-xl font-bold">
+        <h1 className="bg-cGreen text-cWhite px-20 py-4 rounded-xl text-center shadow-xl text-2xl font-extrabold">
           {teamBehindAiN}
         </h1>
       </div>

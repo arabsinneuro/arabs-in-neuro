@@ -1,4 +1,3 @@
-// FormComponent.jsx
 import React from "react";
 
 const FormComponent = () => {
@@ -6,8 +5,6 @@ const FormComponent = () => {
     <div>
       <p id="thanks"></p>
       <div className="publications">
-      {/* <script async defer src="https://formfacade.com/include/115584537198165427158/form/1FAIpQLSdF6btSqvrYiskbvssC3O74JIVhe-hpbyALAcNN9sf2eZRjCA/classic.js?div=ff-compose"></script> */}
-
         <script type="text/javascript">var submitted = false;</script>
 
         <iframe

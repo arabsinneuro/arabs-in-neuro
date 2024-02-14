@@ -1,7 +1,6 @@
 import React from "react";
 import { useContext } from "react";
 import LanguageContext from "../../../context/LanguageContext";
-import Link from "next/link";
 
 const Card = ({ number, text, icon }) => (
   <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/green_red.svg')]">
