@@ -10,8 +10,8 @@ const Team = () => {
 
   return (
     <div className="p-4 lg:p-8">
-      <div className="flex items-center justify-center mb-20">
-        <h1 className="bg-cGreen text-cWhite px-20 py-4 rounded-xl text-center shadow-xl text-2xl font-extrabold">
+      <div className="flex items-center justify-center mt-10 mb-10">
+        <h1 className="bg-cGreenLight text-cWhite lg:px-20 px-3 py-4 rounded-xl text-center shadow-xl text-2xl font-extrabold">
           {teamBehindAiN}
         </h1>
       </div>
