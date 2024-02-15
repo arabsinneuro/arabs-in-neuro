@@ -21,22 +21,22 @@ const WhyJoin = () => {
 
   const data = [
     {
-      illustration: "/assets/home/illustrations1.svg",
+      illustration: "/assets/home/illustration1.svg",
       title: `${handsOnLearning}`,
       description: `${handsOnDescription}`,
     },
     {
-      illustration: "/assets/home/illustrations2.svg",
+      illustration: "/assets/home/illustration2.svg",
       title: `${engagingCommunity}`,
       description: `${communityDescription}`,
     },
     {
-      illustration: "/assets/home/illustrations3.svg",
+      illustration: "/assets/home/illustration3.svg",
       title: `${innovativeCurriculum}`,
       description: `${curriculumDescription}`,
     },
     {
-      illustration: "/assets/home/illustrations4.svg",
+      illustration: "/assets/home/illustration4.svg",
       title: `${recognizedCertifications}`,
       description: `${certificationsDescription}`,
     },

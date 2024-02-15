@@ -37,7 +37,7 @@ const WhatsAcheived = () => {
       <div className="flex flex-col lg:flex-row justify-around items-center">
         <div className="relative mb-5 lg:mb-0">
           <img
-            src="/assets/home/subtract.png"
+            src="/assets/home/brain.png"
             alt="Brain"
             className="lg:w-96 w-64"
           />

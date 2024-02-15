@@ -16,7 +16,7 @@ const OverviewComponent = ({ connectWithUs, embarkJourney, virtualDoorsOpen, exp
 
         <br/>
         <br/>
-        <img src="assets/contact/illustrations.svg" alt="illustration" style={{ maxHeight: "250px", maxWidth: "250px", width: "100%", height: "auto" }}/>
+        <img src="assets/contact/illustration.svg" alt="illustration" style={{ maxHeight: "250px", maxWidth: "250px", width: "100%", height: "auto" }}/>
       </div>
     </div>
   );
