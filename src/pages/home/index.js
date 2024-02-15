@@ -3,7 +3,7 @@ import Intro from "./components/intro";
 import JoinUs from "./components/joinUs";
 import WhyJoin from "./components/whyJoin";
 import WhatsAcheived from "./components/whatsAcheived";
-
+import RootLayout from "../../app/layout";
 function HomePage() {
   return (
     <div>

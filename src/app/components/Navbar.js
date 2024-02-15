@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useContext } from "react";
 import Link from "next/link";
 import LanguageContext from "../../context/LanguageContext";
@@ -30,7 +28,7 @@ function Navbar({ setPreferredLanguage }) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full p-5 bg-cWhite text-black shadow-md">
+    <nav className="fixed top-0 left-0 z-50 w-full p-5 bg-cWhite text-black shadow-md">
       <div className="flex items-center justify-between">
         <Link href="/">
           <img
@@ -49,7 +47,7 @@ function Navbar({ setPreferredLanguage }) {
                 className={`mx-2 px-4 py-2 rounded shadow hover:bg-cN200 hover:text-cRed hover:no-underline ${
                   isActive(link.href) ? 'text-cWhite' : 'text-cBlack'
                 } ${
-                  isActive(link.href) ? 'bg-cRed' : 'bg-white'
+                  isActive(link.href) ? 'bg-cRed' : 'bg-cWhite'
                 }`}
               >
                 {link.label}

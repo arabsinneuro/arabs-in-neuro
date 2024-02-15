@@ -9,7 +9,7 @@ const Team = () => {
   const { teamBehindAiN, teamLeads, volunteers } = currentContent.about;
 
   return (
-    <div className="p-4 lg:p-8">
+    <div className="p-10 lg:p-20">
       <div className="flex items-center justify-center mt-10 mb-10">
         <h1 className="bg-cGreenLight text-cWhite lg:px-20 px-3 py-4 rounded-xl text-center shadow-xl text-2xl font-extrabold">
           {teamBehindAiN}

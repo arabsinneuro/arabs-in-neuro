@@ -61,7 +61,7 @@ const WhyJoin = () => {
                   <img
                     src={item.illustration}
                     alt="illustration"
-                    className="overflow-visible bottom-0 w-40 h-40 object-cover"
+                    className="overflow-visible bottom-0 w-32 h-32 md:w-40 md:h-40  object-cover"
                   />
                 </div>
               )}
@@ -78,7 +78,7 @@ const WhyJoin = () => {
                   <img
                     src={item.illustration}
                     alt="illustration"
-                    className="overflow-visible bottom-0 w-40 h-40 object-cover"
+                    className="overflow-visible bottom-0 w-32 h-32 md:w-40 md:h-40 object-cover"
                   />
                 </div>
               )}

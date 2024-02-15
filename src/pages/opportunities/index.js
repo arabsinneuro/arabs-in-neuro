@@ -15,7 +15,7 @@ function OpportunitiesPage() {
     applyHere,
   } = currentContent.opportunities;
   return (
-    <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/opportunities.svg')]">
+    <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/faq.svg')]">
       <div className="grid grid-cols-1 md:grid-cols-2 py-20">
         <div className="lg:px-20 px-10">
           <h1 className="text-3xl font-extrabold text-cBlack">{volunteerToday}</h1>

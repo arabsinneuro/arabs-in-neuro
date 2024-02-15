@@ -18,9 +18,10 @@ const DailySchedule = ({ calendarUrl }) => {
         <h1 className="mt-20 mb-5 text-2xl text-cN600 font-extrabold">
           {dailySchedule}
         </h1>
-
-        <div className=" overflow-x-auto">
-          <div className="lg:px-10 flex justify-center w-full">
+        
+        
+        <div className="overflow-x-auto">
+          <div className="lg:px-10 w-screen flex justify-center lg:w-full">
             <iframe
               src={calendarUrl}
               width="800"
@@ -30,8 +31,9 @@ const DailySchedule = ({ calendarUrl }) => {
           </div>
         </div>
       </div>
+      
       <div className="flex grid grid-cols-1 md:grid-cols-2 py-20">
-        <div className="lg:px-20 px-10">
+        <div className="lg:px-20 px-5">
           <p className="px-2 py-2 text-sm font-extrabold text-cBlack">
             {timeExplanation}
           </p>
@@ -41,7 +43,7 @@ const DailySchedule = ({ calendarUrl }) => {
           </ul>
         </div>
 
-        <div className="lg:w-96 w-64 bg-cPink shadow-md px-4 py-2 rounded-md space-y-2 ltr:ml-auto rtl:mr-auto font-extrabold text-lg  text-cWhite">
+        <div className="w-96 bg-cPink shadow-md px-4 py-2 rounded-md space-y-2 ltr:ml-auto rtl:mr-auto font-extrabold text-lg  text-cWhite">
           <h2>{calendarImportInfo}</h2>
           <h2>{calendarImportInfoCompletion}</h2>
         </div>
