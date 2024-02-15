@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import MemberCard from "./memberCard";
 import LanguageContext from "../../.././context/LanguageContext";
+import { teamLeadsData } from "../../../../public/data/team/team_leads_data";
 
 const Team = () => {
   const languageContext = useContext(LanguageContext);
@@ -17,44 +18,27 @@ const Team = () => {
       </div>
 
       <br />
-      <p className="text-cN600 font-bold pl-4">{teamLeads}</p>
+      <p className="text-cGreen text-lg font-bold px-4">{teamLeads}</p>
       <br />
-      
-      <iframe
-        className="airtable-embed"
-        srcDoc={`<iframe src="https://airtable.com/embed/app9zmLQ4yCvPwiCG/shrfnV7F71yckhAPn?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="470" style="background: transparent; border: 1px solid #ccc;"></iframe>`}
-      
-        width="100%"
-        height="500"
-        style={{ background: "transparent", border: "1px solid #ccc" }}
-        allowFullScreen
-        sandbox="allow-scripts allow-same-origin"
-      ></iframe>
-      {/* <div className="flex flex-wrap justify-center gap-4">
-       <MemberCard
-          name="Mohammad Abdelhack"
-          role="Software Engineer"
-          affiliation="ABC Corporation"
-          image="/assets/team/mabdelhack.svg"
-          linkedinLink="https://www.linkedin.com/in/johndoe/"
-          twitterLink="https://twitter.com/johndoe/"
-          emailText="johndoe@example.com"
-        />
 
-        <MemberCard
-          name="Sarah hosni"
-          role="UX Designer"
-          affiliation="XYZ Agency"
-          image="/assets/team/sarah.svg"
-          linkedinLink="https://www.linkedin.com/in/janesmith/"
-          twitterLink="https://twitter.com/janesmith/"
-          emailText="janesmith@example.com"
-        /> 
-      </div> */}
+      <div className="flex flex-wrap justify-center lg:gap-8 gap-4">
+        {teamLeadsData.map(member => (
+          <MemberCard
+            key={member.name}
+            name={member.name}
+            team={member.team}
+            affiliation={member.affiliation}
+            image={member.image}
+            linkedinLink={member.linkedinLink}
+            twitterLink={member.twitterLink}
+            emailText={member.emailText}
+          />
+        ))}
+      </div>
       <br />
-      <p className="text-cN600 font-bold pl-4 py-5">{volunteers}</p>
+      <p className="text-cGreen text-lg font-extrabold px-4 py-5">{volunteers}</p>
       <br />
-      
+
       <iframe
         className="airtable-embed"
         srcDoc={`<iframe src="https://airtable.com/embed/app9zmLQ4yCvPwiCG/shrKroFcLaFoK1NN2?backgroundColor=gray" frameborder="0" onmousewheel="" width="100%" height="470" style="background: transparent; border: 1px solid #ccc;"></iframe>`}
@@ -64,27 +48,6 @@ const Team = () => {
         allowFullScreen
         sandbox="allow-scripts allow-same-origin"
       ></iframe>
-      {/* <div className="flex flex-wrap justify-center gap-4 pb-20">
-      <MemberCard
-          name="John Doe"
-          role="Software Engineer"
-          team='Communication'
-          affiliation="ABC Corporation"
-          linkedinLink="https://www.linkedin.com/in/johndoe/"
-          twitterLink="https://twitter.com/johndoe/"
-          emailText="johndoe@example.com"
-        />
-
-        <MemberCard
-          name="Jane Smith"
-          role="UX Designer"
-          team='Fundraising'
-          affiliation="XYZ Agency"
-          linkedinLink="https://www.linkedin.com/in/janesmith/"
-          twitterLink="https://twitter.com/janesmith/"
-          emailText="janesmith@example.com"
-        /> 
-     </div> */}
     </div>
   );
 };

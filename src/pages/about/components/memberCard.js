@@ -11,25 +11,26 @@ const MemberCard = ({
   emailText,
 }) => {
   const backgroundColorClass = image ? "bg-cN500" : "bg-cPink";
-  const width = image? "w-60" : "w-80";
+  const width = image ? "w-64" : "w-80";
+  const height = "h-96";
 
   return (
     <div
-      className={`${backgroundColorClass} rounded-md p-4 p-4 flex flex-col items-center mx-4 ${width}`}
+      className={`${backgroundColorClass} rounded-2xl p-2 flex flex-col items-center ${width} ${height}`}
     >
-      {image && (
-        <img
-          src={image}
-          alt={name}
-          className="mb-2"
-        />
-      )}
+      <div className="w-full flex items-center rounded-2xl justify-center bg-cN400">
+        {image && (
+          <img src={image} alt={name} className="w-auto h-52 rounded-2xl" />
+        )}
+      </div>
 
-      <div className="flex w-full">
+      <div className="flex w-full py-3">
         {!team && (
           <div className="flex-grow flex flex-col items-center justify-center w-full">
-            <h2 className="text-lg font-bold text-cWhite mb-2">{name}</h2>
-            <p className="text-sm font-bold text-cWhite mb-2">{role}</p>
+            <h2 className="text-lg font-bold text-cWhite mb-2 mx-auto">
+              {name}
+            </h2>
+            <p className="text-sm font-bold text-cWhite mb-2 mx-auto">{role}</p>
             <h3 className="text-sm italic text-cWhite mb-2 text-center">
               Affiliation:
             </h3>
@@ -38,23 +39,21 @@ const MemberCard = ({
         )}
 
         {team && (
-          <div className="flex-grow flex flex-col justify-center pr-4">
-            <div className=" items-center mb-2">
-            <h2 className="text-lg font-bold text-cWhite text-center">
+          <div className="flex-grow flex flex-col justify-between w-56">
+            <h2 className="text-xl font-extrabold text-cWhite text-center  mx-auto">
               {name}
             </h2>
-            <h3 className="text-sm italic text-cWhite mb-2 text-center">
-              Team: {team}
-            </h3>
+
+            <div className="justify-end">
+              <h3 className="text-sm fond-extrabold italic text-cGreen mb-2 text-center">
+                {team}
+              </h3>
+              <p className="text-xs text-cWhite text-left">{affiliation}</p>
             </div>
-            <p className="text-sm text-cWhite mb-2 text-left">Role: {role}</p>
-            <p className="text-sm text-cWhite text-left">
-              Affiliation: {affiliation}
-            </p>
           </div>
         )}
 
-        <div className="flex flex-col items-center my-auto">
+        <div className="flex flex-col items-center">
           {linkedinLink && (
             <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
               <img
@@ -67,7 +66,11 @@ const MemberCard = ({
 
           {twitterLink && (
             <a href={twitterLink} target="_blank" rel="noopener noreferrer">
-              <img src="/icons/twitter.svg" alt="Twitter" className="w-10 h-10" />
+              <img
+                src="/icons/twitter.svg"
+                alt="Twitter"
+                className="w-10 h-10"
+              />
             </a>
           )}
 
