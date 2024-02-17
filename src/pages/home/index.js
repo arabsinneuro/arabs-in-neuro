@@ -7,9 +7,8 @@ import RootLayout from "../../app/layout";
 function HomePage() {
   return (
     <div>
-      <div className="bg-cover h-full bg-blend-soft-light bg-[url('/backgrounds/home-intro.svg')] ">
-        <HomeOverview />
-      </div>
+      <HomeOverview />
+
       <div className="bg-contain bg-blend-soft-light bg-[url('/backgrounds/gr_red_green.svg')] ">
         <Intro />
         <JoinUs />
