@@ -7,7 +7,7 @@ import { teamLeadsData } from "../../../../public/data/team/team_leads_data";
 const Team = () => {
   const languageContext = useContext(LanguageContext);
   const { currentContent } = languageContext;
-  const { teamBehindAiN, teamLeads, volunteers } = currentContent.about;
+  const { teamBehindAiN, teamLeads, volunteers, affiliation } = currentContent.about;
 
   return (
     <div className="p-10 lg:p-20">
@@ -28,6 +28,7 @@ const Team = () => {
             name={member.name}
             team={member.team}
             affiliation={member.affiliation}
+            affiliationTitle={affiliation}
             image={member.image}
             linkedinLink={member.linkedinLink}
             twitterLink={member.twitterLink}

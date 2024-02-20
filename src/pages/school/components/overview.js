@@ -6,8 +6,10 @@ const Overview = () => {
   const { currentContent } = languageContext;
   const {
     introCompNeuroscience,
-    introCompNeuroText,
-    applications2022,
+    introCourseTitle,
+    introCourseDescription,
+    summerSchoolContent,
+    journeyDescription,
     closedApplications2023,
   } = currentContent.school;
 
@@ -19,24 +21,31 @@ const Overview = () => {
             {introCompNeuroscience}
           </h1>
           <br />
-          <p className="lg:px-10 px-2 py-2 text-s text-cBlack">{introCompNeuroText}</p>
-          <br />
-          <p className="lg:px-10 px-2 py-2 text-sm text-cBlack">{applications2022}</p>
+          <p className="lg:px-10 px-2 py-2 text-s font-bold text-cBlack">
+            {introCourseTitle}
+          </p>
+          <p className="lg:px-10 px-2 py-2 text-sm text-cBlack">
+            {summerSchoolContent}
+          </p>
+          <p className="lg:px-10 px-2 py-2 text-sm text-cBlack">
+          <span className="text-md text-cRed">{introCourseDescription}: </span> {journeyDescription}
+          </p>
+        
         </div>
 
         <div className="md:col-span-1 w-64 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
           <h2 className="font-extrabold text-xl py-2 text-cWhite font-bold">
             {closedApplications2023}
           </h2>
+          {/* <button
+            className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
+            type="submit"
+            role="button"
+          >
+            applyHere
+            <img className="ml-2" src="icons/arrow-up-right.svg" alt="arrow" />
+          </button> */}
         </div>
-      </div>
-
-      <div className="lg:px-20 px-10 py-5">
-        <img
-          src="/assets/school/map.png"
-          alt="map Image"
-          className="w-full h-full object-fit rounded-md py-4"
-        />
       </div>
     </div>
   );

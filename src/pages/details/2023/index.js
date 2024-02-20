@@ -1,12 +1,14 @@
 import React from "react";
 import LanguageContext from "@/context/LanguageContext";
 import {
+  participantsNoteData,
   courseDaysData,
   instructorsData,
   materialsData,
   courseOutlineData,
   welcomeVideoUrl,
   calendarUrl,
+  collabsData
 } from "../../../../public/data/school/2023";
 import SchoolComponent from "../components/schoolComponent";
 
@@ -24,12 +26,14 @@ function School2023() {
   return (
     <SchoolComponent
       year="2023"
+      participantsNoteData={participantsNoteData}
       languageSpecificInstructors={languageSpecificInstructors}
       materialsData={materialsData}
       welcomeVideoUrl={welcomeVideoUrl}
       langauageBasedCourseOutlineData={langauageBasedCourseOutlineData}
       calendarUrl={calendarUrl}
       languageSpecificCourseDays={languageSpecificCourseDays}
+      collabsData={collabsData}
     />
   );
 }

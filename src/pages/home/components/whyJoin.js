@@ -9,36 +9,36 @@ const WhyJoin = () => {
 
   const {
     whyJoin,
-    handsOnLearning,
-    handsOnDescription,
-    engagingCommunity,
-    communityDescription,
-    innovativeCurriculum,
-    curriculumDescription,
-    recognizedCertifications,
-    certificationsDescription,
+    empoweringEducation,
+    empoweringEducationDescription,
+    communityEngagement,
+    communityEngagementDescription,
+    certificationRecognition,
+    certificationRecognitionDescription,
+    continuousSupport,
+    continuousSupportDescription
   } = currentContent.home;
 
   const data = [
     {
       illustration: "/assets/home/illustration1.svg",
-      title: `${handsOnLearning}`,
-      description: `${handsOnDescription}`,
+      title: `${empoweringEducation}`,
+      description: `${empoweringEducationDescription}`,
     },
     {
       illustration: "/assets/home/illustration2.svg",
-      title: `${engagingCommunity}`,
-      description: `${communityDescription}`,
+      title: `${communityEngagement}`,
+      description: `${communityEngagementDescription}`,
     },
     {
       illustration: "/assets/home/illustration3.svg",
-      title: `${innovativeCurriculum}`,
-      description: `${curriculumDescription}`,
+      title: `${continuousSupport}`,
+      description: `${continuousSupportDescription}`,
     },
     {
       illustration: "/assets/home/illustration4.svg",
-      title: `${recognizedCertifications}`,
-      description: `${certificationsDescription}`,
+      title: `${certificationRecognition}`,
+      description: `${certificationRecognitionDescription}`,
     },
   ];
 

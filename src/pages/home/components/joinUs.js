@@ -11,8 +11,8 @@ const JoinUs = () => {
     joinUs,
     inOur,
     introCompNeuroCourse,
-    courseJourney,
-    courseDescription,
+    passionateAboutBrain,
+    courseDesigned,
     dontMissOpportunity,
     learnMore,
   } = currentContent.home;
@@ -20,10 +20,7 @@ const JoinUs = () => {
   return (
     <div className="py-20 lg:px-20 px-5">
       <div className="flex flex-col lg:flex-row justify-center lg:w-3/4 lg:mx-auto">
-        {/* <div className="flex-1 px-5 mb-8 lg:mb-0">
-          <img src="/assets/home/joinus.svg" alt="Join Us" className="h-64 w-64 mx-auto" />
-        </div> */}
-        <div className="flex-1 px-4 text-center lg:text-left">
+        <div className="flex-1 px-4 my-auto text-center lg:text-left">
           <h1 className="text-cRed font-extrabold text-4xl text-center">
             {joinUs}
           </h1>
@@ -36,9 +33,9 @@ const JoinUs = () => {
         </div>
         <div className="flex-1 px-4">
           <div className="bg-cWhite text-sm shadow-xl p-4 rounded-2xl">
-            <p>{courseJourney}</p>
+            <p>{passionateAboutBrain}</p>
             <br />
-            <p>{courseDescription}</p>
+            <p>{courseDesigned}</p>
             <br />
             <p className="font-bold">{dontMissOpportunity}</p>
             <br />

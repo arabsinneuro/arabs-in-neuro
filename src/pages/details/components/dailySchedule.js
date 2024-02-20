@@ -43,7 +43,7 @@ const DailySchedule = ({ calendarUrl }) => {
           </ul>
         </div>
 
-        <div className="w-96 bg-cPink shadow-md px-4 py-2 rounded-md space-y-2 ltr:ml-auto rtl:mr-auto font-extrabold text-lg  text-cWhite">
+        <div className="md:w-96 w-64 bg-cPink shadow-md px-4 py-2 rounded-md space-y-2 ltr:ml-auto rtl:mr-auto font-extrabold md:text-lg text-md  text-cWhite">
           <h2>{calendarImportInfo}</h2>
           <h2>{calendarImportInfoCompletion}</h2>
         </div>

@@ -1,9 +1,20 @@
-const InstructorCard = ({ name, affiliation }) => (
-  <div className="w-96 h-32 bg-cWhite rounded-md shadow-md p-4 m-5 overflow-hidden flex flex-col justify-center items-center">
-    <h2 className="text-xl font-bold text-center">{name}</h2>
-    <p className="mt-2 text-center">{affiliation}</p>
-  </div>
-);
+import React from "react";
+
+const InstructorCard = ({ name, affiliation, url }) => {
+  const handleClick = () => {
+    window.open(url, "_blank");
+  };
+
+  return (
+    <div
+      className="w-96 h-32 bg-cWhite rounded-md shadow-md p-4 m-5 overflow-hidden flex flex-col justify-center items-center cursor-pointer hover:scale-110 hover:shadow-xl hover:text-cGreen"
+      onClick={handleClick}
+    >
+      <h2 className="text-xl font-bold text-center">{name}</h2>
+      <p className="mt-2 text-center">{affiliation}</p>
+    </div>
+  );
+};
 
 const InstructorsList = ({ instructors, instructorsTitle }) => {
   return (
@@ -12,15 +23,18 @@ const InstructorsList = ({ instructors, instructorsTitle }) => {
         {instructorsTitle}
       </h1>
       <div className="flex flex-wrap">
-        {instructors && instructors.map((instructor, index) => (
-          <InstructorCard
-            key={index}
-            name={instructor.name}
-            affiliation={instructor.affiliation}
-          />
-        ))}
+        {instructors &&
+          instructors.map((instructor, index) => (
+            <InstructorCard
+              key={index}
+              name={instructor.name}
+              affiliation={instructor.affiliation}
+              url={instructor.url}
+            />
+          ))}
       </div>
     </div>
   );
 };
+
 export default InstructorsList;
