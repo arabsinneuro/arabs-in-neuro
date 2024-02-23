@@ -50,7 +50,7 @@ const SchoolDescription = () => {
 
   return (
     <div className="text-cN800">
-      <div className="mx-auto px-5 lg:px-8 lg:py-10 py-5">
+      <div className="mx-auto px-5 lg:px-20 lg:py-10 py-5">
         <section className="mb-10">
           <h3 className="text-2xl font-bold mb-4 text-cRed">
             {whyCompNeuroscience}
@@ -59,7 +59,7 @@ const SchoolDescription = () => {
           <p>{compToolsUnlockMindMysteries}</p>
         </section>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 md:gap-15 gap-5">
           <section className="lg:mb-10 mb-5 p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {whatToExpect}
