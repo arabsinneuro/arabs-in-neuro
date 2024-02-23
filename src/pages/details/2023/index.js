@@ -8,7 +8,8 @@ import {
   courseOutlineData,
   welcomeVideoUrl,
   calendarUrl,
-  collabsData
+  collabsData,
+  applyLink
 } from "../../../../public/data/school/2023";
 import SchoolComponent from "../components/schoolComponent";
 
@@ -34,6 +35,7 @@ function School2023() {
       calendarUrl={calendarUrl}
       languageSpecificCourseDays={languageSpecificCourseDays}
       collabsData={collabsData}
+      applyLink={applyLink}
     />
   );
 }

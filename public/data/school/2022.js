@@ -1,3 +1,5 @@
+export const applyLink = "";
+
 export const participantsNoteData = [
   {
     note: {

@@ -49,8 +49,8 @@ const SchoolDescription = () => {
   } = currentContent.description;
 
   return (
-    <div className="min-h-screen text-cN800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="text-cN800">
+      <div className="mx-auto px-5 lg:px-8 lg:py-10 py-5">
         <section className="mb-10">
           <h3 className="text-2xl font-bold mb-4 text-cRed">
             {whyCompNeuroscience}
@@ -60,7 +60,7 @@ const SchoolDescription = () => {
         </section>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <section className="mb-10 p-6 bg-white rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+          <section className="lg:mb-10 mb-5 p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {whatToExpect}
             </h3>
@@ -68,7 +68,7 @@ const SchoolDescription = () => {
             <p>{courseForEveryone}</p>
           </section>
 
-          <section className="mb-10 p-6 bg-white rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+          <section className="lg:mb-10 mb-5 p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {interactiveLearning}
             </h3>
@@ -76,7 +76,7 @@ const SchoolDescription = () => {
             <p>{blendOfLecturesAndQAs}</p>
           </section>
 
-          <section className="mb-10 p-6 bg-white rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+          <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {courseOutline}
             </h3>
@@ -84,7 +84,7 @@ const SchoolDescription = () => {
             <p>{masteringPython}</p>
           </section>
 
-          <section className="mb-10 p-6 bg-white rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+          <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {joinCommunity}
             </h3>
@@ -93,7 +93,7 @@ const SchoolDescription = () => {
           </section>
         </div>
 
-        <section className="mb-10">
+        <section className="lg:py-20 py-10 ">
           <h3 className="text-2xl font-bold mb-4 text-cRed">
             {learningExperienceDetails}
           </h3>
@@ -141,7 +141,7 @@ const SchoolDescription = () => {
           </ul>
         </section>
 
-        <section className="mb-10 mt-20 px-4 py-6 bg-white rounded-md shadow-lg transform transition duration-500 hover:scale-105">
+        <section className="lg:py-20 py-10 px-4 py-6 bg-cWhite rounded-md shadow-xl transform transition duration-500 hover:scale-105">
           <h3 className="text-3xl font-bold mb-6 text-cRed text-center">
             {applicationDetails}
           </h3>
@@ -156,8 +156,8 @@ const SchoolDescription = () => {
               {dontMissOut}
             </p>
             <a
-              href="{applicationLink}"
-              className="inline-block bg-cRed hover:bg-cRedLight text-white font-bold py-3 px-8 rounded-lg text-lg shadow transition duration-300 ease-in-out transform hover:-translate-y-1"
+              href=""
+              className="inline-block bg-cRed hover:bg-cRedLight text-cWhite font-bold py-3 px-8 rounded-lg text-lg shadow transition duration-300 ease-in-out transform hover:-translate-y-1"
             >
               {applyNow}
             </a>
