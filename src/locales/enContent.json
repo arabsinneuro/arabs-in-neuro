@@ -6,12 +6,12 @@
     "courseDetails": "Course Details",
     "faq": "FAQ",
     "team": "Team",
-    "opportunities": "Opportunities"
+    "opportunities": "Join Us"
   },
   "home": {
     "arabsInNeuroscience": "Arabs In Neuroscience",
     "joinUsExploring": "Join us in exploring the fascinating world of computational neuroscience and advancing our understanding of the brain using the latest technologies.",
-    "we": "We",
+    "we": "We are",
     "dedicatedToFostering": "We are dedicated to fostering collaboration, education, and research in neuroscience.",
     "unlockBrainsPotential": "Unlock the Brain's Potential",
     "missionStatement": "At AiN, we are on a mission to unravel the mysteries of the brain, pushing the boundaries of neuroscience to uncover its vast potential.",
@@ -46,7 +46,7 @@
     "title": "About",
     "aboutUs": "About Us",
     "empoweringNeuroscientists": "Empowering Arab neuroscientists to shape the future of brain science",
-    "aboutText": "We are a community of Arab speakers interested in Neuroscience, cognitive science, and psychiatry. Aimed for aspiring Arab neuroscientists to connect, collaborate, and contribute. We aim to engage Arabic-speaking neuroscientists in hands-on experience to kick start their careers.",
+    "aboutText": "We are a community of Arabic speakers passionate about Neuroscience, Cognitive Science, and NeuroAI, aimed at fostering connections, collaboration, and contributions among aspiring Arab neuroscientists. Our goal is to engage Arabic-speaking neuroscientists through hands-on experiences, kick-starting their careers and driving meaningful advancements in the field.",
     "aiNStart": "How did AiN start?",
     "teamBehindAiN": "The Team Behind AiN",
     "teamLeads": "Team Leads",
@@ -58,20 +58,27 @@
     "embarkJourney": "Embark on a journey through the intricacies of the mind with us.",
     "virtualDoorsOpen": "Whether you have questions, seek guidance, or simply want to delve deeper into the fascinating world of neuroscience tutorials, our virtual doors are always open.",
     "exploreWonders": "Connect with us and let the exploration of the brain's wonders begin.",
-    "sharedCuriosity": "Your inquiries are the sparks that fuel our shared curiosity."
+    "sharedCuriosity": "Your inquiries are the sparks that fuel our shared curiosity.",
+    "name": "Name*",
+    "email": "Email Address*",
+    "subject": "Subject*",
+    "message": "Message*",
+    "submit": "Submit"
   },
   "opportunities": {
     "title": "Opportunities",
     "paragraph": "Welcome to the Opportunities page!",
     "volunteerToday": "Volunteer Today.",
     "thriveTomorrow": "Thrive Tomorrow in Neuroscience!",
-    "makeNeuronDifference": "Make a neuron of difference",
+    "makeNeuronDifference": "Pioneer a distinctive path in neurosciences",
     "newVolunteeringPositions": "New Volunteering Positions Available!",
-    "applyHere": "Apply Here"
+    "applyHere": "Apply Here",
+    "responsibilitiesLabel": "Responsibilities",
+    "coreCompetencies": "Core Competencies"
   },
   "faq": {
     "faqsSection": "FAQs Section",
-    "beyondAnswers": "Beyond being answers, FAQs are solutions delicately woven in the fabric of simplicity.",
+    "beyondAnswers": "Beyond answers, FAQs are solutions delicately woven in the fabric of simplicity.",
     "collapseAll": "Collapse All",
     "expandAll": "Expand All"
   },
@@ -79,14 +86,14 @@
     "introCompNeuroscience": "Introduction to Computational Neuroscience",
     "introCourseTitle": "Welcome to the Gateway of Discovery",
     "introCourseDescription": "More Than Just Knowledge",
-    "summerSchoolContent": "This Summer School equips you with the essential tools and knowledge to explore the brain through the lens of computers and algorithms. Whether you're a neuroscience enthusiast or a programming wizard, this program empowers you to understand the mind's complex workings through the power of code.",
-    "journeyDescription": "This Summer School is about igniting your passion, building a vibrant community of like-minded individuals, and empowering you to become a pioneer in the field of computational neuroscience.",
+    "summerSchoolContent": "AIN summer school equips you with the essential tools and knowledge to explore the brain through the lens of computers and algorithms. Whether you're a neuroscience enthusiast or a programming wizard, this program empowers you to understand the mind's complex workings through the power of code.",
+    "journeyDescription": "AIN summer school is about igniting your passion, building a vibrant community of like-minded individuals, and empowering you to become a pioneer in the field of computational neuroscience.",
     "closedApplications2023": "Applications for the 2023 summer school have closed.",
     "participantsFeedbacks": "Participants' Feedbacks"
   },
   "description": {
     "whyCompNeuroscience": "Why Computational Neuroscience?",
-    "compNeuroscienceRealm": "Imagine decoding the language of neurons, predicting behavior patterns, or even developing brain-computer interfaces  this is the realm of computational neuroscience.",
+    "compNeuroscienceRealm": "Imagine decoding the language of neurons, predicting behavior patterns, or even developing brain-computer interfaces; this is the realm of computational neuroscience.",
     "compToolsUnlockMindMysteries": "It's not just about cool brain facts; it's about applying computational tools to unlock the mysteries of the mind, holding the potential to revolutionize fields like healthcare, education, and artificial intelligence.",
     "whatToExpect": "What to Expect",
     "comprehensiveCurriculum": "Our instructors, who are experts in their respective fields, will guide you through a comprehensive curriculum covering programming with Python, linear algebra, calculus, statistics, and basic neuroscience principles.",

@@ -11,7 +11,7 @@ const MemberCard = ({
   twitterLink,
   emailText,
 }) => {
-  const backgroundColorClass = image ? "bg-cN500" : "bg-cPink";
+  const backgroundColorClass = image ? "bg-cN600" : "bg-cPink";
   const width = image ? "w-64" : "w-80";
   const height = "h-96";
 

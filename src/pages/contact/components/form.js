@@ -1,6 +1,10 @@
 import React from "react";
-
+import { useContext } from "react";
+import LanguageContext from '../../../context/LanguageContext';
 const FormComponent = () => {
+  const languageContext = useContext(LanguageContext);
+  const { preferredLanguage, currentContent } = languageContext;
+  const { name, email, subject, message, submit } = currentContent.contact;
   return (
     <div>
       <p id="thanks"></p>
@@ -31,51 +35,51 @@ const FormComponent = () => {
           <div className="grid grid-cols-1 gap-5">
             <div>
               <label htmlFor="name" className="font-bold">
-                Name*
+                {name}
               </label>
               <input
                 type="text"
                 className="form-control border-cN300 shadow-md p-2 rounded-md my-2 w-full"
                 id="name"
-                placeholder="Name*"
+                placeholder= {name}
                 name="entry.435430897"
                 required
               />
             </div>
             <div>
               <label htmlFor="email" className="font-bold">
-                Email Address*
+              {email}
               </label>
               <input
                 type="email"
                 className="form-control border-gray-300 shadow-md p-2 rounded-md my-2 w-full"
                 id="email"
-                placeholder="Email address*"
+                placeholder= {email}
                 name="entry.86580912"
                 required
               />
             </div>
             <div>
               <label htmlFor="subject" className="font-bold">
-                Subject*
+              {subject}
               </label>
               <input
                 type="text"
                 className="form-control border-cN300 shadow-md p-2 rounded-md my-2 w-full"
                 id="subject"
-                placeholder="Subject*"
+                placeholder= {subject}
                 name="entry.1456137451"
               />
             </div>
             <div>
               <label htmlFor="message" className="font-bold">
-                Message*
+              {message}
               </label>
               <textarea
                 rows="5"
                 className="form-control border-cN300 shadow-md p-2 rounded-md my-2 w-full"
                 id="message"
-                placeholder="Message*"
+                placeholder={message}
                 name="entry.1141301720"
                 required
               ></textarea>
@@ -87,7 +91,7 @@ const FormComponent = () => {
               type="submit"
               role="button"
             >
-              Submit
+              {submit}
               <img className="ml-2" src="icons/send.svg" alt="send" />
             </button>
           </div>

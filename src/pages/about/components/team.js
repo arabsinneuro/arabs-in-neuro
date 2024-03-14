@@ -6,8 +6,9 @@ import { teamLeadsData } from "../../../../public/data/team/team_leads_data";
 
 const Team = () => {
   const languageContext = useContext(LanguageContext);
-  const { currentContent } = languageContext;
-  const { teamBehindAiN, teamLeads, volunteers, affiliation } = currentContent.about;
+  const { preferredLanguage, currentContent } = languageContext;
+  const { teamBehindAiN, teamLeads, volunteers, affiliation } =
+    currentContent.about;
 
   return (
     <div className="p-10 lg:p-20">
@@ -22,12 +23,12 @@ const Team = () => {
       <br />
 
       <div className="flex flex-wrap justify-center lg:gap-8 gap-4">
-        {teamLeadsData.map(member => (
+        {teamLeadsData.map((member) => (
           <MemberCard
-            key={member.name}
-            name={member.name}
-            team={member.team}
-            affiliation={member.affiliation}
+            key={member.name[preferredLanguage]}
+            name={member.name[preferredLanguage]}
+            team={member.team[preferredLanguage]}
+            affiliation={member.affiliation[preferredLanguage]}
             affiliationTitle={affiliation}
             image={member.image}
             linkedinLink={member.linkedinLink}
@@ -37,7 +38,9 @@ const Team = () => {
         ))}
       </div>
       <br />
-      <p className="text-cGreen text-lg font-extrabold px-4 py-5">{volunteers}</p>
+      <p className="text-cGreen text-lg font-extrabold px-4 py-5">
+        {volunteers}
+      </p>
       <br />
 
       <iframe

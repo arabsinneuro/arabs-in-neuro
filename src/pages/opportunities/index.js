@@ -51,8 +51,8 @@ function OpportunitiesPage() {
           </Link>
         </div>
       </div>
-      <div dir="ltr" className=" mx-auto pb-20 lg:px-20 px-10 lg:w-4/5">
-        <JobList jobData={JobData} />
+      <div className=" mx-auto pb-20 lg:px-20 px-10 lg:w-4/5">
+        <JobList jobData={JobData[preferredLanguage]} />
       </div>
     </div>
   );

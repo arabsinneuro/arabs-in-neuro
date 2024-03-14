@@ -51,15 +51,23 @@ const SchoolDescription = () => {
   return (
     <div className="text-cN800">
       <div className="mx-auto px-5 lg:px-20 lg:py-10 py-5">
-        <section className="mb-10">
+        {/* <section clssName="mb-10 text-md">
           <h3 className="text-2xl font-bold mb-4 text-cRed">
             {whyCompNeuroscience}
           </h3>
           <p>{compNeuroscienceRealm}</p>
           <p>{compToolsUnlockMindMysteries}</p>
-        </section>
+        </section>a */}
 
-        <div className="grid md:grid-cols-2 md:gap-15 gap-5">
+        <div className="grid md:grid-cols-2 md:gap-15 gap-5 text-md">
+        <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+            <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
+              {whyCompNeuroscience}
+            </h3>
+            <p className="mb-4">{compNeuroscienceRealm}</p>
+            <p>{compToolsUnlockMindMysteries}</p>
+          </section>
+          
           <section className="lg:mb-10 mb-5 p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {whatToExpect}
@@ -76,13 +84,13 @@ const SchoolDescription = () => {
             <p>{blendOfLecturesAndQAs}</p>
           </section>
 
-          <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+          {/* <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {courseOutline}
             </h3>
             <p className="mb-4">{threeWeekJourney}</p>
             <p>{masteringPython}</p>
-          </section>
+          </section> */}
 
           <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
@@ -93,7 +101,7 @@ const SchoolDescription = () => {
           </section>
         </div>
 
-        <section className="lg:py-20 py-10 ">
+        <section className="lg:py-20 py-10 text-md">
           <h3 className="text-2xl font-bold mb-4 text-cRed">
             {learningExperienceDetails}
           </h3>
@@ -109,7 +117,7 @@ const SchoolDescription = () => {
             <li className="mb-4">
               <span className="font-bold">{dailySchedule}</span>{" "}
               {structuredDailyRoutine}
-              <ul className="list-disc pl-5 mt-2">
+              <ul className="list-disc px-5 mt-2">
                 <li className="mb-2">{watchLectures}</li>
                 <li className="mb-2">{liveCodingSessions}</li>
                 <li className="mb-2">{interactiveQAs}</li>
@@ -117,7 +125,7 @@ const SchoolDescription = () => {
             </li>
             <li className="mb-4">
               <span className="font-bold">{toolsUsed}</span>
-              <ul className="list-disc pl-5 mt-2">
+              <ul className="list-disc px-5 mt-2">
                 <li className="mb-2">
                   <span className="font-bold">{zoom}</span> {liveSessions}
                 </li>

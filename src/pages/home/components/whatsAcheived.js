@@ -4,24 +4,25 @@ import LanguageContext from "../../../context/LanguageContext";
 
 const Card = ({ number, text, icon }) => (
   <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/green_red.svg')]">
-  <div
-    className="rounded-2xl border border-cN300 shadow-md p-4 relative"
-    style={{ width: "240px", height: "130px" }}
-  >
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-      <p className="pb-3 text-cRed font-extrabold text-2xl">{number}</p>
-      <p className="text-sm text-cN800">{text}</p>
-    </div>
+    <div
+      className="rounded-2xl border border-cN300 shadow-md p-4 relative"
+      style={{ width: "240px", height: "130px" }}
+    >
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+        <p className="pb-3 text-cRed font-extrabold text-2xl">{number}</p>
+        <p className="text-sm text-cN800">{text}</p>
+      </div>
 
-    <div className="absolute top-2 right-2 bg-cWhite rounded-full shadow-md w-8 h-8 flex items-center justify-center">
-      <img src={icon} alt="Icon" className="w-5 h-5" />
+      <div className="absolute top-2 right-2 bg-cWhite rounded-full shadow-md w-8 h-8 flex items-center justify-center">
+        <img src={icon} alt="Icon" className="w-5 h-5" />
+      </div>
     </div>
-  </div></div>
+  </div>
 );
 
 const WhatsAcheived = () => {
   const languageContext = useContext(LanguageContext);
-  const { currentContent } = languageContext;
+  const { preferredLanguage, currentContent } = languageContext;
 
   const {
     countries,
@@ -44,7 +45,7 @@ const WhatsAcheived = () => {
           <div className="absolute lg:bottom-20 bottom-5 right-0 text-center lg:text-center font-extrabold text-2xl">
             <p>{what}</p>
             <p className="text-cRed">AIN</p>
-            <p>{achieved}?</p>
+            {preferredLanguage === "en" ? <p>{achieved}?</p> : <></>}
           </div>
         </div>
         <div className="lg:px-10">

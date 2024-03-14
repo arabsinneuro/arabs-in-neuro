@@ -1,11 +1,28 @@
-import React from 'react';
+import React from "react";
+import { useContext } from "react";
+import LanguageContext from "../../../context/LanguageContext";
+const OverviewComponent = () => {
+  const languageContext = useContext(LanguageContext);
+  const { preferredLanguage, currentContent } = languageContext;
+  const isRTL = preferredLanguage == "ar" ? true : false;
 
-const OverviewComponent = ({ connectWithUs, embarkJourney, virtualDoorsOpen, exploreWonders, sharedCuriosity }) => {
+  const {
+    connectWithUs,
+    embarkJourney,
+    virtualDoorsOpen,
+    exploreWonders,
+    sharedCuriosity,
+  } = currentContent.contact;
+
+  const imageStyle = {
+    transform: isRTL ? "scaleX(-1)" : "scaleX(1)",
+  };
+
   return (
     <div className="flex-shrink-0 lg:w-1/2">
       <div className="text-center ltr:lg:text-left rtl:lg:text-right lg:w-1/2 mx-auto">
         <h1 className="text-xl font-bold text-cBlack">{connectWithUs}</h1>
-        <br/>
+        <br />
         <p>{embarkJourney}</p>
         <br />
         <p>{virtualDoorsOpen}</p>
@@ -14,9 +31,19 @@ const OverviewComponent = ({ connectWithUs, embarkJourney, virtualDoorsOpen, exp
         <br />
         <p className="font-bold italic">{sharedCuriosity}</p>
 
-        <br/>
-        <br/>
-        <img src="assets/contact/illustration.svg" alt="illustration" style={{ maxHeight: "250px", maxWidth: "250px", width: "100%", height: "auto" }}/>
+        <br />
+        <br />
+        <img
+          src="assets/contact/illustration.svg"
+          alt="illustration"
+          style={{
+            transform: isRTL ? "scaleX(-1)" : "scaleX(1)",
+            maxHeight: "250px",
+            maxWidth: "250px",
+            width: "100%",
+            height: "auto",
+          }}
+        />
       </div>
     </div>
   );

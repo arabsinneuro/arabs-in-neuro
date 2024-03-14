@@ -26,13 +26,13 @@ const Overview = () => {
             {introCompNeuroscience}
           </h1>
           <br />
-          <p className="lg:px-10 px-2 py-2 text-s font-bold text-cBlack">
+          <p className="lg:px-10 px-2 py-2 text-lg font-bold text-cBlack">
             {introCourseTitle}
           </p>
-          <p className="lg:px-10 px-2 py-2 text-sm text-cBlack">
+          <p className="lg:px-10 px-2 py-2 text-md text-cBlack">
             {summerSchoolContent}
           </p>
-          <p className="lg:px-10 px-2 py-2 text-sm text-cBlack">
+          <p className="lg:px-10 px-2 py-2 text-md text-cBlack">
             <span className="text-md font-bold text-cRed">
               {introCourseDescription}:{" "}
             </span>{" "}

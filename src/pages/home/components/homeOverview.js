@@ -4,9 +4,10 @@ import LanguageContext from "../../../context/LanguageContext";
 
 const HomeOverview = () => {
   const languageContext = useContext(LanguageContext);
-  const { currentContent } = languageContext;
-  const { arabsInNeuroscience, joinUsExploring, dedicatedToFostering } =
+  const { preferredLanguage, currentContent } = languageContext;
+  const { joinUsExploring, dedicatedToFostering } =
     currentContent.home;
+  const isRTL = preferredLanguage == "ar" ? true : false;
 
   return (
     <div className="bg-cover h-full bg-blend-soft-light bg-[url('/backgrounds/opportunities.svg')] ">
@@ -34,10 +35,10 @@ const HomeOverview = () => {
             />
           </div>
 
-          <div className="lg:w-1/2 px-5 lg:p-10 flex flex-col items-center justify-center shadow-xl p-4 rounded-2xl border opacity-0 animate-slide-in-bottom">
-            <p className="text-md text-black text-left">{joinUsExploring}</p>
+          <div className="lg:w-1/2 px-5 lg:p-10 flex flex-col shadow-xl p-4 rounded-2xl border opacity-0 animate-slide-in-bottom">
+            <p className={`text-md text-black ${isRTL ? 'text-right' : 'text-left'}`}>{joinUsExploring}</p>
             <br />
-            <p className="text-md text-black text-left">
+            <p className={`text-md text-black ${isRTL ? 'text-right' : 'text-left'}`}>
               {dedicatedToFostering}
             </p>
           </div>

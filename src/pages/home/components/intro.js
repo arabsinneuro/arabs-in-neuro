@@ -31,10 +31,14 @@ const Intro = () => {
     },
   ];
 
+  const imageStyle = {
+    transform: isRTL ? 'scaleX(-1)' : 'scaleX(1)',
+  };
+
   return (
     <div className="py-10">
       <div className="flex justify-center items-center pb-10 font-extrabold text-4xl">
-        <span className="text-black mr-2">{we}</span>
+        <span className="text-black mx-2">{we} </span>
         <span className="text-cRed">AIN</span>
       </div>
 
@@ -44,11 +48,13 @@ const Intro = () => {
             src="/assets/home/multipleLines1.svg"
             alt="Top"
             className="h-full"
+            style={imageStyle}
           />
           <img
             src="/assets/home/multipleLines2.svg"
             alt="Bottom"
             className="h-full"
+            style={imageStyle}
           />
         </div>
 
@@ -70,12 +76,14 @@ const Intro = () => {
                     src="/assets/home/arrowup.svg"
                     alt="up arrow"
                     className="lg:w-3/4 "
+                    style={imageStyle}
                   />
                   <br />
                   <img
                     src="/assets/home/arrowdown.svg"
                     alt="down arrow"
                     className="lg:w-3/4 "
+                    style={imageStyle}
                   />
                 </div>
 

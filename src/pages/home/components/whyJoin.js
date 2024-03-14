@@ -1,7 +1,6 @@
 import React from "react";
 import { useContext } from "react";
 import LanguageContext from "../../.././context/LanguageContext";
-import Link from "next/link";
 
 const WhyJoin = () => {
   const languageContext = useContext(LanguageContext);
@@ -45,7 +44,7 @@ const WhyJoin = () => {
   return (
     <div className="py-10 lg:px-20 px-5 ">
       <h1 className="text-cBlack font-extrabold text-4xl text-center">
-        {whyJoin} <span className="text-cRed"> AIN</span>?{" "}
+        {whyJoin} <span className="text-cRed"> AIN</span>{" "}
       </h1>
       <div className="mt-10 grid grid-cols-1 lg:px-20">
         {data &&
@@ -61,7 +60,7 @@ const WhyJoin = () => {
                   <img
                     src={item.illustration}
                     alt="illustration"
-                    className="overflow-visible bottom-0 w-32 h-32 md:w-40 md:h-40  object-cover"
+                    className="overflow-visible bottom-0 w-32 h-32 md:w-40 md:h-40 object-cover"
                   />
                 </div>
               )}
