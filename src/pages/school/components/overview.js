@@ -26,9 +26,7 @@ const Overview = () => {
             {introCompNeuroscience}
           </h1>
           <br />
-          <p className="lg:px-10 px-2 py-2 text-lg font-bold text-cBlack">
-            {introCourseTitle}
-          </p>
+
           <p className="lg:px-10 px-2 py-2 text-md text-cBlack">
             {summerSchoolContent}
           </p>

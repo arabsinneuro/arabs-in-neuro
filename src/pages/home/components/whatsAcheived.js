@@ -44,7 +44,7 @@ const WhatsAcheived = () => {
           />
           <div className="absolute lg:bottom-20 bottom-5 right-0 text-center lg:text-center font-extrabold text-2xl">
             <p>{what}</p>
-            <p className="text-cRed">AIN</p>
+            <p className="text-cRed">AiN</p>
             {preferredLanguage === "en" ? <p>{achieved}?</p> : <></>}
           </div>
         </div>

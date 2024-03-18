@@ -44,7 +44,7 @@ const WhyJoin = () => {
   return (
     <div className="py-10 lg:px-20 px-5 ">
       <h1 className="text-cBlack font-extrabold text-4xl text-center">
-        {whyJoin} <span className="text-cRed"> AIN</span>{" "}
+        {whyJoin} <span className="text-cRed"> AiN</span>{" "}
       </h1>
       <div className="mt-10 grid grid-cols-1 lg:px-20">
         {data &&

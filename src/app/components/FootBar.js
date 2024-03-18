@@ -42,7 +42,7 @@ function Footbar({ setPreferredLanguage }) {
             {shapingFutureNeuroscience}
           </h1>
           <p dir="ltr" className="text-sm lg:mt-10">
-            @2023 arabsinneuro
+            © Arabs in Neuroscience
           </p>
         </div>
 
@@ -54,9 +54,9 @@ function Footbar({ setPreferredLanguage }) {
           </Link>
 
           <div className="flex items-center mx-auto lg:mx-0">
-            <a href={emailLink}>
+            {/* <a href={emailLink}>
               <img src="/icons/email.svg" alt={emailName} />
-            </a>
+            </a> */}
             <a href={facebookLink}>
               <img src="/icons/facebook.svg" alt={facebookName} />
             </a>

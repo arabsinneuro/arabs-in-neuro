@@ -5,7 +5,8 @@ import LanguageContext from "../../../context/LanguageContext";
 const AboutOverview = () => {
   const languageContext = useContext(LanguageContext);
   const { currentContent } = languageContext;
-  const { empoweringNeuroscientists, aboutText } = currentContent.about;
+  const { empoweringNeuroscientists, aboutText, organizationDescription } =
+    currentContent.about;
 
   return (
     <div>
@@ -25,12 +26,14 @@ const AboutOverview = () => {
           />
         </div>
         <div className="flex flex-col full-width items-center justify-around my-10 lg:py-10 py-5">
-          <div className="lg:w-1/2 px-5 lg:p-10 flex flex-col items-center justify-center shadow-xl p-4 rounded-2xl border">
-          <h1 className="text-4xl font-bold text-cBlack mb-4">
-            {empoweringNeuroscientists}
-          </h1>
-          <br />
-          <p className="text-lg text-black">{aboutText}</p>
+          <div className="lg:w-3/5 px-5 lg:p-10 flex flex-col items-center justify-center shadow-xl p-4 rounded-2xl border">
+            <h1 className="text-4xl font-bold text-cBlack mb-4">
+              {empoweringNeuroscientists}
+            </h1>
+            <br />
+            <p className="text-lg text-black">{aboutText}</p>
+            <br />
+            <p className="text-lg text-black">{organizationDescription}</p>
           </div>
         </div>
       </div>

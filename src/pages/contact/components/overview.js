@@ -6,17 +6,8 @@ const OverviewComponent = () => {
   const { preferredLanguage, currentContent } = languageContext;
   const isRTL = preferredLanguage == "ar" ? true : false;
 
-  const {
-    connectWithUs,
-    embarkJourney,
-    virtualDoorsOpen,
-    exploreWonders,
-    sharedCuriosity,
-  } = currentContent.contact;
-
-  const imageStyle = {
-    transform: isRTL ? "scaleX(-1)" : "scaleX(1)",
-  };
+  const { connectWithUs, embarkJourney, virtualDoorsOpen, reachOut } =
+    currentContent.contact;
 
   return (
     <div className="flex-shrink-0 lg:w-1/2">
@@ -27,9 +18,7 @@ const OverviewComponent = () => {
         <br />
         <p>{virtualDoorsOpen}</p>
         <br />
-        <p>{exploreWonders}</p>
-        <br />
-        <p className="font-bold italic">{sharedCuriosity}</p>
+        <p className="font-bold italic">{reachOut}</p>
 
         <br />
         <br />

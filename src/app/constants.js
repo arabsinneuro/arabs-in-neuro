@@ -1,4 +1,4 @@
-export const emailLink = "mailto:info@arabsinneuro.org";
+// export const emailLink = "mailto:info@arabsinneuro.org";
 export const emailName = "info@arabsinneuro.org";
 export const facebookLink = "https://www.facebook.com/ArabsInNeuro";
 export const facebookName = "ArabsInNeuro";

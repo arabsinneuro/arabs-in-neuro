@@ -11,18 +11,18 @@ const MaterialRow = ({ topic, tutorialLink, videoLink, slidesLink }) => {
             <img
               src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
               alt="Tutorial"
-              className="w-16 h-12"
+              className="w-auto h-10"
             />
           </a>
         )}
       </td>
-      <td className="lg:p-4">
+      <td className="lg:p-4 px-2">
         {videoLink && (
           <a href={videoLink} target="_blank" rel="noopener noreferrer">
             <img
               src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
               alt="Video"
-              className="w-16 h-12"
+              className="w-auto h-10"
             />
           </a>
         )}
@@ -33,7 +33,7 @@ const MaterialRow = ({ topic, tutorialLink, videoLink, slidesLink }) => {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/120px-Google_Drive_icon_%282020%29.svg.png"
               alt="Slides"
-              className="w-12 h-12"
+              className="w-auto h-8"
             />
           </a>
         )}
@@ -76,38 +76,39 @@ const CourseMaterials = ({
           </a>
         </div>
         <div className="lg:mx-auto">
-        <div className="overflow-x-auto">
-          <table className="text-left mt-6">
-            <thead className="bg-cN100">
-              <tr>
-                <th className="lg:px-4 py-4 px-1">{topic}</th>
-                <th className="lg:px-4 py-4 px-1">{tutorial}</th>
-                <th className="lg:px-4 py-4 px-1">{video}</th>
-                <th className="lg:px-4 py-4 px-1">{slides}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {displayedData && displayedData.map((data, index) => (
-                <MaterialRow
-                  key={index}
-                  topic={data.topic}
-                  tutorialLink={data.tutorialLink}
-                  videoLink={data.videoLink}
-                  slidesLink={data.slidesLink}
-                />
-              ))}
-              <tr>
-                <td
-                  colSpan="4"
-                  className="p-4 text-center cursor-pointer text-cRed"
-                  onClick={toggleShowMore}
-                >
-                  {showMoreButton ? showLess : showMore}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <div className="overflow-x-auto">
+            <table className="text-left mt-6">
+              <thead className="bg-cN100">
+                <tr>
+                  <th className="lg:px-4 py-4 px-1">{topic}</th>
+                  <th className="lg:px-4 py-4 px-1">{tutorial}</th>
+                  <th className="lg:px-4 py-4 px-1">{video}</th>
+                  <th className="lg:px-4 py-4 px-1">{slides}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {displayedData &&
+                  displayedData.map((data, index) => (
+                    <MaterialRow
+                      key={index}
+                      topic={data.topic}
+                      tutorialLink={data.tutorialLink}
+                      videoLink={data.videoLink}
+                      slidesLink={data.slidesLink}
+                    />
+                  ))}
+                <tr>
+                  <td
+                    colSpan="4"
+                    className="p-4 text-center cursor-pointer text-cRed"
+                    onClick={toggleShowMore}
+                  >
+                    {showMoreButton ? showLess : showMore}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

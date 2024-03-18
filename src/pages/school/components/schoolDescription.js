@@ -31,7 +31,7 @@ const SchoolDescription = () => {
     liveCodingSessions,
     interactiveQAs,
     toolsUsed,
-    zoom,
+    videoConferencing,
     liveSessions,
     googleColab,
     codingSessions,
@@ -60,14 +60,14 @@ const SchoolDescription = () => {
         </section>a */}
 
         <div className="grid md:grid-cols-2 md:gap-15 gap-5 text-md">
-        <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+          <section className="lg:mb-10 mb-5  p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {whyCompNeuroscience}
             </h3>
             <p className="mb-4">{compNeuroscienceRealm}</p>
             <p>{compToolsUnlockMindMysteries}</p>
           </section>
-          
+
           <section className="lg:mb-10 mb-5 p-6 bg-cWhite rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
             <h3 className="text-2xl font-bold mb-4 text-cRed text-center">
               {whatToExpect}
@@ -127,7 +127,8 @@ const SchoolDescription = () => {
               <span className="font-bold">{toolsUsed}</span>
               <ul className="list-disc px-5 mt-2">
                 <li className="mb-2">
-                  <span className="font-bold">{zoom}</span> {liveSessions}
+                  <span className="font-bold">{videoConferencing}</span>{" "}
+                  {liveSessions}
                 </li>
                 <li className="mb-2">
                   <span className="font-bold">{googleColab}</span>{" "}
