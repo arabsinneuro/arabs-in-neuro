@@ -16,22 +16,27 @@ import {
 
 function Footbar({ setPreferredLanguage }) {
   const languageContext = useContext(LanguageContext);
-  const { shapingFutureNeuroscience, connectWithAiN } =
-    languageContext.currentContent.footer;
+  const { preferredLanguage, currentContent } = languageContext;
+  const { shapingFutureNeuroscience, connectWithAiN, allRightsReserved } =
+  currentContent.footer;
+    
+  const isRTL = preferredLanguage == "ar" ? true : false;
   return (
     <footer className="bg-cRed">
       <div className="flex flex-col lg:flex-row lg:items-center">
         <div className="flex">
           <Link href="/">
             <img
-              src="/logo/rounded_logo.svg"
+              src="/logo/round_logo.png"
               alt="Logo"
               style={{
                 maxHeight: "200px",
                 maxWidth: "200px",
                 width: "100%",
                 height: "auto",
-                marginTop: "-30px",
+                marginTop: "-20px",
+                marginRight: isRTL?  "-15px" : "0px",
+                marginLeft: isRTL? "0px" : "-15px"
               }}
             />
           </Link>
@@ -44,6 +49,7 @@ function Footbar({ setPreferredLanguage }) {
           <p dir="ltr" className="text-sm lg:mt-10">
             © Arabs in Neuroscience
           </p>
+          <p className="text-sm"> {allRightsReserved} </p>
         </div>
 
         <div className="flex flex-col lg:flex-col lg:items-center lg:ml-auto mx-10 mt-4 lg:mt-0">
