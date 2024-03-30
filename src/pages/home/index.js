@@ -3,12 +3,13 @@ import Intro from "./components/intro";
 import JoinUs from "./components/joinUs";
 import WhyJoin from "./components/whyJoin";
 import WhatsAcheived from "./components/whatsAcheived";
-import RootLayout from "../../app/layout";
+
 function HomePage() {
   return (
     <div>
-      <HomeOverview />
-
+      <div className="bg-cover h-full bg-[url('/backgrounds/home_overview.svg')] ">
+        <HomeOverview />
+      </div>
       <div className="bg-contain bg-blend-soft-light bg-[url('/backgrounds/gr_red_green.svg')] ">
         <Intro />
         <JoinUs />

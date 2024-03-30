@@ -5,6 +5,9 @@ const LanguageSwitcher = ({ setPreferredLanguage, preferredLanguage }) => {
     setPreferredLanguage(newLanguage);
   };
 
+  const ar = preferredLanguage == "en" ? "Ar" : "عربي";
+  const en = preferredLanguage == "en" ? "En" : "إنجليزي";
+
   const commonButtonClasses =
     "py-1 px-3 border-none rounded-full cursor-pointer bg-cN200";
 
@@ -22,13 +25,13 @@ const LanguageSwitcher = ({ setPreferredLanguage, preferredLanguage }) => {
         onClick={() => handleLanguageChange("en")}
         className={getButtonClasses("en")}
       >
-        En
+        {en}
       </button>
       <button
         onClick={() => handleLanguageChange("ar")}
         className={getButtonClasses("ar")}
       >
-        Ar
+        {ar}
       </button>
     </div>
   );

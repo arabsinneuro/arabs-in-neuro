@@ -14,9 +14,6 @@ const SchoolDescription = () => {
     interactiveLearning,
     engageWithMaterials,
     blendOfLecturesAndQAs,
-    courseOutline,
-    threeWeekJourney,
-    masteringPython,
     joinCommunity,
     vibrantLearningEnvironment,
     connectAndForgeConnections,
@@ -41,11 +38,6 @@ const SchoolDescription = () => {
     lecturesHosted,
     detailedSchedule,
     dailyActivities,
-    applicationDetails,
-    applyThroughLink,
-    applicationDeadline,
-    dontMissOut,
-    applyNow,
   } = currentContent.description;
 
   return (
@@ -150,7 +142,7 @@ const SchoolDescription = () => {
           </ul>
         </section>
 
-        <section className="lg:py-20 py-10 px-4 py-6 bg-cWhite rounded-md shadow-xl transform transition duration-500 hover:scale-105">
+        {/* <section className="lg:py-20 py-10 px-4 py-6 bg-cWhite rounded-md shadow-xl transform transition duration-500 hover:scale-105">
           <h3 className="text-3xl font-bold mb-6 text-cRed text-center">
             {applicationDetails}
           </h3>
@@ -171,7 +163,7 @@ const SchoolDescription = () => {
               {applyNow}
             </a>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

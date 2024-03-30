@@ -5,9 +5,10 @@ import LanguageContext from "../../.././context/LanguageContext";
 
 const Journey = () => {
   const languageContext = useContext(LanguageContext);
-  const { currentContent } = languageContext;
+  const { preferredLanguage, currentContent } = languageContext;
   const { aiNStart } = currentContent.about;
 
+  const image = preferredLanguage == 'en' ? "/assets/about/journey.svg" : "/assets/about/journey_ar.svg"
   return (
     <div className="p-4">
       <div className="lg:flex items-center mx-auto">
@@ -21,7 +22,7 @@ const Journey = () => {
 
         <div className="lg:w-3/4 mx-auto">
           <img
-            src="/assets/about/journey.svg"
+            src= {image}
             alt="Journey Image"
             className="lg:w-3/4 w-full h-auto"
           />

@@ -1,4 +1,5 @@
 import Overview from "./components/overview";
+import ApplicationSection from "./components/applicationSection";
 import SchoolDetails from "./components/schoolDetails";
 import Feedback from "./components/feedback";
 import SchoolDescription from "./components/schoolDescription";
@@ -12,6 +13,7 @@ function SchoolPage() {
       {/* <SchoolDetails /> */}
 
       <SchoolDescription />
+      {/* <ApplicationSection /> */}
 
       <Feedback />
     </div>

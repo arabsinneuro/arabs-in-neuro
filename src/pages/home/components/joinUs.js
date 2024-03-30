@@ -1,5 +1,4 @@
-import React from "react";
-import { useContext } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import LanguageContext from "../../.././context/LanguageContext";
 import Link from "next/link";
 
@@ -17,10 +16,41 @@ const JoinUs = () => {
     learnMore,
   } = currentContent.home;
 
+  
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const widgetRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !isIntersecting) {
+            setIsIntersecting(true);
+          }
+        });
+      },
+      {
+        root: null, 
+        rootMargin: '0px', 
+        threshold: 0.3, 
+      }
+    );
+
+    if (widgetRef.current) {
+      observer.observe(widgetRef.current);
+    }
+
+    return () => {
+      if (widgetRef.current) {
+        observer.unobserve(widgetRef.current);
+      }
+    };
+  }, [widgetRef, isIntersecting]);
+
   return (
-    <div className="py-20 lg:px-20 px-5">
+    <div  ref={widgetRef} className="py-20 lg:px-20 px-5">
       <div className="flex flex-col lg:flex-row justify-center lg:w-3/4 lg:mx-auto">
-        <div className="flex-1 px-4 my-auto text-center lg:text-left">
+        <div className={`flex-1 px-4 my-auto text-center lg:text-left ${isIntersecting ?  " animate-slow-shake" : ""}`}>
           <h1 className="text-cRed font-extrabold text-4xl text-center">
             {joinUs}
           </h1>
