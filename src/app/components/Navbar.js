@@ -16,6 +16,7 @@ function Navbar({ setPreferredLanguage }) {
     { href: "/details/2023", label: currentContent.navbar.courseDetails },
     { href: "/faq", label: currentContent.navbar.faq },
     { href: "/opportunities", label: currentContent.navbar.opportunities },
+    { href: "/donate", label: currentContent.navbar.donate },
   ];
 
   const router = useRouter();
