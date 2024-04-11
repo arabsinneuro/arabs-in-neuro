@@ -3,7 +3,7 @@ export const applyLink = "";
 export const participantsNoteData = [
   {
     note: {
-      en: "We received over 450 applications from 12 different Arabic-speaking nationalities. Among those applications, we accepted 115 students and 10 teacher assistants.",
+      en: "We received over 450 applications from 13+ different Arabic-speaking nationalities. Among those applications, we accepted 115 students and 10 teacher assistants.",
       ar: "لقد تلقينا أكثر من 450 طلبًا من أكثر من 13 جنسية عربية مختلفة. من بين تلك الطلبات، قبلنا 115 طالبًا و 10 مساعدين تدريس."
     },
     image: "/assets/school/map2023.png",
