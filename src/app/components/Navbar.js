@@ -13,7 +13,7 @@ function Navbar({ setPreferredLanguage }) {
   const links = [
     { href: "/about", label: currentContent.navbar.about },
     { href: "/school", label: currentContent.navbar.courses },
-    { href: "/details/2023", label: currentContent.navbar.courseDetails },
+    { href: "/details/2024", label: currentContent.navbar.courseDetails },
     { href: "/faq", label: currentContent.navbar.faq },
     { href: "/opportunities", label: currentContent.navbar.opportunities },
     { href: "/donate", label: currentContent.navbar.donate },

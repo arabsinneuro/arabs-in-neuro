@@ -2,7 +2,11 @@ import React, { useState, useEffect, useContext, useRef } from "react";
 import LanguageContext from "@/context/LanguageContext";
 import ScrollButtons from "./scrollButtons";
 import fetchData from "../../../app/utils/fetchData";
-import { addScrollListener, removeScrollListener, scroll } from "../../../app/utils/scrollUtils";
+import {
+  addScrollListener,
+  removeScrollListener,
+  scroll,
+} from "../../../app/utils/scrollUtils";
 import useExpandedCard from "../../../app/utils/feedbackCardUtil";
 
 const Feedback = () => {
@@ -49,8 +53,10 @@ const Feedback = () => {
 
   return (
     <div className="p-10 lg:p-20">
-      <div className="flex items-center mb-20">
-        <h1 className="text-2xl text-cN600 font-extrabold ">{participantsFeedbacks}</h1>
+      <div className="flex items-center mb-10">
+        <h1 className="text-2xl text-cN600 font-extrabold ">
+          {participantsFeedbacks}
+        </h1>
 
         <ScrollButtons
           onScrollLeft={() => scroll(scrollRef, -200)}
@@ -72,20 +78,13 @@ const Feedback = () => {
           feedbackList.map((feedback, index) => (
             <div
               key={index}
-              className={`flex-none bg-cGreen w-60 h-70 p-4 rounded-md text-cWhite ${
-                index === expandedCardIndex ? "expanded-card" : ""
-              }`}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-              }}
+              className="flex-none bg-cN100 w-60 h-70 p-4 rounded-md text-black m-5 shadow-md border border-cN200"
               onClick={() => handleCardClick(index)}
             >
               {index !== expandedCardIndex ? (
                 <>
                   <div
-                    className="text-sm font-semibold overflow-hidden"
+                    className="text-md overflow-hidden"
                     style={{
                       display: "-webkit-box",
                       WebkitLineClamp: 5,
@@ -96,8 +95,8 @@ const Feedback = () => {
                   </div>
                 </>
               ) : (
-                <div className="expanded-content">
-                  <p className="expanded-feedback">{feedback.feedback}</p>
+                <div>
+                  <p>{feedback.feedback}</p>
                 </div>
               )}
             </div>

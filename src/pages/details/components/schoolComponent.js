@@ -31,7 +31,10 @@ function SchoolComponent({
     instructors,
     courseMaterials,
     participants,
+    qualifications,
     applyHere,
+    previousYear,
+    latestYear
   } = currentContent.details;
 
   const router = useRouter();
@@ -46,8 +49,14 @@ function SchoolComponent({
   const currentYear = new Date().getFullYear();
 
   const applicationStatus = {
-    en: "Applications are open until June 2024!",
-    ar: "التقديم مفتوح حتى يونيو 2024!",
+    // en: "Applications are open until June 2024!",
+    // ar: "التقديم مفتوح حتى يونيو 2024!",
+    en: "Applications for the summer school 2024 will open by April 15.",
+    ar: "سيتم فتح طلبات الالتحاق بالمدرسة الصيفية لعام 2024 بحلول 15 أبريل.",
+  };
+  const schoolDuration = {
+    en: "The school's duration is 3 weeks, starting from August 11 until August 30.",
+    ar: "مدة المدرسة 3 أسابيع، تبدأ من 11 أغسطس حتى 30 أغسطس.",
   };
 
   return (
@@ -64,6 +73,7 @@ function SchoolComponent({
                 value={selectedYear}
                 onChange={handleYearChange}
               >
+                <option value="2024">2024</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
               </select>
@@ -83,7 +93,8 @@ function SchoolComponent({
             <h2 className="text-xl font-extrabold text-cGreen mb-5">
               {applicationStatus[preferredLanguage]}
             </h2>
-            <Link href={applyLink}>
+            <h3 className="text-lg font-bold text-cGreen" >{schoolDuration[preferredLanguage]}</h3>
+            {/* <Link href={applyLink}>
               <button
                 className="flex items-center bg-cRed text-cWhite px-5 py-5 rounded-md h-10"
                 type="submit"
@@ -96,33 +107,54 @@ function SchoolComponent({
                   alt="arrow"
                 />
               </button>
-            </Link>
+            </Link> */}
           </div>
         )}
 
-        <ParticipantsNote
-          title={participants}
-          participantsNoteData={participantsNoteData}
-          language={preferredLanguage}
-        />
+        {participantsNoteData && (
+          <ParticipantsNote
+            title={selectedYear == `${currentYear}` ? qualifications : participants}
+            participantsNoteData={participantsNoteData}
+            language={preferredLanguage}
+          />
+        )}
 
-        <InstructorsList
-          instructors={languageSpecificInstructors}
-          instructorsTitle={instructors}
-        />
+        {languageSpecificInstructors && (
+          <InstructorsList
+            instructors={languageSpecificInstructors}
+            instructorsTitle={instructors}
+          />
+        )}
 
-        <CourseMaterials
-          courseMaterialsTitle={courseMaterials}
-          materialsData={materialsData}
-          welcomeVideoUrl={welcomeVideoUrl}
-        />
+        {materialsData && (
+          <CourseMaterials
+            courseMaterialsTitle={courseMaterials}
+            materialsData={materialsData}
+            welcomeVideoUrl={welcomeVideoUrl}
+          />
+        )}
 
-        <CourseOutline courseOutlineData={langauageBasedCourseOutlineData} />
+        {langauageBasedCourseOutlineData && (
+          <CourseOutline courseOutlineData={langauageBasedCourseOutlineData} />
+        )}
 
-        <DailySchedule calendarUrl={calendarUrl} />
-        <CourseDays courseDaysData={languageSpecificCourseDays} />
+        {calendarUrl && <DailySchedule calendarUrl={calendarUrl} />}
+        {languageSpecificCourseDays && (
+          <CourseDays courseDaysData={languageSpecificCourseDays} />
+        )}
 
-        <CollabsList collabsData={collabsData} language={preferredLanguage} />
+        {collabsData && (
+          <CollabsList collabsData={collabsData} language={preferredLanguage} />
+        )}
+
+        <div className="lg:px-20 px-5">
+          <Link href={`/details/${selectedYear > 2022 ? selectedYear - 1 : 2024}`}>
+            <button className="bg-cPink text-cWhite py-2 px-4 my-5 rounded-md mx-auto lg:mx-0">
+              {selectedYear > 2022 ? previousYear : latestYear} {selectedYear > 2022 ? selectedYear - 1 : 2024}
+            </button>
+          </Link>
+        </div>
+
       </div>
     </div>
   );

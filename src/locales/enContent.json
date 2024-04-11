@@ -64,7 +64,10 @@
     "email": "Email Address*",
     "subject": "Subject*",
     "message": "Message*",
-    "submit": "Submit"
+    "captchaMath": "Captcha Math*",
+    "submit": "Submit",
+    "incorrectCaptcha": "Incorrect Captcha. Please try again.",
+    "messageReceived": "Your message is successfully received!"
   },
   "opportunities": {
     "title": "Opportunities",
@@ -89,7 +92,29 @@
     "summerSchoolContent": "AiN summer school equips you with the essential tools and knowledge to explore the brain through the lens of computers and algorithms. Whether you're a neuroscience enthusiast or a programming wizard, this program empowers you to understand the mind's complex workings through the power of code.",
     "journeyDescription": "AiN summer school is about igniting your passion, building a vibrant community of like-minded individuals, and empowering you to become a pioneer in the field of computational neuroscience.",
     "closedApplications2023": "Applications for the 2023 summer school have closed.",
-    "participantsFeedbacks": "Participants' Feedbacks"
+    "participantsFeedbacks": "Participants' Feedbacks",
+    "welcomeVideo": "Welcome Video",
+    "previousYear": "View course details for the previous year",
+    "latestYear": "View course details for the latest year",
+    "teacherAssistants": "Teacher Assistants",
+    "role": "Role",
+    "leadGuideResearch": "Lead students group and assist them with the tutorials and the final project.",
+    "responsibilities": "Responsibilities",
+    "facilitateLearning": "Facilitate problem-based learning, offer expertise, and support collaborative learning.",
+    "position": "Position",
+    "fullTimeTemporary": "Full-time, temporary, contracted role with payment.",
+    "benefits": "Benefits",
+    "certificateLetter": "Receive a certificate and may request a recommendation letter.",
+    "students": "Students",
+    "commitment": "Commitment",
+    "fullTimeAttendance": "Full-time attendance required with no more than two absences.",
+    "groupDynamics": "Group Dynamics",
+    "placedInGroups": "Placed in groups of about 10 with a teaching assistant.",
+    "engagement": "Engagement",
+    "participateDiscussions": "Expected to participate in discussions, tutorials, and the final project.",
+    "outcome": "Outcome",
+    "receiveCertificate": "Receive a certificate upon completion, including a collaborative team project presentation.",
+    "applyNow": "Apply Now"
   },
   "description": {
     "whyCompNeuroscience": "Why Computational Neuroscience?",
@@ -107,7 +132,7 @@
     "joinCommunity": "Join Our Community",
     "vibrantLearningEnvironment": "We welcome Arabic-speaking participants from every corner of the globe, fostering a vibrant and inclusive learning environment.",
     "connectAndForgeConnections": "Connect with like-minded individuals, exchange ideas, and forge lifelong connections with peers and mentors.",
-    "learningExperienceDetails": "Details of Learning Experience",
+    "learningExperienceDetails": "Learning Experience Details",
     "timeCommitment": "Time Commitment:",
     "dedicatedEffort": "The course requires a dedicated effort for three weeks, with participants expected to devote 4-6 hours per day, Monday to Friday.",
     "organization": "Organization:",
@@ -142,6 +167,7 @@
     "instructors": "Instructors",
     "courseMaterials": "Course Materials",
     "participants": "Participants",
+    "qualifications": "Qualifications",
     "courseOutline": "Course Outline",
     "dailySchedule": "Daily Schedule",
     "calendarImportInfo": "TO AVOID CONFUSION, you can import the above calendar to your own Google calendar.",
@@ -164,8 +190,7 @@
     "timeHour": "Time (Hour)",
     "lecture": "Lecture",
     "showLess": "Show Less",
-    "showMore": "Show More",
-    "welcomeVideo": "Welcome Video"
+    "showMore": "Show More"
   },
   "footer": {
     "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!",

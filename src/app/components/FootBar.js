@@ -23,7 +23,7 @@ function Footbar({ setPreferredLanguage }) {
   const isRTL = preferredLanguage == "ar" ? true : false;
   return (
     <footer className="bg-cRed">
-      <div className="flex flex-col lg:flex-row lg:items-center">
+      <div className="flex flex-col lg:flex-row items-center">
         <div className="flex">
           <Link href="/">
             <img
@@ -42,17 +42,17 @@ function Footbar({ setPreferredLanguage }) {
           </Link>
         </div>
 
-        <div className="text-cWhite text-center lg:text-center mx-auto mt-5 lg:ml-4 lg:flex-grow">
+        <div className="text-cWhite text-center lg:text-center mx-auto my-5 lg:ml-4 lg:flex-grow">
           <h1 className="text-xl font-bold mx-10 lg:mt-0">
             {shapingFutureNeuroscience}
           </h1>
-          <p dir="ltr" className="text-sm lg:mt-10">
+          <p dir="ltr" className="text-sm mt-10">
             © Arabs in Neuroscience
           </p>
           <p className="text-sm"> {allRightsReserved} </p>
         </div>
 
-        <div className="flex flex-col lg:flex-col lg:items-center lg:ml-auto mx-10 mt-4 lg:mt-0">
+        <div className="flex flex-col lg:flex-col items-center lg:ml-auto mx-10 mt-4 lg:mt-0">
           <Link href="/contact">
             <button className="bg-cPink text-cWhite py-2 px-4 my-5 rounded-md mx-auto lg:mx-0">
               {connectWithAiN}

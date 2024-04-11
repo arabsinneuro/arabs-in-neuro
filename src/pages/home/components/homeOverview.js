@@ -10,7 +10,7 @@ const HomeOverview = () => {
 
   return (
     <div className="p-10 h-full w-full relative overflow-hidden">
-      <div className="absolute top-0 left-0 lg:-top-10 lg:-left-20 animate-spin-to-top-left">
+      <div className="absolute top-0 left-0 lg:-top-10 lg:-left-20 -left-5  animate-spin-to-top-left">
         <img
           src="/assets/home/green_neuron.svg"
           alt="Green Image"
@@ -18,7 +18,7 @@ const HomeOverview = () => {
         />
       </div>
 
-      <div className="absolute bottom-0 right-0 lg:-bottom-20 lg:-right-32 animate-spin-to-bottom-right">
+      <div className="absolute bottom-0 right-0 lg:-bottom-20 lg:-right-32 -right-8 animate-spin-to-bottom-right">
         <img
           src="/assets/home/red_neuron.svg"
           alt="Red Image"
@@ -31,7 +31,7 @@ const HomeOverview = () => {
           <img
             src="logo/banner.png"
             alt="Intro Image"
-            className="w-1/3 h-full mx-auto py-5 animate-banner"
+            className=" w-1/2 md:w-1/3 h-full mx-auto py-5 animate-banner"
           />
         </div>
 

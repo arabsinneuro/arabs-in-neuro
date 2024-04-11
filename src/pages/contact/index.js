@@ -13,7 +13,8 @@ function ContactPage() {
         </div>
 
         {/* <SocialMediaLinksComponent /> */}
-      </div>
+
+    </div>
     </div>
   );
 }

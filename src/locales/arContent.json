@@ -64,7 +64,10 @@
     "email": "عنوان البريد الإلكتروني*",
     "subject": "الموضوع*",
     "message": "الرسالة*",
-    "submit": "إرسال"
+    "submit": "إرسال",
+    "captchaMath": "التحقق بالرياضيات*",
+    "incorrectCaptcha": "خطأ في التحقق بالرياضيات. يرجى المحاولة مرة أخرى.",
+    "messageReceived": "تم استلام رسالتك بنجاح!"
   },
   "opportunities": {
     "title": "صفحة الفرص",
@@ -91,7 +94,29 @@
     "closedApplications2023": "تم إغلاق التقديم لمدرسة الصيف لعام 2023.",
     "summerSchoolDetails": "تفاصيل مدرسة الصيف",
     "viewDetails": "عرض التفاصيل",
-    "participantsFeedbacks": "آراء المشاركين"
+    "participantsFeedbacks": "آراء المشاركين",
+    "welcomeVideo": "فيديو الترحيب",
+    "previousYear": "عرض تفاصيل الدورة للعام السابق",
+    "latestYear": "عرض تفاصيل الدورة لأحدث عام",
+    "teacherAssistants": "مساعدي التدريس",
+    "role": "الدور",
+    "leadGuideResearch": "قيادة مجموعات الطلاب وتوجيه مشروع البحث.",
+    "responsibilities": "المسؤوليات",
+    "facilitateLearning": "تسهيل التعلم، وتقديم الخبرة، ودعم التعلم التعاوني.",
+    "position": "الوظيفة",
+    "fullTimeTemporary": "وظيفة بدوام كامل، مؤقتة، مع عقد مدفوع.",
+    "benefits": "الفوائد",
+    "certificateLetter": "احصل على شهادة ويمكنك طلب رسالة توصية.",
+    "students": "الطلاب",
+    "commitment": "الالتزام",
+    "fullTimeAttendance": "الحضور بدوام كامل مطلوب دون أكثر من غيابين.",
+    "groupDynamics": "ديناميات المجموعة",
+    "placedInGroups": "توضع في مجموعات تتكون من حوالي 10 طلاب مع مساعد تدريس.",
+    "engagement": "المشاركة",
+    "participateDiscussions": "من المتوقع المشاركة في المناقشات، والدروس التعليمية، ومشروع البحث.",
+    "outcome": "النتيجة",
+    "receiveCertificate": "تلقي شهادة عند الانتهاء، بما في ذلك عرض مشروع فريق تعاوني.",
+    "applyNow": "قدّم الآن"
   },
   "description": {
     "whyCompNeuroscience": "لماذا علوم الأعصاب الحسابي؟",
@@ -144,6 +169,7 @@
     "instructors": "المدربون",
     "courseMaterials": "مواد الدورة",
     "participants": "المشاركون",
+    "qualifications": "المؤهلات",
     "courseOutline": "مخطط الدورة",
     "dailySchedule": "الجدول اليومي",
     "calendarImportInfo": "لتجنب الارتباك، يمكنك استيراد التقويم أعلاه إلى تقويم Google الخاص بك.",
@@ -166,8 +192,7 @@
     "timeHour": "الوقت (ساعة)",
     "lecture": "المحاضرة",
     "showLess": "عرض أقل",
-    "showMore": "عرض المزيد",
-    "welcomeVideo": "فيديو الترحيب"
+    "showMore": "عرض المزيد"
   },
   "footer": {
     "shapingFutureNeuroscience": "تشكيل مستقبل علوم الأعصاب في العالم العربي!",

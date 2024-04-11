@@ -8,6 +8,7 @@ const ParticipantsNote = ({ title, participantsNoteData, language }) => {
       {participantsNoteData && participantsNoteData.map((note, index) => (
         <div key={index} >
           <p>{note.note[language]}</p>
+          {note.req && <p className="py-5">{note.req[language]}</p>}
           {note.image && (
             <div className="lg:px-40 py-5">
               <img

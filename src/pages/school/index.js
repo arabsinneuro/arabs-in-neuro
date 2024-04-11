@@ -3,6 +3,7 @@ import ApplicationSection from "./components/applicationSection";
 import SchoolDetails from "./components/schoolDetails";
 import Feedback from "./components/feedback";
 import SchoolDescription from "./components/schoolDescription";
+import ResponsibilitiesComponent from "./components/responsibilites";
 
 function SchoolPage() {
   return (
@@ -14,6 +15,7 @@ function SchoolPage() {
 
       <SchoolDescription />
       {/* <ApplicationSection /> */}
+      <ResponsibilitiesComponent />
 
       <Feedback />
     </div>

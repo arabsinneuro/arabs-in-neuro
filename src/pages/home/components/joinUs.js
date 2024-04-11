@@ -61,7 +61,7 @@ const JoinUs = () => {
             {introCompNeuroCourse}
           </p>
         </div>
-        <div className="flex-1 px-4">
+        <div className="flex-1 px-4 py-5">
           <div className="bg-cWhite text-sm shadow-xl p-4 rounded-2xl">
             <p>{passionateAboutBrain}</p>
             <br />

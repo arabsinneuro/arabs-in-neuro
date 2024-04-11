@@ -47,7 +47,7 @@ const CourseDayComponent = ({ title, description, schedule }) => {
   const CourseDays = ({courseDaysData}) => {
  
     return (
-      <div className="lg:px-20 px-5 space-y-10">
+      <div className="lg:px-20 px-5 space-y-10 my-10">
         {courseDaysData && courseDaysData.map((courseDay, index) => (
           <CourseDayComponent
             key={index}

@@ -95,7 +95,7 @@ const Intro = () => {
               className="grid grid-cols-4 gap-4 items-center p-4"
             >
               <div className="col-span-1 flex flex-col justify-center items-center">
-                <h3 className="text-cGreen text-xl font-semibold">
+                <h3 className="text-cGreen lg:text-xl text-md font-semibold">
                   {item.title}
                 </h3>
               </div>
