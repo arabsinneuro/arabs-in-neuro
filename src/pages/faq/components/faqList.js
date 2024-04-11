@@ -20,7 +20,7 @@ const FaqList = () => {
   return (
     <div>
       <button
-        className="mb-8 text-cBlack text-sm ltr:float-right rtl:float-left px-2 py-1 rounded-md border-b-2 border-cRed"
+        className="mb-8 text-cBlack text-smd ltr:float-right rtl:float-left px-2 py-1 rounded-md border-b-2 border-cRed"
         onClick={toggleAllAnswers}
       >
         {allAnswersVisible ? collapseAll : expandAll}

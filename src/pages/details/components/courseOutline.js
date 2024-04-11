@@ -6,7 +6,7 @@ const WeekOutline = ({ weekNb, days }) => {
     <div className="lg:flex-1 flex-2 flex flex-col items-start p-4">
       <h3 className="font-extrabold text-cGreen">{weekNb}:</h3>
       <hr className="border-t-2 border-cPinkLight w-full py-2" />
-      <ul className="list-disc  px-5 py-2 text-sm space-y-4">
+      <ul className="list-disc  px-5 py-2 text-md space-y-4">
         {days && days.map((day, index) => (
           <li key={index}>{day}</li>
         ))}

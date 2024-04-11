@@ -12,7 +12,7 @@ function FaqPage() {
       <div className=" lg:px-20 px-10 md:grid-cols-2 pt-20">
         <div className="pb-10">
           <h1 className="text-3xl font-extrabold text-cBlack">{faqsSection}</h1>
-          <p className="my-2 text-sm font-bold text-cRed">{beyondAnswers}</p>
+          <p className="my-2 text-md font-bold text-cRed">{beyondAnswers}</p>
         </div>
         <div className="mx-auto">
           <FaqList />

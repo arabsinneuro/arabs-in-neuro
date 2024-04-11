@@ -94,8 +94,6 @@
     "closedApplications2023": "Applications for the 2023 summer school have closed.",
     "participantsFeedbacks": "Participants' Feedbacks",
     "welcomeVideo": "Welcome Video",
-    "previousYear": "View course details for the previous year",
-    "latestYear": "View course details for the latest year",
     "teacherAssistants": "Teacher Assistants",
     "role": "Role",
     "leadGuideResearch": "Lead students group and assist them with the tutorials and the final project.",
@@ -190,7 +188,9 @@
     "timeHour": "Time (Hour)",
     "lecture": "Lecture",
     "showLess": "Show Less",
-    "showMore": "Show More"
+    "showMore": "Show More",
+    "previousYear": "View course details for the previous year",
+    "latestYear": "View course details for the latest year"
   },
   "footer": {
     "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!",

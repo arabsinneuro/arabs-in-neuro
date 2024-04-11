@@ -96,8 +96,6 @@
     "viewDetails": "عرض التفاصيل",
     "participantsFeedbacks": "آراء المشاركين",
     "welcomeVideo": "فيديو الترحيب",
-    "previousYear": "عرض تفاصيل الدورة للعام السابق",
-    "latestYear": "عرض تفاصيل الدورة لأحدث عام",
     "teacherAssistants": "مساعدي التدريس",
     "role": "الدور",
     "leadGuideResearch": "قيادة مجموعات الطلاب وتوجيه مشروع البحث.",
@@ -192,7 +190,9 @@
     "timeHour": "الوقت (ساعة)",
     "lecture": "المحاضرة",
     "showLess": "عرض أقل",
-    "showMore": "عرض المزيد"
+    "showMore": "عرض المزيد",
+    "previousYear": "عرض تفاصيل الدورة للعام السابق",
+    "latestYear": "عرض تفاصيل الدورة لأحدث عام"
   },
   "footer": {
     "shapingFutureNeuroscience": "تشكيل مستقبل علوم الأعصاب في العالم العربي!",

@@ -31,11 +31,11 @@ const MemberCard = ({
             <h2 className="text-lg font-bold text-cWhite mb-2 mx-auto">
               {name}
             </h2>
-            <p className="text-sm font-bold text-cWhite mb-2 mx-auto">{role}</p>
-            <h3 className="text-sm italic text-cWhite mb-2 text-center">
+            <p className="text-md font-bold text-cWhite mb-2 mx-auto">{role}</p>
+            <h3 className="text-md italic text-cWhite mb-2 text-center">
               {affiliationTitle}
             </h3>
-            <p className="text-sm text-cWhite">{affiliation}</p>
+            <p className="text-md text-cWhite">{affiliation}</p>
           </div>
         )}
 
@@ -45,7 +45,7 @@ const MemberCard = ({
               <h2 className="text-md font-extrabold text-cWhite text-center mx-auto">
                 {name}
               </h2>
-              <h3 className="text-sm fond-extrabold italic text-cWhite text-center">
+              <h3 className="text-md fond-extrabold italic text-cWhite text-center">
                 {team}
               </h3>
             </div>

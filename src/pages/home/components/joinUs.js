@@ -62,7 +62,7 @@ const JoinUs = () => {
           </p>
         </div>
         <div className="flex-1 px-4 py-5">
-          <div className="bg-cWhite text-sm shadow-xl p-4 rounded-2xl">
+          <div className="bg-cWhite text-md shadow-xl p-4 rounded-2xl">
             <p>{passionateAboutBrain}</p>
             <br />
             <p>{courseDesigned}</p>

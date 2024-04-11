@@ -118,7 +118,7 @@ const Intro = () => {
 
               <div className="col-span-2 flex flex-col justify-center items-center">
                 <div className="rounded-xl shadow-lg p-4">
-                  <p className="text-sm">{item.description}</p>
+                  <p className="text-md">{item.description}</p>
                 </div>
               </div>
             </div>

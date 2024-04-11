@@ -63,7 +63,7 @@ function SchoolComponent({
     <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/faq.svg')]">
       <div className="py-20">
         <div className="fixed top-20 left-0 right-0 bg-cWhite z-10">
-          <div className="flex items-center lg:px-20 px-5 my-10">
+          <div className="flex items-center lg:px-20 px-5 mt-10 mb-5">
             <h1 className="text-3xl text-cBlack font-extrabold">
               {courseDetails}
             </h1>

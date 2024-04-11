@@ -34,10 +34,10 @@ const DailySchedule = ({ calendarUrl }) => {
       
       <div className="flex grid grid-cols-1 md:grid-cols-2 py-20">
         <div className="lg:px-20 px-5">
-          <p className="px-2 py-2 text-sm font-extrabold text-cBlack">
+          <p className="px-2 py-2 text-md font-extrabold text-cBlack">
             {timeExplanation}
           </p>
-          <ul className="list-disc py-5 px-10 text-sm">
+          <ul className="list-disc py-5 px-10 text-md">
             {timeZonesList &&
               timeZonesList.map((zone, index) => <li key={index}>{zone}</li>)}
           </ul>

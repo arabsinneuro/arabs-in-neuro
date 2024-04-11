@@ -46,10 +46,10 @@ function Footbar({ setPreferredLanguage }) {
           <h1 className="text-xl font-bold mx-10 lg:mt-0">
             {shapingFutureNeuroscience}
           </h1>
-          <p dir="ltr" className="text-sm mt-10">
+          <p dir="ltr" className="text-md mt-10 text-cPink font-bold">
             © Arabs in Neuroscience
           </p>
-          <p className="text-sm"> {allRightsReserved} </p>
+          <p className="text-md text-cPink font-bold"> {allRightsReserved} </p>
         </div>
 
         <div className="flex flex-col lg:flex-col items-center lg:ml-auto mx-10 mt-4 lg:mt-0">

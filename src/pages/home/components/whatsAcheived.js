@@ -10,7 +10,7 @@ const Card = ({ number, text, icon }) => (
 
     <div className="relative flex flex-col justify-center items-center h-full px-4">
       <p className="pb-3 text-cRed font-extrabold text-2xl">{number}</p>
-      <p className="text-sm text-cN800">{text}</p>
+      <p className="text-md text-cN800">{text}</p>
     </div>
 
     <div className="absolute top-2 right-2 bg-cWhite rounded-full shadow-md w-8 h-8 flex items-center justify-center">

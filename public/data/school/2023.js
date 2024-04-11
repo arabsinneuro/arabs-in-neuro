@@ -3,9 +3,11 @@ export const applyLink = "";
 export const participantsNoteData = [
   {
     note: {
-      en: "We accept Arabic-speaking participants from all over the world",
-      ar: "نقبل المشاركين الناطقين بالعربية من جميع أنحاء العالم"
-    }
+      en: "We received over 450 applications from 12 different Arabic-speaking nationalities. Among those applications, we accepted 115 students and 10 teacher assistants.",
+      ar: "لقد تلقينا أكثر من 450 طلبًا من أكثر من 13 جنسية عربية مختلفة. من بين تلك الطلبات، قبلنا 115 طالبًا و 10 مساعدين تدريس."
+    },
+    image: "/assets/school/map2023.png",
+    alt: "nationalities"
   }
 ];
 

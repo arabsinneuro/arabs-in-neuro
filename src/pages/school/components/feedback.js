@@ -48,8 +48,7 @@ const Feedback = () => {
   const isRightDisabled =
     scrollPosition !== 0 &&
     scrollRef.current &&
-    scrollPosition + scrollRef.current.offsetWidth >=
-      scrollRef.current.scrollWidth;
+    scrollPosition + scrollRef.current.offsetWidth >= scrollRef.current.scrollWidth - 20;
 
   return (
     <div className="p-10 lg:p-20">
