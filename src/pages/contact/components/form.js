@@ -139,7 +139,7 @@ const FormComponent = () => {
               role="button"
             >
               {submit}
-              <img className="ml-2" src="icons/send.svg" alt="send" />
+              <img className="ml-2" src="/icons/send.svg" alt="send" />
             </button>
           </div>
           {submittedMessage && (

@@ -64,7 +64,7 @@ const Overview = () => {
                 {applyNow}
                 <img
                   className="ml-2"
-                  src="icons/arrow-up-right.svg"
+                  src="/icons/arrow-up-right.svg"
                   alt="arrow"
                 />
               </button>
@@ -84,7 +84,7 @@ const Overview = () => {
                 {applyNow}
                 <img
                   className="ml-2"
-                  src="icons/arrow-up-right.svg"
+                  /icons/arrow-up-right.svg"
                   alt="arrow"
                 />
               </button>

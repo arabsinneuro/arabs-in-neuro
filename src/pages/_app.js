@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
     >
       <div dir={direction} className="flex flex-col min-h-screen">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/logo/ain.png" />
         </Head>
         <Navbar setPreferredLanguage={setPreferredLanguage} />
         <div className="mt-20 flex-grow">

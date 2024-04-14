@@ -48,7 +48,7 @@ const ResponsibilitiesComponent = () => {
               {applyNow}
               <img
                 className="ml-2"
-                src="icons/arrow-up-right.svg"
+                src="/icons/arrow-up-right.svg"
                 alt="arrow"
               />
             </button>
@@ -75,7 +75,7 @@ const ResponsibilitiesComponent = () => {
               {applyNow}
               <img
                 className="ml-2"
-                src="icons/arrow-up-right.svg"
+                src="/icons/arrow-up-right.svg"
                 alt="arrow"
               />
             </button>

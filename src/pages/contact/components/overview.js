@@ -23,7 +23,7 @@ const OverviewComponent = () => {
         <br />
         <br />
         <img
-          src="assets/contact/illustration.svg"
+          src="/assets/contact/illustration.svg"
           alt="illustration"
           style={{
             transform: isRTL ? "scaleX(-1)" : "scaleX(1)",

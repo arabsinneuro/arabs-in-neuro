@@ -20,7 +20,7 @@ function FaqPage() {
       </div>
       <div className="flex justify-end">
         <img
-          src="assets/faq/faq-illustration.svg"
+          src="/assets/faq/faq-illustration.svg"
           alt="illustration"
           style={{
             maxHeight: "250px",
