@@ -107,12 +107,14 @@
     "commitment": "Commitment",
     "fullTimeAttendance": "Full-time attendance required with no more than two absences.",
     "groupDynamics": "Group Dynamics",
-    "placedInGroups": "Placed in groups of about 10 with a teaching assistant.",
+    "placedInGroups": "Placed in groups applicationDeadline about 10 with a teaching assistant.",
     "engagement": "Engagement",
     "participateDiscussions": "Expected to participate in discussions, tutorials, and the final project.",
     "outcome": "Outcome",
     "receiveCertificate": "Receive a certificate upon completion, including a collaborative team project presentation.",
-    "applyNow": "Apply Now"
+    "applyNow": "Apply Now",
+    "studentsApplication": "Students Application",
+    "teacherAssistantsApplication": "Teacher Assistants Application"
   },
   "description": {
     "whyCompNeuroscience": "Why Computational Neuroscience?",
@@ -190,7 +192,10 @@
     "showLess": "Show Less",
     "showMore": "Show More",
     "previousYear": "View course details for the previous year",
-    "latestYear": "View course details for the latest year"
+    "latestYear": "View course details for the latest year",
+    "applyNow": "Apply Now",
+    "studentsApplication": "Students Application",
+    "teacherAssistantsApplication": "Teacher Assistants Application"
   },
   "footer": {
     "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!",

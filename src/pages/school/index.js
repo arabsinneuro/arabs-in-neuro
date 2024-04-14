@@ -8,15 +8,14 @@ import ResponsibilitiesComponent from "./components/responsibilites";
 function SchoolPage() {
   return (
     <div className="bg-cover bg-blend-soft-light bg-[url('/backgrounds/opportunities.svg')]">
-    
       <Overview />
 
       {/* <SchoolDetails /> */}
 
       <SchoolDescription />
-      {/* <ApplicationSection /> */}
-      <ResponsibilitiesComponent />
 
+      {/* <ResponsibilitiesComponent /> */}
+      <ApplicationSection />
       <Feedback />
     </div>
   );

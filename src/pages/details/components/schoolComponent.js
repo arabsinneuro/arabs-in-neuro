@@ -9,6 +9,7 @@ import CourseMaterials from "../components/courseMaterial";
 import CollabsList from "./collabsList";
 import ParticipantsNote from "./participantsNote";
 import Link from "next/link";
+import { studentsApplicationLink, taApplicationLink } from "@/app/constants";
 
 function SchoolComponent({
   year,
@@ -34,7 +35,10 @@ function SchoolComponent({
     qualifications,
     applyHere,
     previousYear,
-    latestYear
+    latestYear,
+    applyNow,
+    studentsApplication,
+    teacherAssistantsApplication,
   } = currentContent.details;
 
   const router = useRouter();
@@ -51,8 +55,8 @@ function SchoolComponent({
   const applicationStatus = {
     // en: "Applications are open until June 2024!",
     // ar: "التقديم مفتوح حتى يونيو 2024!",
-    en: "Applications for the summer school 2024 will open by April 15.",
-    ar: "سيتم فتح طلبات الالتحاق بالمدرسة الصيفية لعام 2024 بحلول 15 أبريل.",
+    en: "Applications will open from April 15 until May 7. ",
+    ar: " سيتم فتح باب التقديم من 15 أبريل حتى 7 مايو.",
   };
   const schoolDuration = {
     en: "The school's duration is 3 weeks, starting from August 11 until August 30.",
@@ -89,31 +93,69 @@ function SchoolComponent({
         )}
 
         {selectedYear == `${currentYear}` && (
-          <div className="lg:px-20 px-5 mt-10 mb-5  text-cBlack font-bold">
-            <h2 className="text-xl font-extrabold text-cGreen mb-5">
+          <div className="lg:px-20 px-5 mt-10 mb-5 text-cBlack font-bold">
+            <h2 className="text-xl font-extrabold text-cN800 mb-5">
               {applicationStatus[preferredLanguage]}
             </h2>
-            <h3 className="text-lg font-bold text-cGreen" >{schoolDuration[preferredLanguage]}</h3>
-            {/* <Link href={applyLink}>
-              <button
-                className="flex items-center bg-cRed text-cWhite px-5 py-5 rounded-md h-10"
-                type="submit"
-                role="button"
+            <h3 className="text-lg font-bold text-cN800">
+              {schoolDuration[preferredLanguage]}
+            </h3>
+            <br />
+            <br />
+            <div className="flex flex-wrap gap-10 justify-around w-full">
+              <Link
+                href={studentsApplicationLink}
+                className="lg:w-1/3 w-full bg-cRed shadow-md px-4 rounded-md space-y-1 flex item-center justify-center"
               >
-                {applyHere}
-                <img
-                  className="ml-2"
-                  src="/icons/arrow-up-right.svg"
-                  alt="arrow"
-                />
-              </button>
-            </Link> */}
+                <div>
+                  <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
+                    {studentsApplication}
+                  </h2>
+                  <button
+                    className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mt-auto"
+                    type="submit"
+                    role="button"
+                  >
+                    {applyNow}
+                    <img
+                      className="ml-2"
+                      src="/icons/arrow-up-right.svg"
+                      alt="arrow"
+                    />
+                  </button>
+                </div>
+              </Link>
+              <Link
+                href={taApplicationLink}
+                className="lg:w-1/3 w-full bg-cGreen shadow-md px-4 rounded-md space-y-1 flex item-center justify-center"
+              >
+                <div>
+                  <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
+                    {teacherAssistantsApplication}
+                  </h2>
+                  <button
+                    className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mt-auto"
+                    type="submit"
+                    role="button"
+                  >
+                    {applyNow}
+                    <img
+                      className="ml-2"
+                      src="/icons/arrow-up-right.svg"
+                      alt="arrow"
+                    />
+                  </button>
+                </div>
+              </Link>
+            </div>
           </div>
         )}
 
         {participantsNoteData && (
           <ParticipantsNote
-            title={selectedYear == `${currentYear}` ? qualifications : participants}
+            title={
+              selectedYear == `${currentYear}` ? qualifications : participants
+            }
             participantsNoteData={participantsNoteData}
             language={preferredLanguage}
           />
@@ -148,13 +190,15 @@ function SchoolComponent({
         )}
 
         <div className="lg:px-20 px-5">
-          <Link href={`/details/${selectedYear > 2022 ? selectedYear - 1 : 2024}`}>
+          <Link
+            href={`/details/${selectedYear > 2022 ? selectedYear - 1 : 2024}`}
+          >
             <button className="bg-cPink text-cWhite py-2 px-4 my-5 rounded-md mx-auto lg:mx-0">
-              {selectedYear > 2022 ? previousYear : latestYear} {selectedYear > 2022 ? selectedYear - 1 : 2024}
+              {selectedYear > 2022 ? previousYear : latestYear}{" "}
+              {selectedYear > 2022 ? selectedYear - 1 : 2024}
             </button>
           </Link>
         </div>
-
       </div>
     </div>
   );

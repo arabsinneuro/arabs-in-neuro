@@ -15,7 +15,7 @@ function Navbar({ setPreferredLanguage }) {
     { href: "/school", label: currentContent.navbar.courses },
     { href: "/details/2024", label: currentContent.navbar.courseDetails },
     { href: "/faq", label: currentContent.navbar.faq },
-    { href: "/opportunities", label: currentContent.navbar.opportunities },
+    { href: "/volunteer", label: currentContent.navbar.opportunities },
     { href: "/donate", label: currentContent.navbar.donate },
   ];
 
@@ -35,7 +35,7 @@ function Navbar({ setPreferredLanguage }) {
           <img
             src="/logo/banner.png"
             alt="Logo"
-            className="h-10 w-auto cursor-pointer"
+            className="h-12 w-auto cursor-pointer"
           />
         </Link>
 

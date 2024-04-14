@@ -114,7 +114,9 @@
     "participateDiscussions": "من المتوقع المشاركة في المناقشات، والدروس التعليمية، ومشروع البحث.",
     "outcome": "النتيجة",
     "receiveCertificate": "تلقي شهادة عند الانتهاء، بما في ذلك عرض مشروع فريق تعاوني.",
-    "applyNow": "قدّم الآن"
+    "applyNow": "قدّم الآن",
+    "studentsApplication": "طلب الطلاب",
+    "teacherAssistantsApplication": "طلب مساعدي التدريس"
   },
   "description": {
     "whyCompNeuroscience": "لماذا علوم الأعصاب الحسابي؟",
@@ -192,7 +194,10 @@
     "showLess": "عرض أقل",
     "showMore": "عرض المزيد",
     "previousYear": "عرض تفاصيل الدورة للعام السابق",
-    "latestYear": "عرض تفاصيل الدورة لأحدث عام"
+    "latestYear": "عرض تفاصيل الدورة لأحدث عام",
+    "applyNow": "قدّم الآن",
+    "studentsApplication": "طلب الطلاب",
+    "teacherAssistantsApplication": "طلب مساعدي التدريس"
   },
   "footer": {
     "shapingFutureNeuroscience": "تشكيل مستقبل علوم الأعصاب في العالم العربي!",

@@ -1,15 +1,22 @@
 import React, { useContext } from 'react';
 import LanguageContext from "@/context/LanguageContext";
+import ResponsibilitiesComponent from './responsibilites';
 
 const ApplicationSection = () => {
   const languageContext = useContext(LanguageContext);
+  const { preferredLanguage, currentContent } = languageContext;
   const {
     applicationDetails,
     applyThroughLink,
     applicationDeadline,
     dontMissOut,
     applyNow,
-  } = languageContext.currentContent.description;
+  } = currentContent.description;
+
+  const applicationStatus = {
+    en: "Applications close on May 7, 2024",
+    ar: "يغلق التقديم في 7 مايو 2024",
+  };
 
   return (
     <div className='text-cN800 mx-auto px-5 lg:px-20 lg:py-10 py-5'>
@@ -21,19 +28,20 @@ const ApplicationSection = () => {
         {applyThroughLink}
       </p>
       <p className="mb-8 text-lg font-semibold text-center text-gray-700">
-        {applicationDeadline}
+        {applicationStatus[preferredLanguage]}
       </p>
       <div className="text-center">
         <p className="text-xl font-medium mb-10 text-gray-700">
           {dontMissOut}
         </p>
-        <a
+        {/* <a
           href=""
           className="inline-block bg-cRed hover:bg-cRedLight text-cWhite font-bold py-3 px-8 rounded-lg text-lg shadow transition duration-300 ease-in-out transform hover:-translate-y-1"
         >
           {applyNow}
-        </a>
+        </a> */}
       </div>
+      <ResponsibilitiesComponent />
     </section>
     </div>
   );

@@ -16,14 +16,14 @@ const ScrollButtons = ({ onScrollLeft, onScrollRight, isLeftDisabled, isRightDis
             onClick={onScrollLeft} 
             disabled={isRightDisabled}
           >
-            <img src={`${isRightDisabled ? "icons/chevron-left.svg" : "icons/chevron-left-white.svg"} `} alt="Left Chevron" className="w-6 h-6 text-cWhite" />
+            <img src={`${isRightDisabled ? "/icons/chevron-left.svg" : "/icons/chevron-left-white.svg"} `} alt="Left Chevron" className="w-6 h-6 text-cWhite" />
           </button>
           <button
             className={`cursor-pointer bg-${isLeftDisabled ? "cWhite" : "cRed"} rounded-full p-2 shadow-md`}
             onClick={onScrollRight} 
             disabled={isLeftDisabled}
           >
-            <img src={`${isLeftDisabled ? "icons/chevron-right.svg" : "icons/chevron-right-white.svg"} `} alt="Right Chevron" className="w-6 h-6 text-cWhite" />
+            <img src={`${isLeftDisabled ? "/icons/chevron-right.svg" : "/icons/chevron-right-white.svg"} `} alt="Right Chevron" className="w-6 h-6 text-cWhite" />
           </button>
         </>
       ) : (
@@ -34,14 +34,14 @@ const ScrollButtons = ({ onScrollLeft, onScrollRight, isLeftDisabled, isRightDis
             onClick={onScrollLeft}
             disabled={isLeftDisabled}
           >
-            <img src={`${isLeftDisabled ? "icons/chevron-left.svg" : "icons/chevron-left-white.svg"} `} alt="Left Chevron" className="w-6 h-6 text-white" />
+            <img src={`${isLeftDisabled ? "/icons/chevron-left.svg" : "/icons/chevron-left-white.svg"} `} alt="Left Chevron" className="w-6 h-6 text-white" />
           </button>
           <button
             className={`cursor-pointer bg-${isRightDisabled ? "cWhite" : "cRed"} rounded-full p-2 shadow-md`}
             onClick={onScrollRight}
             disabled={isRightDisabled}
           >
-            <img src={`${isRightDisabled ? "icons/chevron-right.svg" : "icons/chevron-right-white.svg"} `} alt="Right Chevron" className="w-6 h-6 text-white" />
+            <img src={`${isRightDisabled ? "/icons/chevron-right.svg" : "/icons/chevron-right-white.svg"} `} alt="Right Chevron" className="w-6 h-6 text-white" />
           </button>
         </>
       )}

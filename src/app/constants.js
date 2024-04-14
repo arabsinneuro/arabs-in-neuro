@@ -8,3 +8,5 @@ export const twiterLink = "https://twitter.com/ArabsInNeuro";
 export const twiterName = "ArabsInNeuro";
 export const linkedinLink = "https://www.linkedin.com/company/arabs-in-neuroscience-ain/mycompany/";
 export const linkedinName = "arabs-in-neuroscience-ain";
+export const studentsApplicationLink = "https://docs.google.com/forms/d/e/1FAIpQLSdfGwumYEbxU00hqHEzT-rcKLyuW3DFdAZrAjbsZDN62HGnVA/viewform?usp=sf_link";
+export const taApplicationLink = "https://docs.google.com/forms/d/e/1FAIpQLSfdY4xzPBvbEis_fhNUAj_L8NODBGU8ZqtnMgNb2PGQG2cgyg/viewform?usp=sf_link";

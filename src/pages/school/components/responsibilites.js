@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import LanguageContext from "@/context/LanguageContext";
 import Link from "next/link";
+import { studentsApplicationLink, taApplicationLink } from "@/app/constants";
 
 const ResponsibilitiesComponent = () => {
   const languageContext = useContext(LanguageContext);
@@ -27,7 +28,7 @@ const ResponsibilitiesComponent = () => {
     applyNow
   } = currentContent.school;
   return (
-    <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-16 mx-10 md:mx-20 text-cWhite">
+    <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-16 mx-5 md:mx-20 text-cWhite">
       <div className="w-full md:w-1/2 bg-cRed p-4 rounded-lg shadow-md mx-auto flex flex-col justify-between">
         <div>
           <h2 className="text-lg font-semibold mb-4">{students}</h2>
@@ -39,7 +40,7 @@ const ResponsibilitiesComponent = () => {
           </ul>
         </div>
         <div className="pt-5">
-          {/* <Link href="">
+          <Link href={studentsApplicationLink}>
             <button
               className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mb-4"
               type="submit"
@@ -52,7 +53,7 @@ const ResponsibilitiesComponent = () => {
                 alt="arrow"
               />
             </button>
-          </Link> */}
+          </Link>
         </div>
       </div>
       <div className="w-full md:w-1/2 bg-cGreen p-4 rounded-lg shadow-md mx-auto flex flex-col justify-between text-cWhite">
@@ -66,7 +67,7 @@ const ResponsibilitiesComponent = () => {
           </ul>
         </div>
         <div className="pt-5">
-          {/* <Link href="">
+          <Link href={taApplicationLink}>
             <button
               className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mb-4"
               type="submit"
@@ -79,7 +80,7 @@ const ResponsibilitiesComponent = () => {
                 alt="arrow"
               />
             </button>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>

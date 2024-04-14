@@ -20,7 +20,7 @@ export const teamLeadsData = [
     {
         "name": {"en": "Rawan AlSubaie", "ar": "روان السبيعي"},
         "team": {"en": "Academic Affairs", "ar": "الشؤون الأكاديمية"},
-        "affiliation": {"en": "King Fahad Medical City Research Center", "ar": "مدينة الملك فهد الطبية - مركز البحوث"},
+        "affiliation": {"en": "Massachusetts Institute of Technology", "ar": "معهد ماساتشوستس للتكنولوجيا"},
         "image": "/data/team/rawan.png",
         "linkedinLink": "https://www.linkedin.com/in/rawan-alsubaie-phd-bab68120b/",
         "twitterLink": "https://twitter.com/Rawryy",

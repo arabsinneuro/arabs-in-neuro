@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import LanguageContext from "@/context/LanguageContext";
 import Link from "next/link";
+import { studentsApplicationLink, taApplicationLink } from "@/app/constants";
 
 const Overview = () => {
   const languageContext = useContext(LanguageContext);
@@ -11,7 +12,9 @@ const Overview = () => {
     introCourseDescription,
     summerSchoolContent,
     journeyDescription,
-    applyNow
+    applyNow,
+    studentsApplication,
+    teacherAssistantsApplication,
   } = currentContent.school;
 
   const applicationStatus = {
@@ -20,7 +23,7 @@ const Overview = () => {
   };
   const applicationsDuration = {
     en: "Applications will open from April 15 until May 7. ",
-    ar: "سيتم فتح باب التقديم من 15 أبريل حتى 7 مايو.",
+    ar: " سيتم فتح باب التقديم من 15 أبريل حتى 7 مايو.",
   };
   const schoolDuration = {
     en: "The summer school 2024 will be 3 weeks, from August 11 until August 30.",
@@ -44,18 +47,25 @@ const Overview = () => {
             </span>{" "}
             {journeyDescription}
           </p>
-          <h3 className="lg:px-10 px-2 text-lg font-bold text-cGreen" >{schoolDuration[preferredLanguage]}</h3>
-          <h3 className="lg:px-10 px-2 text-lg font-bold text-cGreen" >{applicationsDuration[preferredLanguage]}</h3>
+          <h3 className="lg:px-10 px-2 text-lg font-extrabold text-cN800">
+            {schoolDuration[preferredLanguage]}
+          </h3>
+          <h3 className="lg:px-10 px-2 text-lg font-extrabold text-cN800">
+            {applicationsDuration[preferredLanguage]}
+          </h3>
         </div>
 
         {/* Banners Container */}
         <div className="md:col-span-1 flex flex-col justify-start items-start">
-         
-          <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
-            <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
-              {applicationStatus[preferredLanguage]}
-            </h2>
-            {/* <Link href="">
+          <Link
+            href={studentsApplicationLink}
+            className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
+          >
+            <div>
+              <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
+                {studentsApplication}
+              </h2>
+
               <button
                 className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
                 type="submit"
@@ -68,14 +78,18 @@ const Overview = () => {
                   alt="arrow"
                 />
               </button>
-            </Link> */}
-          </div>
+            </div>
+          </Link>
 
-          {/* <div className="w-64 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
-            <h2 className="font-extrabold text-xl py-2 text-cWhite font-bold">
-              {applicationStatus[preferredLanguage]}
-            </h2>
-            <Link href="">
+          <Link
+            href={taApplicationLink}
+            className="w-72 h-[fit-content] bg-cGreen shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
+          >
+            <div>
+              <h2 className="font-extrabold text-xl py-2 text-cWhite font-bold">
+                {teacherAssistantsApplication}
+              </h2>
+
               <button
                 className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
                 type="submit"
@@ -84,12 +98,12 @@ const Overview = () => {
                 {applyNow}
                 <img
                   className="ml-2"
-                  /icons/arrow-up-right.svg"
+                  src="/icons/arrow-up-right.svg"
                   alt="arrow"
                 />
               </button>
-            </Link>
-          </div> */}
+            </div>
+          </Link>
         </div>
       </div>
     </div>
