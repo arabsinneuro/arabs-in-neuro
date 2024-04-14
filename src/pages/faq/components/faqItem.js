@@ -14,7 +14,7 @@ function FAQItem({ question, answer, isAllAnswersVisible }) {
     return (
       <div className="bg-cWhite shadow-md rounded-lg mb-4">
         <div className="p-4 cursor-pointer flex justify-between items-center" onClick={toggleAnswer}>
-          <h2 className="text-xl font-bold text-primary">{question}</h2>
+          <h2 className="w-3/4 md:text-xl text-lg font-bold text-primary">{question}</h2>
           <span className={`toggle-icon transform ${isAnswerVisible ? "rotate-180" : ""}`}>
             <img className="ml-2" src="/icons/arrow.svg" alt="arrow" />
           </span>
