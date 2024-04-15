@@ -40,11 +40,13 @@ module.exports = {
         "spin-to-bottom-right": "spin-to-bottom-right 2s forwards",
         "slide-in-top": "slide-in-top 2s forwards",
         "slide-in-bottom": "slide-in-bottom 1.5s 2s forwards",
-        "banner": "banner 3s forwards",
-        'slide-in-left': 'slide-in-left 3s forwards',
-        'slide-in-right': 'slide-in-right 3s forwards',
-        'slow-shake': 'slow-shake 3s ease-in-out',
-        'grow': 'grow 2s ease-in-out forwards',
+        banner: "banner 3s forwards",
+        "slide-in-left": "slide-in-left 3s forwards",
+        "slide-in-right": "slide-in-right 3s forwards",
+        "slow-shake": "slow-shake 2s ease-in-out",
+        shrink: "shrink 2s ease-in-out forwards",
+        grow: "grow 2s ease-in-out forwards",
+        fade: "fade 3s ease-in-out forwards",
       },
       keyframes: {
         "spin-to-top-left": {
@@ -64,27 +66,36 @@ module.exports = {
           "10%": { opacity: "1" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
-        'slide-in-left': {
-          '0%': { transform: 'translateX(-100%)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
+        "slide-in-left": {
+          "0%": { transform: "translateX(-25%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
         },
-        'slide-in-right': {
-          '0%': { transform: 'translateX(100%)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)", opacity: "0.5" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
         },
-        "banner": {
+        banner: {
           "0%": { transform: "translateY(-100%) scale(1)" },
           "80%": { transform: "translateY(50%) scale(1.5)" },
           "100%": { transform: "translateY(0) scale(1)" },
         },
-        'slow-shake': {
-          '0%, 100%': { transform: 'rotate(-5deg)' },
-          '50%': { transform: 'rotate(5deg)' },
+        "slow-shake": {
+          "0%, 100%": { transform: "rotate(-10deg)" },
+          "50%": { transform: "rotate(10deg)" },
         },
-        'grow': {
-          '0%': { transform: 'scale(0)', opacity: '0' },
-          '10%': { transform: 'scale(0.1)', opacity: '1' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
+        shrink: {
+          "0%": { transform: "scale(1.2)", opacity: "0.1" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        grow: {
+          "0%": { transform: "scale(0)", opacity: "0" },
+          "10%": { transform: "scale(0.1)", opacity: "1" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        fade: {
+          "0%": { opacity: "0" },
+          "10%": { opacity: "0.1" },
+          "100%": { opacity: "1" },
         },
       },
       animationDelay: {

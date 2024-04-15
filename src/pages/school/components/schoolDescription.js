@@ -93,7 +93,7 @@ const SchoolDescription = () => {
           </section>
         </div>
 
-        <section className="lg:py-20 py-10 text-md">
+        <section className="py-10 text-md">
           <h3 className="text-2xl font-bold mb-4 text-cRed">
             {learningExperienceDetails}
           </h3>

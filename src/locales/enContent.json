@@ -39,7 +39,7 @@
     "countries": "Countries",
     "achieved": "Achieved",
     "applicants": "Applicants",
-    "teacherAssistants": "Teacher Assistants",
+    "teacherAssistants": "Teaching Assistants",
     "instructorsAndGuestSpeakers": "Instructors and Guest Speakers",
     "what": "What"
   },
@@ -94,7 +94,7 @@
     "closedApplications2023": "Applications for the 2023 summer school have closed.",
     "participantsFeedbacks": "Participants' Feedbacks",
     "welcomeVideo": "Welcome Video",
-    "teacherAssistants": "Teacher Assistants",
+    "teacherAssistants": "Teaching Assistants",
     "role": "Role",
     "leadGuideResearch": "Lead students group and assist them with the tutorials and the final project.",
     "responsibilities": "Responsibilities",
@@ -114,7 +114,7 @@
     "receiveCertificate": "Receive a certificate upon completion, including a collaborative team project presentation.",
     "applyNow": "Apply Now",
     "studentsApplication": "Students Application",
-    "teacherAssistantsApplication": "Teacher Assistants Application"
+    "teacherAssistantsApplication": "Teaching Assistants Application"
   },
   "description": {
     "whyCompNeuroscience": "Why Computational Neuroscience?",
@@ -195,7 +195,7 @@
     "latestYear": "View course details for the latest year",
     "applyNow": "Apply Now",
     "studentsApplication": "Students Application",
-    "teacherAssistantsApplication": "Teacher Assistants Application"
+    "teacherAssistantsApplication": "Teaching Assistants Application"
   },
   "footer": {
     "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!",

@@ -59,6 +59,7 @@ const Overview = () => {
         <div className="md:col-span-1 flex flex-col justify-start items-start">
           <Link
             href={studentsApplicationLink}
+            target="_blank"  rel="noopener noreferrer"
             className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
           >
             <div>
@@ -83,6 +84,7 @@ const Overview = () => {
 
           <Link
             href={taApplicationLink}
+            target="_blank"  rel="noopener noreferrer"
             className="w-72 h-[fit-content] bg-cGreen shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
           >
             <div>

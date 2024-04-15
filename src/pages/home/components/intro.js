@@ -33,7 +33,7 @@ const Intro = () => {
   const imageStyle = {
     transform: isRTL ? "scaleX(-1)" : "scaleX(1)",
   };
-  
+
   const [isIntersecting, setIsIntersecting] = useState(false);
   const widgetRef = useRef(null);
 
@@ -47,9 +47,9 @@ const Intro = () => {
         });
       },
       {
-        root: null, 
-        rootMargin: '0px', 
-        threshold: 0.1, 
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
       }
     );
 
@@ -64,16 +64,18 @@ const Intro = () => {
     };
   }, [widgetRef, isIntersecting]);
 
-
   return (
     <div className="py-10">
       <div className="flex justify-center items-center pb-10 font-extrabold text-4xl">
         <span className="text-black mx-2">{we} </span>
         <span className="text-cRed">AiN</span>
       </div>
-      
-      <div ref={widgetRef} className={`lg:grid grid-cols-4 w-full h-full ${isIntersecting ?  "animate-slide-in-left" : ""}`}>
-        <div className="hidden lg:flex flex-col space-y-4">
+
+      <div ref={widgetRef} className={`lg:grid grid-cols-4 w-full h-full `}>
+        <div
+          className={`hidden lg:flex flex-col space-y-4 ${isIntersecting ? "animate-fade" : ""
+            }`}
+        >
           <img
             src="/assets/home/multipleLines1.svg"
             alt="Top"
@@ -92,15 +94,17 @@ const Intro = () => {
           {timelineItems.map((item, index) => (
             <div
               key={index}
-              className="grid grid-cols-4 gap-4 items-center p-4"
+              className="grid grid-cols-4 gap-4 items-center p-4 "
             >
-              <div className="col-span-1 flex flex-col justify-center items-center">
+              <div className={`col-span-1 flex flex-col justify-center items-center ${isIntersecting ? "animate-slide-in-left" : ""}`}>
                 <h3 className="text-cGreen lg:text-xl text-md font-semibold">
                   {item.title}
                 </h3>
               </div>
-
-              <div className="col-span-1 flex flex-col justify-between items-center">
+              <div
+                className={`col-span-1 flex flex-col justify-between items-center ${isIntersecting ? "animate-fade" : ""
+                  }`}
+              >
                 <img
                   src="/assets/home/arrowup.svg"
                   alt="up arrow"
@@ -116,7 +120,10 @@ const Intro = () => {
                 />
               </div>
 
-              <div className="col-span-2 flex flex-col justify-center items-center">
+              <div
+                className={`col-span-2 flex flex-col justify-center items-center ${isIntersecting ? "animate-slide-in-left" : ""
+                  }`}
+              >
                 <div className="rounded-xl shadow-lg p-4">
                   <p className="text-md">{item.description}</p>
                 </div>

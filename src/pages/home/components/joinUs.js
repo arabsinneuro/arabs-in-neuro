@@ -50,7 +50,7 @@ const JoinUs = () => {
   return (
     <div  ref={widgetRef} className="py-20 lg:px-20 px-5">
       <div className="flex flex-col lg:flex-row justify-center lg:w-3/4 lg:mx-auto">
-        <div className={`flex-1 px-4 my-auto text-center lg:text-left ${isIntersecting ?  " animate-slow-shake" : ""}`}>
+        <div className={`flex-1 px-4 my-auto text-center lg:text-left ${isIntersecting ?  "animate-shrink" : ""}`}>
           <h1 className="text-cRed font-extrabold text-4xl text-center">
             {joinUs}
           </h1>

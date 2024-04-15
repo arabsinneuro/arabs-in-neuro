@@ -56,7 +56,7 @@ const MemberCard = ({
           </div>
         )}
 
-        <div className="flex flex-col items-center h-auto">
+        <div className="flex flex-col items-center h-auto mx-2">
           {linkedinLink && (
             <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
               <img

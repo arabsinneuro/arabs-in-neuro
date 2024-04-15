@@ -40,7 +40,7 @@ const ResponsibilitiesComponent = () => {
           </ul>
         </div>
         <div className="pt-5">
-          <Link href={studentsApplicationLink}>
+          <Link href={studentsApplicationLink}  target="_blank"  rel="noopener noreferrer">
             <button
               className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mb-4"
               type="submit"
@@ -67,7 +67,7 @@ const ResponsibilitiesComponent = () => {
           </ul>
         </div>
         <div className="pt-5">
-          <Link href={taApplicationLink}>
+          <Link href={taApplicationLink}  target="_blank"  rel="noopener noreferrer">
             <button
               className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mb-4"
               type="submit"

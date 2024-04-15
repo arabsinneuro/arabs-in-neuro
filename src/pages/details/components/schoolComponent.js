@@ -105,6 +105,7 @@ function SchoolComponent({
             <div className="flex flex-wrap gap-10 justify-around w-full">
               <Link
                 href={studentsApplicationLink}
+                target="_blank"  rel="noopener noreferrer"
                 className="lg:w-1/3 w-full bg-cRed shadow-md px-4 rounded-md space-y-1 flex item-center justify-center"
               >
                 <div>
@@ -127,6 +128,7 @@ function SchoolComponent({
               </Link>
               <Link
                 href={taApplicationLink}
+                target="_blank"  rel="noopener noreferrer"
                 className="lg:w-1/3 w-full bg-cGreen shadow-md px-4 rounded-md space-y-1 flex item-center justify-center"
               >
                 <div>

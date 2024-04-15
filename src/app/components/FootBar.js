@@ -63,16 +63,16 @@ function Footbar({ setPreferredLanguage }) {
             {/* <a href={emailLink}>
               <img src="/icons/email.svg" alt={emailName} />
             </a> */}
-            <a href={facebookLink}>
+            <a href={facebookLink} target="_blank" rel="noopener noreferrer">
               <img src="/icons/facebook.svg" alt={facebookName} />
             </a>
-            <a href={linkedinLink}>
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
               <img src="/icons/linkedin.svg" alt={linkedinName} />
             </a>
-            <a href={instagramLink}>
+            <a href={instagramLink} target="_blank" rel="noopener noreferrer">
               <img src="/icons/instagram.svg" alt={instagramName} />
             </a>
-            <a href={twiterLink}>
+            <a href={twiterLink} target="_blank" rel="noopener noreferrer">
               <img src="/icons/twitter.svg" alt={twiterName} />
             </a>
           </div>
