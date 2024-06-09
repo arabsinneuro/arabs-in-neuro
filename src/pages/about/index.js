@@ -1,6 +1,7 @@
 import AboutOverview from "./components/aboutOverview";
 import Journey from "./components/journey";
 import Team from "./components/team";
+import Partners from "./components/partners";
 
 function AboutPage() {
   return (
@@ -11,6 +12,7 @@ function AboutPage() {
       <div className="relative lg:bg-cover h-full w-full bg-cover bg-blend-soft-light bg-[url('/backgrounds/team_gr_bg.svg')]">
         <Journey />
         <Team />
+        <Partners />
       </div>
     </div>
   );

@@ -47,16 +47,16 @@ const Overview = () => {
             </span>{" "}
             {journeyDescription}
           </p>
-          <h3 className="lg:px-10 px-2 text-lg font-extrabold text-cN800">
+          {/* <h3 className="lg:px-10 px-2 text-lg font-extrabold text-cN800">
             {schoolDuration[preferredLanguage]}
           </h3>
           <h3 className="lg:px-10 px-2 text-lg font-extrabold text-cN800">
             {applicationsDuration[preferredLanguage]}
-          </h3>
+          </h3> */}
         </div>
 
         {/* Banners Container */}
-        <div className="md:col-span-1 flex flex-col justify-start items-start">
+        {/* <div className="md:col-span-1 flex flex-col justify-start items-start">
           <Link
             href={studentsApplicationLink}
             target="_blank"  rel="noopener noreferrer"
@@ -106,7 +106,7 @@ const Overview = () => {
               </button>
             </div>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

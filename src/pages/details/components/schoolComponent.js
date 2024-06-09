@@ -53,10 +53,8 @@ function SchoolComponent({
   const currentYear = new Date().getFullYear();
 
   const applicationStatus = {
-    // en: "Applications are open until June 2024!",
-    // ar: "التقديم مفتوح حتى يونيو 2024!",
-    en: "Applications will open from April 15 until May 7. ",
-    ar: " سيتم فتح باب التقديم من 15 أبريل حتى 7 مايو.",
+    en: "We are no longer accepting applications for the 2024 school year as the deadline has passed.",
+    ar: "لم نعد نقبل طلبات الالتحاق للسنة الدراسية 2024 لأن الموعد النهائي قد انتهى.",
   };
   const schoolDuration = {
     en: "The school's duration is 3 weeks, starting from August 11 until August 30.",
@@ -97,9 +95,9 @@ function SchoolComponent({
             <h2 className="text-xl font-extrabold text-cN800 mb-5">
               {applicationStatus[preferredLanguage]}
             </h2>
-            <h3 className="text-lg font-bold text-cN800">
+            {/* <h3 className="text-lg font-bold text-cN800">
               {schoolDuration[preferredLanguage]}
-            </h3>
+            </h3> 
             <br />
             <br />
             <div className="flex flex-wrap gap-10 justify-around w-full">
@@ -149,7 +147,7 @@ function SchoolComponent({
                   </button>
                 </div>
               </Link>
-            </div>
+            </div> */}
           </div>
         )}
 
