@@ -183,31 +183,31 @@ export const courseOutlineData = {
     {
       nb: "1",
       days: [
-        "Mon, July 31: Python Day 1",
-        "Tue, August 1: Python Day 2",
-        "Wed, August 2: Basics of Neurosciences Day 1",
-        "Thu, August 3: Basics of Neurosciences Day 2",
-        "Fri, August 4: Neural Data",
+        "Mon, August 12: Python Day 1",
+        "Tue, August 13: Python Day 2",
+        "Wed, August 14: Basics of Neurosciences Day 1",
+        "Thu, August 15: Basics of Neurosciences Day 2",
+        "Fri, August 16: Neural Data",
       ],
     },
     {
       nb: "2",
       days: [
-        "Mon, August 7: Linear Algebra Day 1 (Vectors)",
-        "Tue, August 8: Linear Algebra Day 2 (Matrices)",
-        "Wed, August 9: Linear Algebra Day 3 (Eigen Values and Eigen Vectors)",
-        "Thu, August 10: Calculus Day 1 (Differentiation and Integration)",
-        "Fri, August 11: Calculus Day 2 (Differential Equations)",
+        "Mon, August 19: Linear Algebra Day 1 (Vectors)",
+        "Tue, August 20: Linear Algebra Day 2 (Matrices)",
+        "Wed, August 21: Linear Algebra Day 3 (Eigen Values and Eigen Vectors)",
+        "Thu, August 22: Calculus Day 1 (Differentiation and Integration)",
+        "Fri, August 23: Calculus Day 2 (Differential Equations)",
       ],
     },
     {
       nb: "3",
       days: [
-        "Mon, August 14: Statistics Day 1 (Probability)",
-        "Tue, August 15: Statistics Day 2 (Inference)",
-        "Wed, August 16: Guest Speaker (TBD)",
-        "Thu, August 17: Project Day 1",
-        "Fri, August 18: Project Day 2",
+        "Mon, August 26: Statistics Day 1 (Probability)",
+        "Tue, August 27: Statistics Day 2 (Inference)",
+        "Wed, August 28: Guest Speaker (TBD)",
+        "Thu, August 29: Project Day 1",
+        "Fri, August 30: Project Day 2",
       ],
     },
   ],
@@ -215,35 +215,36 @@ export const courseOutlineData = {
     {
       nb: "1",
       days: [
-        "الإثنين، 31 يوليو: يوم البايثون 1",
-        "الثلاثاء، 1 أغسطس: يوم البايثون 2",
-        "الأربعاء، 2 أغسطس: يوم أساسيات علم الأعصاب 1",
-        "الخميس، 3 أغسطس: يوم أساسيات علم الأعصاب 2",
-        "الجمعة، 4 أغسطس: يوم البيانات العصبية",
+        "الإثنين، 12 أغسطس: يوم البايثون 1",
+        "الثلاثاء، 13 أغسطس: يوم البايثون 2",
+        "الأربعاء، 14 أغسطس: يوم أساسيات علم الأعصاب 1",
+        "الخميس، 15 أغسطس: يوم أساسيات علم الأعصاب 2",
+        "الجمعة، 16 أغسطس: يوم البيانات العصبية",
       ],
     },
     {
       nb: "2",
       days: [
-        "الإثنين، 7 أغسطس: يوم الجبر الخطي 1 (المتجهات)",
-        "الثلاثاء، 8 أغسطس: يوم الجبر الخطي 2 (المصفوفات)",
-        "الأربعاء، 9 أغسطس: يوم الجبر الخطي 3 (قيم ومتجهات ذاتية)",
-        "الخميس، 10 أغسطس: يوم التفاضل والتكامل 1 (التفاضل والتكامل)",
-        "الجمعة، 11 أغسطس: يوم التفاضل والتكامل 2 (المعادلات التفاضلية)",
+        "الإثنين، 19 أغسطس: يوم الجبر الخطي 1 (المتجهات)",
+        "الثلاثاء، 20 أغسطس: يوم الجبر الخطي 2 (المصفوفات)",
+        "الأربعاء، 21 أغسطس: يوم الجبر الخطي 3 (قيم ومتجهات ذاتية)",
+        "الخميس، 22 أغسطس: يوم التفاضل والتكامل 1 (التفاضل والتكامل)",
+        "الجمعة، 23 أغسطس: يوم التفاضل والتكامل 2 (المعادلات التفاضلية)",
       ],
     },
     {
       nb: "3",
       days: [
-        "الإثنين، 14 أغسطس: يوم الإحصاء 1 (الاحتمالات)",
-        "الثلاثاء، 15 أغسطس: يوم الإحصاء 2 (الاستدلال)",
-        "الأربعاء، 16 أغسطس: محاضر ضيف (لم يحدد بعد)",
-        "الخميس، 17 أغسطس: يوم المشروع 1",
-        "الجمعة، 18 أغسطس: يوم المشروع 2",
+        "الإثنين، 26 أغسطس: يوم الإحصاء 1 (الاحتمالات)",
+        "الثلاثاء، 27 أغسطس: يوم الإحصاء 2 (الاستدلال)",
+        "الأربعاء، 28 أغسطس: محاضر ضيف (لم يحدد بعد)",
+        "الخميس، 29 أغسطس: يوم المشروع 1",
+        "الجمعة، 30 أغسطس: يوم المشروع 2",
       ],
     },
   ],
 };
+
 
 export const calendarUrl =
   "https://calendar.google.com/calendar/embed?src=5nvg7s13rchqsi8g0nvo5tgbj0%40group.calendar.google.com";

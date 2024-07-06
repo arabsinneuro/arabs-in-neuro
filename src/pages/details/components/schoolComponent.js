@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { useRouter } from "next/router";
 import LanguageContext from "@/context/LanguageContext";
 import CourseOutline from "../components/courseOutline";
-import CourseDays from "../components/courseComponents";
 import InstructorsList from "../components/instructorsList";
 import DailySchedule from "../components/dailySchedule";
 import CourseMaterials from "../components/courseMaterial";
@@ -57,8 +56,8 @@ function SchoolComponent({
     ar: "لم نعد نقبل طلبات الالتحاق للسنة الدراسية 2024 لأن الموعد النهائي قد انتهى.",
   };
   const schoolDuration = {
-    en: "The school's duration is 3 weeks, starting from August 11 until August 30.",
-    ar: "مدة المدرسة 3 أسابيع، تبدأ من 11 أغسطس حتى 30 أغسطس.",
+    en: "The school's duration is 3 weeks, starting from August 12 until August 30.",
+    ar: "مدة المدرسة 3 أسابيع، تبدأ من 12 أغسطس حتى 30 أغسطس.",
   };
 
   return (
@@ -95,11 +94,10 @@ function SchoolComponent({
             <h2 className="text-xl font-extrabold text-cN800 mb-5">
               {applicationStatus[preferredLanguage]}
             </h2>
-            {/* <h3 className="text-lg font-bold text-cN800">
+            <h3 className="text-lg font-bold text-cN800">
               {schoolDuration[preferredLanguage]}
             </h3> 
-            <br />
-            <br />
+            {/* <br />
             <div className="flex flex-wrap gap-10 justify-around w-full">
               <Link
                 href={studentsApplicationLink}
@@ -180,9 +178,8 @@ function SchoolComponent({
           <CourseOutline courseOutlineData={langauageBasedCourseOutlineData} />
         )}
 
-        {calendarUrl && <DailySchedule calendarUrl={calendarUrl} />}
         {languageSpecificCourseDays && (
-          <CourseDays courseDaysData={languageSpecificCourseDays} />
+            <DailySchedule calendarUrl={calendarUrl} courseDaysData={languageSpecificCourseDays} />
         )}
 
         {collabsData && (

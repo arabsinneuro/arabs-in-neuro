@@ -31,7 +31,7 @@ function School2024() {
       languageSpecificInstructors={languageSpecificInstructors}
       // materialsData={materialsData}
       // welcomeVideoUrl={welcomeVideoUrl}
-      // langauageBasedCourseOutlineData={langauageBasedCourseOutlineData}
+      langauageBasedCourseOutlineData={langauageBasedCourseOutlineData}
       // calendarUrl={calendarUrl}
       languageSpecificCourseDays={languageSpecificCourseDays}
       // collabsData={collabsData}
