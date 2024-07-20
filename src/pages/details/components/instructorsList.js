@@ -7,7 +7,7 @@ const InstructorCard = ({ name, affiliation, url }) => {
 
   return (
     <div
-      className="w-96 h-32 bg-cWhite rounded-md shadow-md p-4 m-5 overflow-hidden flex flex-col justify-center items-center cursor-pointer hover:scale-110 hover:shadow-xl hover:text-cGreen"
+      className="w-96 h-32 bg-cWhite rounded-md shadow-md p-4 m-3 overflow-hidden flex flex-col justify-center items-center cursor-pointer hover:scale-110 hover:shadow-xl hover:text-cGreen"
       onClick={handleClick}
     >
       <h2 className="text-xl font-bold text-center">{name}</h2>

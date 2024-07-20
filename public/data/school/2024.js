@@ -92,6 +92,7 @@ export const instructorsData = {
 
 export const welcomeVideoUrl = "https://youtu.be/o60MAFIi44M";
 
+
 export const materialsData = [
   {
     topic: "Python (W1D1&2)",
@@ -99,82 +100,100 @@ export const materialsData = [
       "https://github.com/arabs-in-neuro/intro_to_comp_neuro/tree/main/python_workshop",
     videoLink:
       "https://www.youtube.com/watch?v=chinsa3C4d0&list=PLcDn4yh0rntsWolmOgZ_XC20zvxgqsbdo",
+  },
+  {
+    topic: "Basics of Neurosciences 1 (W1D3)",
+    videoLink: "https://youtu.be/BJyRA1iGQ3Y",
     slidesLink:
       "https://drive.google.com/file/d/1jBuwJXorfYVsQfMz7epQt6FmvrvA6CwD/view?usp=sharing",
   },
   {
-    topic: "Basics of Neurosciences (W1D3)",
-    videoLink: "https://youtu.be/BJyRA1iGQ3Y",
+    topic: "Basics of Neurosciences 2 (W1D4)",
+    videoLink: "https://youtu.be/lagpQJvwtWg",
     slidesLink:
-      "https://drive.google.com/file/d/1iW06BJnPvR2C_MKZNiKMg1RU-ZgVNemY/view?usp=sharing",
+      "https://drive.google.com/file/d/1mCHyrFTaBt01a2B1Mx0g5_b_GSfdMa53/view?usp=sharing",
   },
   {
-    topic: "Neural Data (W1D4)",
+    topic: "Neural Data (W1D5)",
     videoLink: "https://youtu.be/z3Ox8F0fis0",
     slidesLink:
       "https://drive.google.com/file/d/1iW06BJnPvR2C_MKZNiKMg1RU-ZgVNemY/view?usp=sharing",
   },
   {
-    topic: "Linear Algebra Tutorial 1 (W1D5)",
+    topic: "Linear Algebra Tutorial 1 (W2D1)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/linear_algebra/W1D5_Tutorial1.ipynb",
-    videoLink: "https://youtu.be/dxv0JKHL4Fs",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/linear_algebra/W2D1_Tutorial1.ipynb",
+    videoLink: "https://youtu.be/ZDhibdwI_8Y",
     slidesLink:
-      "https://drive.google.com/file/d/1_wSbDJ2D13u6AJLI_nHA0IA3o7vgmP-n/view?usp=sharing",
+      "https://drive.google.com/file/d/1cb-RXf0tQ1BdcBFP4stnG-L03Z8p9OrC/view?usp=sharing",
   },
   {
-    topic: "Linear Algebra Tutorial 2 (W2D1)",
+    topic: "Linear Algebra Tutorial 2 (W2D2)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/linear_algebra/W2D1_Tutorial2.ipynb",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/linear_algebra/W2D2_Tutorial2.ipynb",
     videoLink: "https://youtu.be/rx9hc9zCtrI",
     slidesLink:
       "https://drive.google.com/file/d/1bZpKuAoqYPPOGJ5sv9V9FaEEO75phooK/view?usp=sharing",
   },
   {
-    topic: "Linear Algebra Tutorial 3 (W2D2)",
+    topic: "Linear Algebra Tutorial 3 (W2D3)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/linear_algebra/W2D2_Tutorial3.ipynb",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/linear_algebra/W2D3_Tutorial3.ipynb",
     videoLink: "https://youtu.be/-iy8gQe8mMk",
     slidesLink:
       "https://drive.google.com/file/d/1yCPRiVDdqNu9SGXBivvEhQAJ44uhRnvy/view?usp=sharing",
   },
   {
-    topic: "Calculus Tutorial 1 (W2D3)",
+    topic: "Calculus Tutorial 1 (W2D4)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/calculus/W2D3_Tutorial1.ipynb",
-    videoLink: "https://youtu.be/vtoq_Y1W728",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/calculus/W2D4_Tutorial1.ipynb",
+    videoLink: "https://youtu.be/Cdfsip9QGgw",
     slidesLink:
-      "https://drive.google.com/file/d/12-sCKY3DgRJC0nzy5Wx1l8DE5bnd07bi/view?usp=sharing",
+      "https://drive.google.com/file/d/1Fv4Zrt1zq0xl7XkgNsj9zSKdXvnFkpZ8/view?usp=sharing",
   },
   {
-    topic: "Calculus Tutorial 2 (W2D3)",
+    topic: "Calculus Tutorial 2 (W2D5)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/calculus/W2D3_Tutorial2.ipynb",
-    videoLink: "",
-    slidesLink: "",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/calculus/W2D5_Tutorial2.ipynb",
+    videoLink: "https://youtu.be/l9DhUIO34Qg",
+    slidesLink:
+      "https://drive.google.com/file/d/1CeD_eIddEIrSCYvzIgPmGiybZnlhnb2R/view?usp=sharing",
   },
   {
-    topic: "Calculus Tutorial 3 (W2D3)",
+    topic: "Calculus Tutorial 3 (W2D5)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/calculus/W2D3_Tutorial3.ipynb",
-    videoLink: "",
-    slidesLink: "",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/calculus/W2D5_Tutorial3.ipynb",
   },
   {
-    topic: "Statistics Tutorial 1 (W2D4)",
+    topic: "Statistics Tutorial 1 (W3D1)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/statistics/W2D4_Tutorial1.ipynb",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/statistics/W3D1_Tutorial1.ipynb",
     videoLink: "https://youtu.be/KVuKH63vLeI",
     slidesLink:
       "https://drive.google.com/file/d/14-8i07u5MCAsZEPymvpxGqdisD5GrNcw/view?usp=sharing",
   },
   {
-    topic: "Statistics Tutorial 2 (W2D5)",
+    topic: "Statistics Tutorial 2 (W3D2)",
     tutorialLink:
-      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/statistics/W2D5_Tutorial2.ipynb",
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/statistics/W3D2_Tutorial2.ipynb",
     videoLink: "https://youtu.be/qKSVIjnL8u8",
     slidesLink:
       "https://drive.google.com/file/d/19Bx5oaYSQ6rlhAUWcE5fUucVKDCZMgY6/view?usp=sharing",
+  },
+  {
+    topic: "Guest Speakers (W3D3)",
+  },
+  {
+    topic: "Projects Topic 1 - FMRI (W3D4 - W3D5)",
+    tutorialLink:
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/projects/fmri/brain_decoding_tutorial.ipynb",
+    videoLink: "https://youtu.be/poKxgBnsTFs?si=7yiHN3rzS35tqVss",
+  },
+  {
+    topic: "Projects Topic 2 - EEG (W3D4 - W3D5)",
+    tutorialLink:
+      "https://colab.research.google.com/github/arabs-in-neuro/intro_to_comp_neuro/blob/main/projects/eeg/Project2_MI_Project_AiN2023.ipynb",
+    videoLink: "https://youtu.be/hq8TVMB74yI?si=ttNqnu91a3wfINTo",
   },
 ];
 
@@ -319,4 +338,13 @@ export const collabsData = [
       { image: "/assets/school/simons.png", alt: "Simons Foundation" },
     ]
   },
+  {
+    type: {
+      en: "Partners",
+      ar: "الشركاء"
+    },
+    items: [
+      { image: "/assets/school/ieee_sac.png", alt: "IEEE R8 SAC" }
+    ]
+  }
 ];

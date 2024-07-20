@@ -29,12 +29,12 @@ function School2024() {
       year="2024"
       participantsNoteData={participantsNoteData}
       languageSpecificInstructors={languageSpecificInstructors}
-      // materialsData={materialsData}
-      // welcomeVideoUrl={welcomeVideoUrl}
+      materialsData={materialsData}
+      welcomeVideoUrl={welcomeVideoUrl}
       langauageBasedCourseOutlineData={langauageBasedCourseOutlineData}
-      // calendarUrl={calendarUrl}
+      calendarUrl={calendarUrl}
       languageSpecificCourseDays={languageSpecificCourseDays}
-      // collabsData={collabsData}
+      collabsData={collabsData}
       applyLink={applyLink}
     />
   );

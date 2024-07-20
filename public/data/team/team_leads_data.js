@@ -54,7 +54,6 @@ export const teamLeadsData = [
         "twitterLink": "https://twitter.com/abedireem",
         "emailText": "reemabedi@arabsinneuro.org"
     },
-    
     {
         "name": {"en": "Sarah Hosni", "ar": "سارة حسني"},
         "team": {"en": "Academic Affairs & Summer School Lead", "ar": "الشؤون الأكاديمية وقائدة مدرسة الصيف"},
@@ -63,5 +62,14 @@ export const teamLeadsData = [
         "linkedinLink": "https://www.linkedin.com/in/sarah-m-ismail-hosni-ph-d-355b13103/",
         "twitterLink": "https://twitter.com/Sarahihosni",
         "emailText": "shosni@arabsinneuro.org"
+    },
+    {
+        "name": {"en": "Yasmine Bassil", "ar": "ياسمين باسي"},
+        "team": {"en": "General Member Liaison", "ar": "حلقة الوصل للأعضاء العامين"},
+        "affiliation": {"en": "Emory University", "ar": "جامعة إيموري"},
+        "image": "/data/team/yasmine.png",
+        "linkedinLink": "https://www.linkedin.com/in/yasminebassil/",
+        "twitterLink": "https://twitter.com/brainybassil",
+        "emailText": "ybassil@arabsinneuro.org"
     }
 ];
