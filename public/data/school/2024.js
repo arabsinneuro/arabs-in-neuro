@@ -266,7 +266,8 @@ export const courseOutlineData = {
 
 
 export const calendarUrl =
-  "https://calendar.google.com/calendar/embed?src=5nvg7s13rchqsi8g0nvo5tgbj0%40group.calendar.google.com";
+  "https://calendar.google.com/calendar/embed?src=c_7d00e90184e76eb7c24f5c388a16eb7238139bcf67ece8d347841fbf18b2e695%40group.calendar.google.com";
+
 
 export const courseDaysData = {
   en: [
