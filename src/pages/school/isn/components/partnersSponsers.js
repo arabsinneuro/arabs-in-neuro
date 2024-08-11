@@ -4,15 +4,11 @@ import LanguageContext from "@/context/LanguageContext";
 const PartnersSponsers = () => {
   const languageContext = useContext(LanguageContext);
   const { currentContent } = languageContext;
-  const { sponsorsAndPartners } = currentContent.eegschool;
+  const { sponsorsAndPartners } = currentContent.isnSchool;
 
   const partnersSponsersData = [
     { image: "/assets/school/auc.png", alt: "AUC" },
-    { image: "/assets/school/nyu.png", alt: "NYU" },
-    { image: "/assets/school/simons.png", alt: "Simons Foundation" },
-    { image: "/assets/school/ieee_sac.png", alt: "IEEE R8 SAC" },
     { image: "/assets/school/ibro.jpg", alt: "Ibro" },
-    { image: "/assets/school/egyptscholars.png", alt: "Egypt Scholars" }
   ];
 
   return (

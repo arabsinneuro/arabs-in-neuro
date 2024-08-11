@@ -17,7 +17,7 @@ const CollabsList = ({ collabsData, language }) => {
                     key={itemIndex}
                     src={item.image}
                     alt={item.alt}
-                    className="lg:w-1/2 lg:h-auto w-full h-full rounded-md mb-4"
+                    className="md:w-1/3 lg:h-auto w-full h-full rounded-md mb-4"
                   />
                 ))}
             </div>

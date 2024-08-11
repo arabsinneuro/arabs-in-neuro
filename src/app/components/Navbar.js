@@ -12,7 +12,7 @@ function Navbar({ setPreferredLanguage }) {
 
   const links = [
     { href: "/about", label: currentContent.navbar.about },
-    { href: "/school/eeg", label: currentContent.navbar.eegSchool},
+    { href: "/school/isn", label: currentContent.navbar.isnSchool},
     { href: "/school", label: currentContent.navbar.courses },
     { href: "/details/2024", label: currentContent.navbar.courseDetails },
     { href: "/faq", label: currentContent.navbar.faq },

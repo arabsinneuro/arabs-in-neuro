@@ -11,10 +11,10 @@ const Schedule = () => {
     lectureTutorial,
     speaker,
     schedule,
-  } = currentContent.eegschool;
+  } = currentContent.isnSchool;
 
   return (
-    <div className="mx-auto px-10 lg:px-20 py-10">
+    <div className="mx-auto px-5 md:px-20 py-10">
       <h1 className="text-center mb-16 text-3xl text-cRed font-extrabold">
         {tentativeProgram}
       </h1>
@@ -41,7 +41,7 @@ const Schedule = () => {
               day.sessions.map((session, sessionIndex) => (
                 <tr
                   key={`${dayIndex}-${sessionIndex}`}
-                  className={`${dayIndex % 2 === 0 ? `bg-cN50` : ``} ${
+                  className={`${dayIndex % 2 === 0 ? `bg-gray-50` : ``} ${
                     sessionIndex === 0
                       ? "border-t-2 border-cN300"
                       : "border border-cN200"

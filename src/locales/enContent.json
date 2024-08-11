@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Home",
     "about": "About",
-    "eegSchool": "EEG School",
+    "isnSchool": "ISN School",
     "courses": "Courses",
     "courseDetails": "Course Details",
     "faq": "FAQ",
@@ -45,6 +45,7 @@
     "teacherAssistants": "Teaching Assistants",
     "instructorsAndGuestSpeakers": "Instructors and Guest Speakers",
     "what": "What",
+    "isnSummerSchool": "Ibn Sina Neurotech Summer School",
     "eegSchool": "Decoding Your Mind with BCI Technology",
     "readyToDive": "Ready to dive into the world of brain data collection and analysis?",
     "eventInvitation": "Join us for an immersive event where you'll learn to collect EEG data, explore Brain-Computer Interfaces (BCIs), and master state-of-the-art techniques in signal processing and machine learning."
@@ -210,8 +211,9 @@
     "connectWithAiN": "Connect with AiN",
     "allRightsReserved": "All rights reserved"
   },
-  "eegschool": {
-    "introEEGSchool": "Decoding Your Mind with BCI Technology",
+  "isnSchool": {
+    "isnSummerSchool": "Ibn Sina Neurotech Summer School",
+    "introIsnSchool": "Decoding Your Mind with BCI Technology",
     "summerSchoolOverview": "This Summer School is designed to empower Arabic-speaking students and scientists with the knowledge and skills necessary to explore the brain's electrical activity through cutting-edge neurotechnology. This program offers a comprehensive introduction to Brain-Computer Interfaces (BCIs) and electroencephalogram (EEG) data collection and analysis including an in-school project, with Arabic as the main spoken language. It will also serve as a hub to network students and faculty interested in neuroscience.",
     "applyNow": "Apply Now",
     "studentsApplication": "Students Application",

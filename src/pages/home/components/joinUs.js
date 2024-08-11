@@ -19,6 +19,7 @@ const JoinUs = () => {
     eegSchool,
     readyToDive,
     eventInvitation,
+    isnSummerSchool,
   } = currentContent.home;
 
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -66,7 +67,10 @@ const JoinUs = () => {
             {inPersonEvent}
           </p>
           <p className="text-cBlack font-extrabold text-3xl text-center">
-            {eegSchool}
+            {isnSummerSchool}
+          </p>
+          <p className="text-cGreenDark font-semibold text-xl mt-5 text-center">
+            "{eegSchool}"
           </p>
         </div>
         <div className="flex-1 px-4 py-5">
@@ -77,7 +81,7 @@ const JoinUs = () => {
             <br />
             <p className="font-bold">{dontMissOpportunity}</p>
             <br />
-            <Link href="/school/eeg">
+            <Link href="/school/isn">
               <button className="w-full bg-cGreen text-cWhite px-4 py-2 mt-4 rounded hover:bg-cGreenLight shadow-lg">
                 {learnMore}
               </button>
