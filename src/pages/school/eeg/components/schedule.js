@@ -3,7 +3,7 @@ import LanguageContext from "@/context/LanguageContext";
 
 const Schedule = () => {
   const languageContext = useContext(LanguageContext);
-  const { currentContent } = languageContext;
+  const { preferredLanguage, currentContent } = languageContext;
   const {
     tentativeProgram,
     dayLabel,
@@ -22,16 +22,16 @@ const Schedule = () => {
         <table className="min-w-full bg-cWhite rounded-lg shadow-lg border border-cN300">
           <thead className="bg-cRed text-white">
             <tr>
-              <th className="py-4 px-6 text-left text-md font-semibold">
+              <th className={`py-4 px-6 ${preferredLanguage == 'ar' ? "text-right" : "text-left"} text-md font-semibold`}>
                 {dayLabel}
               </th>
-              <th className="py-4 px-6 text-left text-md font-semibold">
+              <th className={`py-4 px-6 ${preferredLanguage == 'ar' ? "text-right" : "text-left"} text-md font-semibold`}>
                 {time}
               </th>
-              <th className="py-4 px-6 text-left text-md font-semibold">
+              <th className={`py-4 px-6 ${preferredLanguage == 'ar' ? "text-right" : "text-left"} text-md font-semibold`}>
                 {lectureTutorial}
               </th>
-              <th className="py-4 px-6 text-left text-md font-semibold">
+              <th className={`py-4 px-6 ${preferredLanguage == 'ar' ? "text-right" : "text-left"} text-md font-semibold`}>
                 {speaker}
               </th>
             </tr>
@@ -41,7 +41,7 @@ const Schedule = () => {
               day.sessions.map((session, sessionIndex) => (
                 <tr
                   key={`${dayIndex}-${sessionIndex}`}
-                  className={`${dayIndex % 2 === 0 ? `bg-gray-50` : ``} ${
+                  className={`${dayIndex % 2 === 0 ? `bg-cN50` : ``} ${
                     sessionIndex === 0
                       ? "border-t-2 border-cN300"
                       : "border border-cN200"
