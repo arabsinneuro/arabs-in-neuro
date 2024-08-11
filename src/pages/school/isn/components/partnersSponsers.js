@@ -14,8 +14,10 @@ const PartnersSponsers = () => {
   return (
     <div className="lg:px-20 px-5 pb-10">
       <div className="text-2xl text-cN600 font-extrabold">
-        <h1 className="py-10">{sponsorsAndPartners}</h1>
-        <div className="lg:px-20 px-10 py-5 flex flex-wrap gap-10 lg:gap-20">
+        <h1 className="py-10 text-center text-3xl text-cRed font-extrabold">
+          {sponsorsAndPartners}
+        </h1>
+        <div className="lg:px-20 px-10 py-5 flex flex-wrap justify-center gap-10 lg:gap-20 mx-auto">
           {partnersSponsersData &&
             partnersSponsersData.map((item, itemIndex) => (
               <img
