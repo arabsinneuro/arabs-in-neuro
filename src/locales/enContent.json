@@ -23,7 +23,9 @@
     "empowermentStatement": "We strive to empower the Arabic-speaking communities with the knowledge and skills to make a positive impact in the field of neuroscience.",
     "joinUs": "Join Us",
     "inOur": "in our",
-    "introCompNeuroCourse": "Introduction to Computational Neuroscience Course",
+    "inPersonEvent": "in our in-person event",
+    "onlineEvent": "in our online event",
+    "introCompNeuroCourse": "Introduction to Computational Neuroscience",
     "passionateAboutBrain": "Are you passionate about unraveling the mysteries of the brain through computational methods?",
     "courseDesigned": "Look no further! Our course is designed to equip you with the essential tools needed to dive into the fascinating field of computational neuroscience.",
     "dontMissOpportunity": "Don't miss this opportunity to expand your knowledge and join a community of passionate learners.",
@@ -42,7 +44,10 @@
     "applicants": "Applicants",
     "teacherAssistants": "Teaching Assistants",
     "instructorsAndGuestSpeakers": "Instructors and Guest Speakers",
-    "what": "What"
+    "what": "What",
+    "eegSchool": "Decoding Your Mind with BCI Technology",
+    "readyToDive": "Ready to dive into the world of brain data collection and analysis?",
+    "eventInvitation": "Join us for an immersive event where you'll learn to collect EEG data, explore Brain-Computer Interfaces (BCIs), and master state-of-the-art techniques in signal processing and machine learning."
   },
   "about": {
     "title": "About",
@@ -397,6 +402,7 @@
         ]
       }
     ],
-    "sponsorsAndPartners": "Sponsors and Partners"
+    "sponsorsAndPartners": "Sponsors and Partners",
+    "requiredTimeCommitment": "All participants are required to commit to the school for its duration."
   }
 }

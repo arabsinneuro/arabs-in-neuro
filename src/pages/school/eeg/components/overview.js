@@ -11,6 +11,7 @@ const Overview = () => {
     summerSchoolOverview,
     applyNow,
     studentsApplication,
+    requiredTimeCommitment,
   } = currentContent.eegschool;
 
   const applicationStatus = {
@@ -39,19 +40,20 @@ const Overview = () => {
           <h3 className="lg:px-10 px-2 text-md font-extrabold text-cGreen">
             {schoolDuration[preferredLanguage]}
           </h3>
+          <p className="lg:px-10 px-2 text-md font-extrabold text-cGreen">{requiredTimeCommitment}</p>
         </div>
 
         <div className="md:col-span-1 flex flex-col justify-start items-start">
           <Link
             href={eegSchoolApplicationLink}
             target="_blank"  rel="noopener noreferrer"
-            className="w-72 h-[fit-content] bg-cRed shadow-md px-5 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
+            className="w-72 h-[fit-content] bg-cGreenLight shadow-md px-5 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
           >
             <div>
               <h2 className="font-extrabold text-xl py-3 text-cWhite">
                 {studentsApplication}
               </h2>
-              <p className="text-md text-cWhite pb-3">{applicationsDuration[preferredLanguage]}</p>
+              <p className="text-md font-bold text-cWhite pb-3">{applicationsDuration[preferredLanguage]}</p>
 
               <button
                 className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"

@@ -18,8 +18,8 @@ const Overview = () => {
   } = currentContent.school;
 
   const applicationStatus = {
-    en: "Applications for the summer school 2024 will open by April 15.",
-    ar: "سيتم فتح طلبات الالتحاق بالمدرسة الصيفية لعام 2024 بحلول 15 أبريل.",
+    en: "We're no longer accepting applications. Stay tuned for the next cohort!",
+    ar: "لم نعد نقبل الطلبات. ترقبوا المجموعة التالية!",
   };
   const applicationsDuration = {
     en: "Applications will open from April 15 until May 7. ",
@@ -56,15 +56,21 @@ const Overview = () => {
         </div>
 
         {/* Banners Container */}
-        {/* <div className="md:col-span-1 flex flex-col justify-start items-start">
-          <Link
+        <div className="md:col-span-1 flex flex-col justify-start items-start">
+          <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
+            <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
+              {applicationStatus[preferredLanguage]}
+            </h2>
+          </div>
+
+          {/* <Link
             href={studentsApplicationLink}
             target="_blank"  rel="noopener noreferrer"
             className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
           >
             <div>
               <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
-                {studentsApplication}
+                {applicationStatus[preferredLanguage]}
               </h2>
 
               <button
@@ -80,8 +86,7 @@ const Overview = () => {
                 />
               </button>
             </div>
-          </Link>
-
+          </Link> 
           <Link
             href={taApplicationLink}
             target="_blank"  rel="noopener noreferrer"
@@ -105,8 +110,8 @@ const Overview = () => {
                 />
               </button>
             </div>
-          </Link>
-        </div> */}
+          </Link> */}
+        </div>
       </div>
     </div>
   );
