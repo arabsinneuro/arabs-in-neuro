@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Home",
     "about": "About",
+    "eegSchool": "EEG School",
     "courses": "Courses",
     "courseDetails": "Course Details",
     "faq": "FAQ",
@@ -203,5 +204,199 @@
     "shapingFutureNeuroscience": "Shaping the future of Neuroscience in the Arab world!",
     "connectWithAiN": "Connect with AiN",
     "allRightsReserved": "All rights reserved"
+  },
+  "eegschool": {
+    "introEEGSchool": "Decoding Your Mind with BCI Technology",
+    "summerSchoolOverview": "This Summer School is designed to empower Arabic-speaking students and scientists with the knowledge and skills necessary to explore the brain's electrical activity through cutting-edge neurotechnology. This program offers a comprehensive introduction to Brain-Computer Interfaces (BCIs) and electroencephalogram (EEG) data collection and analysis including an in-school project, with Arabic as the main spoken language. It will also serve as a hub to network students and faculty interested in neuroscience.",
+    "applyNow": "Apply Now",
+    "studentsApplication": "Students Application",
+    "schoolComposition": "School Composition",
+    "educationSection": "Education",
+    "educationDescription": "Lectures and workshops by faculty members on the different techniques of data collection and analysis as well as the applications in neurotechnology and neuroscience.",
+    "handsOnComponent": "Hands-on Component",
+    "handsOnDescription": "Students will conduct hands-on tutorials on EEG data collection and analysis covering all the stages of project ideation, experimental design, data collection and analysis, and making conclusions.",
+    "projectDescription": "Project",
+    "projectOpportunity": "Students will get the opportunity to apply what they learned in a short project which could utilize data collected onsite or already provided datasets. They will be working on their projects in the afternoon and will present them on the last day.",
+    "networkingAndSocials": "Networking and Socials",
+    "networkingDescription": "The social cohesion component will be focused on where the students will be having lunches together with the faculty and teaching assistants, which will give them the opportunity to socialize informally with the faculty members.",
+    "lecturesSeries": "Lectures Series",
+    "day1Title": "Introduction to Neurotechnology and Brain-Computer Interfaces (BCIs)",
+    "day1Desc": "Overview of neurotechnology and brain-computer interfaces (BCIs), including history, key concepts, major applications, neural data principles, and current and emerging uses. Speakers will also discuss their research contributions.",
+    "day1DayNb": "Day 1",
+    "day2Title": "EEG-Based Brain-Computer Interfaces and Experimental Protocols",
+    "day2Desc": "Exploration of EEG-based brain-computer interfaces (BCIs), focusing on experimental protocols and data acquisition. Learn about EEG technology fundamentals, setting up experiments, best practices, and expert insights from EEG BCI research.",
+    "day2DayNb": "Day 2",
+    "day3Title": "EEG Signal Processing Techniques and Feature Extraction",
+    "day3Desc": "Techniques for processing EEG signals and extracting features, including preprocessing, feature extraction methods, and their application in BCI systems. Examples from research work will be provided.",
+    "day3DayNb": "Day 3",
+    "day4Title": "Machine Learning for EEG in Brain-Computer Interfaces and Healthcare",
+    "day4Desc": "Application of machine learning to EEG data for brain-computer interfaces (BCIs) and healthcare. Topics include machine learning basics, EEG classification algorithms, real-world applications, and case studies from research.",
+    "day4DayNb": "Day 4",
+    "day5Title": "Future Directions in Neurotechnology",
+    "day5Desc": "Discussion on future advancements in neurotechnology and brain-computer interfaces (BCIs), including potential applications, innovations, and ethical considerations in research and application.",
+    "day5DayNb": "Day 5",
+    "tentativeProgram": "Tentative Program",
+    "dayLabel": "Day",
+    "time": "Time",
+    "lectureTutorial": "Lecture/Tutorial",
+    "speaker": "Speaker",
+    "schedule": [
+      {
+        "day": "8/9",
+        "sessions": [
+          {
+            "time": "9:30 - 10:00",
+            "lecture": "Welcome Speech and School Overview",
+            "speaker": "Dr. Seif + AiN"
+          },
+          {
+            "time": "10:00 - 12:00",
+            "lecture": "Session 1: Introduction to Brain-Computer Interfaces (BCIs) and Neurotechnology Research",
+            "speaker": "Dr. Seif El-Dawlatly"
+          },
+          {
+            "time": "12:00 - 1:00",
+            "lecture": "Lunch Break",
+            "speaker": ""
+          },
+          {
+            "time": "1:00 - 2:30",
+            "lecture": "Workshop 1: EEG Data Collection and Experimental Design",
+            "speaker": "Dr. Mohamed Zaky"
+          },
+          {
+            "time": "2:30 - 3:00",
+            "lecture": "Coffee Break",
+            "speaker": ""
+          },
+          {
+            "time": "3:00 - 5:00",
+            "lecture": "Workshop 2: Hands-on EEG Data Recording (SSVEP task)",
+            "speaker": "Dr. Mohamed Zaky, Eng. Mai Gamal"
+          }
+        ]
+      },
+      {
+        "day": "9/9",
+        "sessions": [
+          {
+            "time": "10:00 - 12:00",
+            "lecture": "Session 2: Principles of Electrophysiology and EEG-Based BCIs",
+            "speaker": "TBD"
+          },
+          {
+            "time": "12:00 - 1:00",
+            "lecture": "Lunch Break",
+            "speaker": ""
+          },
+          {
+            "time": "1:00 - 2:30",
+            "lecture": "Workshop 3: Introduction to EEG signal pre-processing",
+            "speaker": "Dr. Mohamed Zaky"
+          },
+          {
+            "time": "2:30 - 3:00",
+            "lecture": "Coffee Break",
+            "speaker": ""
+          },
+          {
+            "time": "3:00 - 5:00",
+            "lecture": "Workshop 4: Hands-on EEG Data Recording (SSVEP task)",
+            "speaker": "Dr. Mohamed Zaky, Eng. Mai Gamal"
+          }
+        ]
+      },
+      {
+        "day": "10/9",
+        "sessions": [
+          {
+            "time": "10:00 - 12:00",
+            "lecture": "Session 3: EEG Feature Extraction for BCIs",
+            "speaker": "Dr. Sarah Ismail"
+          },
+          {
+            "time": "12:00 - 1:00",
+            "lecture": "Lunch Break",
+            "speaker": ""
+          },
+          {
+            "time": "1:00 - 2:30",
+            "lecture": "Workshop 5: EEG Temporal and Spectral Analysis",
+            "speaker": "Dr. Mohamed Zaky"
+          },
+          {
+            "time": "2:30 - 3:00",
+            "lecture": "Coffee Break",
+            "speaker": ""
+          },
+          {
+            "time": "3:00 - 5:00",
+            "lecture": "Workshop 6: Hands-on EEG Data Recording (SSVEP task)",
+            "speaker": "Dr. Mohamed Zaky, Eng. Mai Gamal"
+          }
+        ]
+      },
+      {
+        "day": "11/9",
+        "sessions": [
+          {
+            "time": "10:00 - 12:00",
+            "lecture": "Session 4: Machine learning in BCIs and Healthcare",
+            "speaker": "Dr. Aya Rezika"
+          },
+          {
+            "time": "12:00 - 1:00",
+            "lecture": "Lunch Break",
+            "speaker": ""
+          },
+          {
+            "time": "1:00 - 2:30",
+            "lecture": "Workshop 7: Post-processing Analysis (Pre-recorded dataset)",
+            "speaker": "Dr. Nour El-Madany"
+          },
+          {
+            "time": "2:30 - 3:00",
+            "lecture": "Coffee Break",
+            "speaker": ""
+          },
+          {
+            "time": "3:00 - 5:00",
+            "lecture": "Workshop 8: Post-processing Analysis (Our recorded dataset)",
+            "speaker": "Eng. Mai Gamal"
+          }
+        ]
+      },
+      {
+        "day": "12/9",
+        "sessions": [
+          {
+            "time": "10:00 - 12:00",
+            "lecture": "Session 5: Future Directions in Neurotechnology: Research Advancements and Ethical Considerations",
+            "speaker": "TBD"
+          },
+          {
+            "time": "12:00 - 1:00",
+            "lecture": "Lunch Break",
+            "speaker": ""
+          },
+          {
+            "time": "1:00 - 3:00",
+            "lecture": "Project Lab (Do it yourself)",
+            "speaker": "Students"
+          },
+          {
+            "time": "3:00 - 3:30",
+            "lecture": "Coffee Break",
+            "speaker": ""
+          },
+          {
+            "time": "3:30 - 5:00",
+            "lecture": "Project Presentations",
+            "speaker": "Students"
+          }
+        ]
+      }
+    ],
+    "sponsorsAndPartners": "Sponsors and Partners"
   }
 }
