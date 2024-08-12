@@ -13,13 +13,13 @@ const Team = () => {
   return (
     <div className="p-10 lg:p-20">
       <div className="flex items-center justify-center mt-10 mb-10">
-        <h1 className="text-2xl font-extrabold text-cGreen">
+        <h1 className="text-3xl font-extrabold text-cRed">
           {teamBehindAiN}
         </h1>
       </div>
 
       <br />
-      <p className="text-cGreen text-lg font-bold px-4">{teamLeads}</p>
+      <p className="text-cGreen text-lg font-extrabold px-4">{teamLeads}</p>
       <br />
 
       <div className="flex flex-wrap justify-center lg:gap-8 gap-4">

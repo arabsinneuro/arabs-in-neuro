@@ -21,11 +21,11 @@ const PartnersSponsers = () => {
           {partnersSponsersData &&
             partnersSponsersData.map((item, itemIndex) => (
               <img
-                key={itemIndex}
-                src={item.image}
-                alt={item.alt}
-                className="md:w-1/4 w-full h-auto rounded-md"
-              />
+              key={itemIndex}
+              src={item.image}
+              alt={item.alt}
+              className="md:w-1/3 w-full h-auto rounded-md object-contain"
+            />
             ))}
         </div>
       </div>

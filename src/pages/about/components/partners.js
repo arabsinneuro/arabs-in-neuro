@@ -11,7 +11,7 @@ const Partners = () => {
   const image = preferredLanguage == 'en' ? "/assets/about/journey.svg" : "/assets/about/journey_ar.svg"
   return (
     <div className="md:p-20 p-10">
-    <h2 className="text-2xl font-extrabold text-cRed text-start mb-10">{partners}</h2>
+    <h2 className="text-3xl font-extrabold text-cRed text-center md:mb-20 mb-10">{partners}</h2>
       <div className="md:flex items-center mx-auto">
       <div className="md:w-1/4 mx-auto">
           <img
