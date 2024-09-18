@@ -230,16 +230,16 @@
     "day1Title": "Introduction to Neurotechnology and Brain-Computer Interfaces (BCIs)",
     "day1Desc": "Overview of neurotechnology and brain-computer interfaces (BCIs), including history, key concepts, major applications, neural data principles, and current and emerging uses. Speakers will also discuss their research contributions.",
     "day1DayNb": "Day 1",
-    "day2Title": "EEG-Based Brain-Computer Interfaces and Experimental Protocols",
+    "day2Title": "Principles of Electrophysiology and EEG-Based BCIs",
     "day2Desc": "Exploration of EEG-based brain-computer interfaces (BCIs), focusing on experimental protocols and data acquisition. Learn about EEG technology fundamentals, setting up experiments, best practices, and expert insights from EEG BCI research.",
     "day2DayNb": "Day 2",
     "day3Title": "EEG Signal Processing Techniques and Feature Extraction",
     "day3Desc": "Techniques for processing EEG signals and extracting features, including preprocessing, feature extraction methods, and their application in BCI systems. Examples from research work will be provided.",
     "day3DayNb": "Day 3",
-    "day4Title": "Machine Learning for EEG in Brain-Computer Interfaces and Healthcare",
+    "day4Title": "Machine Learning for EEG in BCIs and Healthcare",
     "day4Desc": "Application of machine learning to EEG data for brain-computer interfaces (BCIs) and healthcare. Topics include machine learning basics, EEG classification algorithms, real-world applications, and case studies from research.",
     "day4DayNb": "Day 4",
-    "day5Title": "Future Directions in Neurotechnology",
+    "day5Title": "Future Directions in Neurotechnology: Advancements and Ethical Considerations",
     "day5Desc": "Discussion on future advancements in neurotechnology and brain-computer interfaces (BCIs), including potential applications, innovations, and ethical considerations in research and application.",
     "day5DayNb": "Day 5",
     "tentativeProgram": "Tentative Program",
@@ -252,14 +252,19 @@
         "day": "8/9",
         "sessions": [
           {
+            "time": "9:00 - 9:30",
+            "lecture": "Students registration",
+            "speaker": ""
+          },
+          {
             "time": "9:30 - 10:00",
-            "lecture": "Welcome Speech and School Overview",
-            "speaker": "Dr. Seif + AiN"
+            "lecture": "Opening ceremony and School overview",
+            "speaker": ""
           },
           {
             "time": "10:00 - 12:00",
-            "lecture": "Session 1: Introduction to Brain-Computer Interfaces (BCIs) and Neurotechnology Research",
-            "speaker": "Dr. Seif El-Dawlatly"
+            "lecture": "Session 1: Introduction to Neurotechnology and Brain Computer Interfaces (BCIs)",
+            "speaker": "Dr. Seif Eldawlatly"
           },
           {
             "time": "12:00 - 1:00",
@@ -268,7 +273,37 @@
           },
           {
             "time": "1:00 - 2:30",
-            "lecture": "Workshop 1: EEG Data Collection and Experimental Design",
+            "lecture": "Tutorial 1: EEG Data Collection and Experimental Design",
+            "speaker": "Dr. Mohamed Zaky"
+          },
+          {
+            "time": "2:30 - 3:00",
+            "lecture": "Coffee Break",
+            "speaker": ""
+          },
+          {
+            "time": "3:00 - 5:00",
+            "lecture": "Workshop 1: Hands-on EEG Data Recording (SSVEP task) - Main",
+            "speaker": "Dr. Mohamed Zaky, Eng. Mai Gamal"
+          }
+        ]
+      },
+      {
+        "day": "9/9",
+        "sessions": [
+          {
+            "time": "10:00 - 12:00",
+            "lecture": "Session 2: Principles of Electrophysiology and EEG-Based BCIs",
+            "speaker": "Dr. Mahmoud Hassan"
+          },
+          {
+            "time": "12:00 - 1:00",
+            "lecture": "Lunch Break",
+            "speaker": ""
+          },
+          {
+            "time": "1:00 - 2:30",
+            "lecture": "Tutorial 2: Introduction to EEG signal pre-processing",
             "speaker": "Dr. Mohamed Zaky"
           },
           {
@@ -284,42 +319,12 @@
         ]
       },
       {
-        "day": "9/9",
-        "sessions": [
-          {
-            "time": "10:00 - 12:00",
-            "lecture": "Session 2: Principles of Electrophysiology and EEG-Based BCIs",
-            "speaker": "TBD"
-          },
-          {
-            "time": "12:00 - 1:00",
-            "lecture": "Lunch Break",
-            "speaker": ""
-          },
-          {
-            "time": "1:00 - 2:30",
-            "lecture": "Workshop 3: Introduction to EEG signal pre-processing",
-            "speaker": "Dr. Mohamed Zaky"
-          },
-          {
-            "time": "2:30 - 3:00",
-            "lecture": "Coffee Break",
-            "speaker": ""
-          },
-          {
-            "time": "3:00 - 5:00",
-            "lecture": "Workshop 4: Hands-on EEG Data Recording (SSVEP task)",
-            "speaker": "Dr. Mohamed Zaky, Eng. Mai Gamal"
-          }
-        ]
-      },
-      {
         "day": "10/9",
         "sessions": [
           {
             "time": "10:00 - 12:00",
-            "lecture": "Session 3: EEG Feature Extraction for BCIs",
-            "speaker": "Dr. Sarah Ismail"
+            "lecture": "Session 3: EEG Signal Processing Techniques and Feature Extraction",
+            "speaker": "Dr. Abdelkader Nasreddine"
           },
           {
             "time": "12:00 - 1:00",
@@ -328,7 +333,7 @@
           },
           {
             "time": "1:00 - 2:30",
-            "lecture": "Workshop 5: EEG Temporal and Spectral Analysis",
+            "lecture": "Tutorial 3: EEG Temporal and Spectral Analysis",
             "speaker": "Dr. Mohamed Zaky"
           },
           {
@@ -338,7 +343,7 @@
           },
           {
             "time": "3:00 - 5:00",
-            "lecture": "Workshop 6: Hands-on EEG Data Recording (SSVEP task)",
+            "lecture": "Workshop 3: Hands-on EEG Data Recording (SSVEP task)",
             "speaker": "Dr. Mohamed Zaky, Eng. Mai Gamal"
           }
         ]
@@ -349,7 +354,7 @@
           {
             "time": "10:00 - 12:00",
             "lecture": "Session 4: Machine learning in BCIs and Healthcare",
-            "speaker": "Dr. Aya Rezika"
+            "speaker": "Dr. Mohamed Abdelhack"
           },
           {
             "time": "12:00 - 1:00",
@@ -358,7 +363,7 @@
           },
           {
             "time": "1:00 - 2:30",
-            "lecture": "Workshop 7: Post-processing Analysis (Pre-recorded dataset)",
+            "lecture": "Tutorial 4: Post-processing Analysis (Pre-recorded dataset)",
             "speaker": "Dr. Nour El-Madany"
           },
           {
@@ -368,8 +373,8 @@
           },
           {
             "time": "3:00 - 5:00",
-            "lecture": "Workshop 8: Post-processing Analysis (Our recorded dataset)",
-            "speaker": "Eng. Mai Gamal"
+            "lecture": "Workshop 4: Post-processing Analysis (Our recorded dataset)",
+            "speaker": "Dr. Nour El-Madany, Eng. Mai Gamal"
           }
         ]
       },
@@ -379,7 +384,7 @@
           {
             "time": "10:00 - 12:00",
             "lecture": "Session 5: Future Directions in Neurotechnology: Research Advancements and Ethical Considerations",
-            "speaker": "TBD"
+            "speaker": "Dr. Slobodan Tanackovic"
           },
           {
             "time": "12:00 - 1:00",
@@ -397,9 +402,9 @@
             "speaker": ""
           },
           {
-            "time": "3:30 - 5:00",
-            "lecture": "Project Presentations",
-            "speaker": "Students"
+            "time": "3:30 - 5:30",
+            "lecture": "Presentations Competition and Closing Ceremony",
+            "speaker": "OC & Students"
           }
         ]
       }

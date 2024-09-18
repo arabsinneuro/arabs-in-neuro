@@ -16,13 +16,13 @@ const Overview = () => {
   } = currentContent.isnSchool;
 
   const applicationStatus = {
-    en: "Applications for the summer school 2024 will open by April 15.",
-    ar: "سيتم فتح طلبات الالتحاق بالمدرسة الصيفية لعام 2024 بحلول 15 أبريل.",
+    en: "We are no longer accepting applications.",
+    ar: "لم نعد نقبل طلبات الالتحاق .",
   };
-  const applicationsDuration = {
-    en: "Applications are open until August 18.",
-    ar: "التقديمات مفتوحة حتى 18 أغسطس.",
-  };
+  // const applicationsDuration = {
+  //   en: "Applications are open until August 18.",
+  //   ar: "التقديمات مفتوحة حتى 18 أغسطس.",
+  // };
   const schoolDuration = {
     en: "This summer school will be held in person at The American University in Cairo (AUC), Egypt, from September 8 to 12, 2024.",
     ar: "ستقام هذه المدرسة الصيفية بشكل شخصي في الجامعة الأمريكية بالقاهرة (AUC)، مصر، في الفترة من 8 إلى 12 سبتمبر 2024.",
@@ -55,17 +55,17 @@ const Overview = () => {
             href={eegSchoolApplicationLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-72 h-[fit-content] bg-cGreenLight shadow-md px-5 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
+            className="w-72 h-[fit-content] bg-cRed shadow-md px-5 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto"
           >
             <div>
               <h2 className="font-extrabold text-xl py-3 text-cWhite">
                 {studentsApplication}
               </h2>
               <p className="text-md font-bold text-cWhite pb-3">
-                {applicationsDuration[preferredLanguage]}
+                {applicationStatus[preferredLanguage]}
               </p>
 
-              <button
+              {/* <button
                 className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
                 type="submit"
                 role="button"
@@ -76,7 +76,7 @@ const Overview = () => {
                   src="/icons/arrow-up-right.svg"
                   alt="arrow"
                 />
-              </button>
+              </button> */}
             </div>
           </Link>
         </div>
