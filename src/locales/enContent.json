@@ -46,7 +46,9 @@
     "instructorsAndGuestSpeakers": "Instructors and Guest Speakers",
     "what": "What",
     "isnSummerSchool": "Ibn Sina Neurotech Summer School",
+    "isnSchool": "Ibn Sina Neurotech School",
     "eegSchool": "Decoding Your Mind with BCI Technology",
+    "introNeurophysiology": "Introduction to Neuroscience and Neurophysiology",
     "readyToDive": "Ready to dive into the world of brain data collection and analysis?",
     "eventInvitation": "Join us for an immersive event where you'll learn to collect EEG data, explore Brain-Computer Interfaces (BCIs), and master state-of-the-art techniques in signal processing and machine learning."
   },
@@ -83,11 +85,15 @@
     "paragraph": "Welcome to the Opportunities page!",
     "volunteerToday": "Volunteer Today.",
     "thriveTomorrow": "Thrive Tomorrow in Neuroscience!",
-    "makeNeuronDifference": "Pioneer a distinctive path in neurosciences",
+    "pioneerDistinctivePath": "Pioneer a distinctive path in neurosciences",
     "newVolunteeringPositions": "New Volunteering Positions Available!",
     "applyHere": "Apply Here",
     "responsibilitiesLabel": "Responsibilities",
-    "coreCompetencies": "Core Competencies"
+    "coreCompetencies": "Core Competencies",
+    "joinTodayThriveTomorrow": "Join Today, Thrive Tomorrow in Neuroscience!",
+    "ainMembership": "AiN Membership",
+    "joinMemberDatabase": "Join AiN Member Database",
+    "ainMemberDescription": "Welcome to the AiN Member Database, a platform designed to connect members of the Arabs in Neuro (AiN) community. This open-access, public directory features Arab neuroscientists and provides opportunities for networking, speaking engagements, job discovery, mentorship, and global collaborations."
   },
   "faq": {
     "faqsSection": "FAQs Section",
@@ -410,6 +416,14 @@
       }
     ],
     "sponsorsAndPartners": "Sponsors and Partners",
-    "requiredTimeCommitment": "All participants are required to commit to the school for its duration."
+    "requiredTimeCommitment": "All participants are required to commit to the school for its duration.",
+    "previousSchool": "View details for the previous ISN School",
+    "latestSchool": "View details for the latest ISN school",
+    "introNeuro": "Introduction to Neuroscience and Neurophysiology",
+    "ibnSinaNeurotech": "Ibn Sina Neurotech School",
+    "scheduleDetailsComingSoon": "More details about the schedule and lectures are coming soon!",
+    "programOverview": "The school's program will cover three main areas: Introduction to Neuroscience and Neurophysiology, Experimental Protocols, and Data Analysis and Modeling. In the first, students will learn about the fundamentals of neurophysiology and electrophysiology, understanding how neural signals are generated and recorded. It includes theoretical lectures and case studies that illustrate real-world applications, as well as initial hands-on sessions to familiarize students with basic EEG and fMRI equipment, focusing on understanding the technology and basic data collection techniques. An overview of the complete workflow of a neuroimaging study, from hypothesis generation to data interpretation, will also be provided.",
+    "experimentalProtocols": "Experimental Protocols will focus on the practical aspects of neuroscience research. Students will gain hands-on experience with live EEG setups, data acquisition sessions, and fMRI demonstrations. This area focuses on designing and implementing experimental protocols, including subject preparation, equipment setup, and troubleshooting. Practical sessions will involve specific case scenarios to illustrate common experimental protocols and challenges in neuroscience research.",
+    "dataAnalysisModeling": "In Data Analysis and Modeling, students will focus on the analysis of experimental data gathered during hands-on sessions. This area covers signal processing, neural modeling, and the application of machine learning techniques to neuroimaging data. Students will analyze the experimental data they collected, applying various analytical methods to interpret the results."
   }
 }

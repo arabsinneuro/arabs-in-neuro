@@ -12,11 +12,13 @@ const JoinUs = () => {
     inPersonEvent,
     onlineEvent,
     introCompNeuroCourse,
+    introNeurophysiology,
     passionateAboutBrain,
     courseDesigned,
     dontMissOpportunity,
     learnMore,
     eegSchool,
+    isnSchool,
     readyToDive,
     eventInvitation,
     isnSummerSchool,
@@ -67,14 +69,14 @@ const JoinUs = () => {
             {inPersonEvent}
           </p>
           <p className="text-cBlack font-extrabold text-3xl text-center">
-            {isnSummerSchool}
+            {isnSchool}
           </p>
           <p className="text-cGreenDark font-semibold text-xl mt-5 text-center">
-            "{eegSchool}"
+            "{introNeurophysiology}"
           </p>
         </div>
         <div className="flex-1 px-4 py-5">
-          <div className="bg-cWhite text-md shadow-xl p-4 rounded-2xl">
+          <div className="bg-cWhite text-md shadow-md shadow-cGreenLight p-4 rounded-2xl">
             <p>{readyToDive}</p>
             <br />
             <p>{eventInvitation}</p>
@@ -92,7 +94,7 @@ const JoinUs = () => {
 
       <div className="flex flex-col lg:flex-row justify-center lg:w-3/4 lg:mx-auto lg:my-20 my-10">
         <div className="flex-1 px-4 py-5">
-          <div className="bg-cWhite text-md shadow-xl p-4 rounded-2xl">
+          <div className="bg-cWhite text-md shadow-md shadow-cRedLight p-4 rounded-2xl">
             <p>{passionateAboutBrain}</p>
             <br />
             <p>{courseDesigned}</p>

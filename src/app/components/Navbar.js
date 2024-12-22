@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Link from "next/link";
 import LanguageContext from "../../context/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -16,7 +16,7 @@ function Navbar({ setPreferredLanguage }) {
     { href: "/school", label: currentContent.navbar.courses },
     { href: "/details/2024", label: currentContent.navbar.courseDetails },
     { href: "/faq", label: currentContent.navbar.faq },
-    { href: "/volunteer", label: currentContent.navbar.opportunities },
+    { href: "/join", label: currentContent.navbar.opportunities },
     { href: "/donate", label: currentContent.navbar.donate },
   ];
 
@@ -25,6 +25,8 @@ function Navbar({ setPreferredLanguage }) {
   const isActive = (href) => {
     if (href.includes('/details')) {
       return router.pathname.includes('/details');
+    } else if (href.includes('/school/isn')) {
+        return router.pathname.includes('/school/isn');
     }
     return router.pathname === href;
   };

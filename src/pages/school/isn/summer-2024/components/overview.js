@@ -7,31 +7,25 @@ const Overview = () => {
   const languageContext = useContext(LanguageContext);
   const { preferredLanguage, currentContent } = languageContext;
   const {
-    ibnSinaNeurotech,
-    introNeuro,
-    programOverview,
-    experimentalProtocols,
-    dataAnalysisModeling,
+    isnSummerSchool,
+    introIsnSchool,
+    summerSchoolOverview,
     applyNow,
     studentsApplication,
     requiredTimeCommitment,
   } = currentContent.isnSchool;
 
   const applicationStatus = {
-    en: "Stay tuned for the application opening!",
-    ar: "ترقبوا فتح التقديم!",
+    en: "We are no longer accepting applications.",
+    ar: "لم نعد نقبل طلبات الالتحاق .",
   };
-  // const applicationStatus = {
-  //   en: "We are no longer accepting applications.",
-  //   ar: "لم نعد نقبل طلبات الالتحاق .",
-  // };
   // const applicationsDuration = {
   //   en: "Applications are open until August 18.",
   //   ar: "التقديمات مفتوحة حتى 18 أغسطس.",
   // };
   const schoolDuration = {
-    en: "This school will be held in person at the New York University Abu Dhabi",
-    ar: "ستُقام هذه المدرسة حضوريًا في جامعة نيويورك أبوظبي",
+    en: "This summer school will be held in person at The American University in Cairo (AUC), Egypt, from September 8 to 12, 2024.",
+    ar: "ستقام هذه المدرسة الصيفية بشكل شخصي في الجامعة الأمريكية بالقاهرة (AUC)، مصر، في الفترة من 8 إلى 12 سبتمبر 2024.",
   };
 
   return (
@@ -39,20 +33,14 @@ const Overview = () => {
       <div className="md:py-20 py-10 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="md:col-span-2 md:px-10 px-5 grid grid-cols-1 gap-4">
           <h1 className="lg:px-10 text-4xl font-extrabold text-cBlack">
-            {ibnSinaNeurotech}
+            {isnSummerSchool}
           </h1>
           <p className="lg:px-10 text-lg font-extrabold italic text-cRed">
-            {introNeuro}
+            {introIsnSchool}
           </p>
 
           <p className="lg:px-10 px-2 py-2 text-md text-cBlack">
-            {programOverview}
-            <br/>
-            <br/>
-            {experimentalProtocols}
-            <br/>
-            <br/>
-            {dataAnalysisModeling}
+            {summerSchoolOverview}
           </p>
           <h3 className="lg:px-10 px-2 text-md font-extrabold text-cGreen">
             {schoolDuration[preferredLanguage]}

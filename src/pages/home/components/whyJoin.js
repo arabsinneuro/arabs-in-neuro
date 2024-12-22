@@ -75,7 +75,7 @@ const WhyJoin = () => {
       <h1 className="text-cBlack font-extrabold text-4xl text-center">
         {whyJoin} <span className="text-cRed"> AiN</span>{" "}
       </h1>
-      <div className="mt-10 grid grid-cols-1 lg:px-20 gap-5">
+      <div className="mt-10 grid grid-cols-1 lg:px-10 gap-5">
         {data &&
           data.map((item, index) => (
             <div
