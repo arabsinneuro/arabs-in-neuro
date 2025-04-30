@@ -52,9 +52,10 @@ function SchoolComponent({
   const currentYear = new Date().getFullYear();
 
   const applicationStatus = {
-    en: "Application closes on May 15, Results announcement on May 16. ",
-    ar: "سيتم إغلاق التقديم في 15 مايو، وسيتم الإعلان عن النتائج في 16 مايو.",
+    en: "Applications close on May 15. Results will be announced via email on May 16. Stay tuned!",
+    ar: "سيتم إغلاق باب التقديم في 15 مايو، وستُعلن النتائج عبر البريد الإلكتروني في 16 مايو. ترقبوا!",
   };
+
   const schoolDuration = {
     en: "The school's duration is 3 weeks, starting from September 1 until September 19.",
     ar: "مدة المدرسة 3 أسابيع، تبدأ من 1 سبتمبر حتى 19 سبتمبر.",
@@ -92,10 +93,10 @@ function SchoolComponent({
 
         {selectedYear == `${currentYear}` && (
           <div className="lg:px-20 px-5 mt-10 mb-5 text-cBlack font-bold">
-            <h3 className="text-lg font-extrabold text-cN800 mb-5">
+            <h3 className="text-lg font-bold text-cN800 mb-5">
               {schoolDuration[preferredLanguage]}
             </h3>
-            <h3 className="text-lg font-extrabold text-cN800 mb-5">
+            <h3 className="text-lg font-bold text-cN800 mb-5">
               {applicationStatus[preferredLanguage]}
             </h3>
             <br />
@@ -194,11 +195,11 @@ function SchoolComponent({
 
         <div className="lg:px-20 px-5">
           <Link
-            href={`/details/${selectedYear > 2022 ? selectedYear - 1 : 2024}`}
+            href={`/details/${selectedYear > 2022 ? selectedYear - 1 : 2025}`}
           >
             <button className="bg-cPink text-cWhite py-2 px-4 my-5 rounded-md mx-auto lg:mx-0">
               {selectedYear > 2022 ? previousYear : latestYear}{" "}
-              {selectedYear > 2022 ? selectedYear - 1 : 2024}
+              {selectedYear > 2022 ? selectedYear - 1 : 2025}
             </button>
           </Link>
         </div>

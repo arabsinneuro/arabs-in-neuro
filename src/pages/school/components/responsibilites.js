@@ -39,7 +39,7 @@ const ResponsibilitiesComponent = () => {
             <li className="mb-2"><b>{outcome}:</b> {receiveCertificate}</li>
           </ul>
         </div>
-        {/* <div className="pt-5">
+        <div className="pt-5">
           <Link href={studentsApplicationLink}  target="_blank"  rel="noopener noreferrer">
             <button
               className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mb-4"
@@ -54,7 +54,7 @@ const ResponsibilitiesComponent = () => {
               />
             </button>
           </Link>
-        </div> */}
+        </div>
       </div>
       <div className="w-full md:w-1/2 bg-cGreen p-4 rounded-lg shadow-md mx-auto flex flex-col justify-between text-cWhite">
         <div>
@@ -66,7 +66,7 @@ const ResponsibilitiesComponent = () => {
             <li className="mb-2"><b>{benefits}:</b> {certificateLetter}</li>
           </ul>
         </div>
-        {/* <div className="pt-5">
+        <div className="pt-5">
           <Link href={taApplicationLink}  target="_blank"  rel="noopener noreferrer">
             <button
               className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto mb-4"
@@ -81,7 +81,7 @@ const ResponsibilitiesComponent = () => {
               />
             </button>
           </Link>
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -22,12 +22,12 @@ const Overview = () => {
     ar: "استمارة تقديم الطالب",
   };
   const applicationsDuration = {
-    en: "Applications will open from April 15 until May 7. ",
-    ar: " سيتم فتح باب التقديم من 15 أبريل حتى 7 مايو.",
+    en: "Applications will open from May 1 until May 15. ",
+    ar: " سيتم فتح باب التقديم من 1 مايو حتى 15 مايو.",
   };
   const schoolDuration = {
-    en: "The summer school 2025 will be 3 weeks, from August 11 until August 30.",
-    ar: "سيكون مدرسة الصيف لعام 2025 مدتها 3 أسابيع، من 11 أغسطس حتى 30 أغسطس.",
+    en: "The school's duration is 3 weeks, starting from September 1 until September 19.",
+    ar: "مدة المدرسة 3 أسابيع، تبدأ من 1 سبتمبر حتى 19 سبتمبر.",
   };
 
   return (
@@ -71,7 +71,7 @@ const Overview = () => {
           >
             <div>
               <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
-                {applicationStatus[preferredLanguage]}
+                {studentsApplication}
               </h2>
 
               <button

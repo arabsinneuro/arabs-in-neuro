@@ -14,8 +14,8 @@ const ApplicationSection = () => {
   } = currentContent.description;
 
   const applicationStatus = {
-    en: "We are no longer accepting applications for the 2024 school year as the deadline has passed.",
-    ar: "لم نعد نقبل طلبات الالتحاق للسنة الدراسية 2024 لأن الموعد النهائي قد انتهى.",
+    en: "Applications close on May 15, 2025",
+    ar: "يغلق التقديم في 15 مايو 2025",
   };
 
   return (
@@ -24,16 +24,16 @@ const ApplicationSection = () => {
         <h3 className="text-3xl font-bold mb-6 text-cRed text-center">
           {applicationDetails}
         </h3>
-        {/* <p className="mb-4 text-lg text-center text-gray-700">
+        <p className="mb-4 text-lg text-center text-gray-700">
         {applyThroughLink}
-      </p> */}
+      </p>
         <p className="mb-8 text-lg font-semibold text-center text-gray-700">
           {applicationStatus[preferredLanguage]}
         </p>
         <div className="text-center">
-          {/* <p className="text-xl font-medium mb-10 text-gray-700">
+          <p className="text-xl font-medium mb-10 text-gray-700">
           {dontMissOut}
-        </p> */}
+        </p>
           {/* <a
           href=""
           className="inline-block bg-cRed hover:bg-cRedLight text-cWhite font-bold py-3 px-8 rounded-lg text-lg shadow transition duration-300 ease-in-out transform hover:-translate-y-1"
