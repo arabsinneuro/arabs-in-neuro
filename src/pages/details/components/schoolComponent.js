@@ -52,12 +52,12 @@ function SchoolComponent({
   const currentYear = new Date().getFullYear();
 
   const applicationStatus = {
-    en: "We are no longer accepting applications for the 2024 school year as the deadline has passed.",
-    ar: "لم نعد نقبل طلبات الالتحاق للسنة الدراسية 2024 لأن الموعد النهائي قد انتهى.",
+    en: "Application closes on May 15, Results announcement on May 16. ",
+    ar: "سيتم إغلاق التقديم في 15 مايو، وسيتم الإعلان عن النتائج في 16 مايو.",
   };
   const schoolDuration = {
-    en: "The school's duration is 3 weeks, starting from August 12 until August 30.",
-    ar: "مدة المدرسة 3 أسابيع، تبدأ من 12 أغسطس حتى 30 أغسطس.",
+    en: "The school's duration is 3 weeks, starting from September 1 until September 19.",
+    ar: "مدة المدرسة 3 أسابيع، تبدأ من 1 سبتمبر حتى 19 سبتمبر.",
   };
 
   return (
@@ -74,6 +74,7 @@ function SchoolComponent({
                 value={selectedYear}
                 onChange={handleYearChange}
               >
+                <option value="2025">2025</option>
                 <option value="2024">2024</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
@@ -91,17 +92,18 @@ function SchoolComponent({
 
         {selectedYear == `${currentYear}` && (
           <div className="lg:px-20 px-5 mt-10 mb-5 text-cBlack font-bold">
-            <h2 className="text-xl font-extrabold text-cN800 mb-5">
-              {applicationStatus[preferredLanguage]}
-            </h2>
-            <h3 className="text-lg font-bold text-cN800">
+            <h3 className="text-lg font-extrabold text-cN800 mb-5">
               {schoolDuration[preferredLanguage]}
-            </h3> 
-            {/* <br />
+            </h3>
+            <h3 className="text-lg font-extrabold text-cN800 mb-5">
+              {applicationStatus[preferredLanguage]}
+            </h3>
+            <br />
             <div className="flex flex-wrap gap-10 justify-around w-full">
               <Link
                 href={studentsApplicationLink}
-                target="_blank"  rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="lg:w-1/3 w-full bg-cRed shadow-md px-4 rounded-md space-y-1 flex item-center justify-center"
               >
                 <div>
@@ -124,7 +126,8 @@ function SchoolComponent({
               </Link>
               <Link
                 href={taApplicationLink}
-                target="_blank"  rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="lg:w-1/3 w-full bg-cGreen shadow-md px-4 rounded-md space-y-1 flex item-center justify-center"
               >
                 <div>
@@ -145,7 +148,7 @@ function SchoolComponent({
                   </button>
                 </div>
               </Link>
-            </div> */}
+            </div>
           </div>
         )}
 
@@ -179,7 +182,10 @@ function SchoolComponent({
         )}
 
         {languageSpecificCourseDays && (
-            <DailySchedule calendarUrl={calendarUrl} courseDaysData={languageSpecificCourseDays} />
+          <DailySchedule
+            calendarUrl={calendarUrl}
+            courseDaysData={languageSpecificCourseDays}
+          />
         )}
 
         {collabsData && (

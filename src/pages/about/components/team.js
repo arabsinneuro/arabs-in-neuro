@@ -13,9 +13,7 @@ const Team = () => {
   return (
     <div className="p-10 lg:p-20">
       <div className="flex items-center justify-center mt-10 mb-10">
-        <h1 className="text-3xl font-extrabold text-cRed">
-          {teamBehindAiN}
-        </h1>
+        <h1 className="text-3xl font-extrabold text-cRed">{teamBehindAiN}</h1>
       </div>
 
       <br />
