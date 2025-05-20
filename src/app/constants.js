@@ -14,6 +14,10 @@ export const studentsApplicationLink =
 export const taApplicationLink =
   "https://docs.google.com/forms/d/e/1FAIpQLScDetKfXUjnhoAYGH1f5LuJKzSypJ6EOSt6-WLys4XGzcV4Bw/closedform";
 export const eegSchoolApplicationLink =
+<<<<<<< HEAD
   "https://docs.google.com/forms/d/1A9I--APy-pGoRRgWeTQ_9T-LJMKF_Lpdw3bg7BYZSkI/edit";
+=======
+  "https://ibro.smapply.org/prog/school_25aprc1/";
+>>>>>>> 3e50aa8 (fMRI and EEG update)
 export const ainMembershipFormLink =
   "https://docs.google.com/forms/d/e/1FAIpQLSciYQdbbEffPlMdLS3e47vz4i3FbO_3ZPWzmHm4dG9epd0DFQ/viewform";

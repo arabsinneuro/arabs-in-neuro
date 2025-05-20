@@ -49,6 +49,10 @@
     "isnSchool": "Ibn Sina Neurotech School",
     "eegSchool": "Decoding Your Mind with BCI Technology",
     "introNeurophysiology": "Introduction to Neuroscience and Neurophysiology",
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 3e50aa8 (fMRI and EEG update)
     "readyToDive": "Ready to dive into the world of brain data collection and analysis?",
     "eventInvitation": "Join us for an immersive event where you'll learn to collect EEG data, explore Brain-Computer Interfaces (BCIs), and master state-of-the-art techniques in signal processing and machine learning."
   },
@@ -420,6 +424,11 @@
     "previousSchool": "View details for the previous ISN School",
     "latestSchool": "View details for the latest ISN school",
     "introNeuro": "Introduction to Neuroscience and Neurophysiology",
+<<<<<<< HEAD
+=======
+    "fMRIandEEG":"fMRI and EEG as Windows to the Mind",
+    
+>>>>>>> 3e50aa8 (fMRI and EEG update)
     "ibnSinaNeurotech": "Ibn Sina Neurotech School",
     "scheduleDetailsComingSoon": "More details about the schedule and lectures are coming soon!",
     "programOverview": "The school's program will cover three main areas: Introduction to Neuroscience and Neurophysiology, Experimental Protocols, and Data Analysis and Modeling. In the first, students will learn about the fundamentals of neurophysiology and electrophysiology, understanding how neural signals are generated and recorded. It includes theoretical lectures and case studies that illustrate real-world applications, as well as initial hands-on sessions to familiarize students with basic EEG and fMRI equipment, focusing on understanding the technology and basic data collection techniques. An overview of the complete workflow of a neuroimaging study, from hypothesis generation to data interpretation, will also be provided.",
