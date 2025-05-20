@@ -8,6 +8,10 @@ const Overview = () => {
   const { preferredLanguage, currentContent } = languageContext;
   const {
     ibnSinaNeurotech,
+<<<<<<< HEAD
+=======
+    fMRIandEEG,
+>>>>>>> 3e50aa8 (fMRI and EEG update)
     introNeuro,
     programOverview,
     experimentalProtocols,
@@ -17,14 +21,22 @@ const Overview = () => {
     requiredTimeCommitment,
   } = currentContent.isnSchool;
 
+<<<<<<< HEAD
   const applicationStatus = {
     en: "Stay tuned for the application opening!",
     ar: "ترقبوا فتح التقديم!",
   };
+=======
+  // const applicationStatus = {
+  //   en: "Stay tuned for the application opening!",
+  //   ar: "ترقبوا فتح التقديم!",
+  // };
+>>>>>>> 3e50aa8 (fMRI and EEG update)
   // const applicationStatus = {
   //   en: "We are no longer accepting applications.",
   //   ar: "لم نعد نقبل طلبات الالتحاق .",
   // };
+<<<<<<< HEAD
   // const applicationsDuration = {
   //   en: "Applications are open until August 18.",
   //   ar: "التقديمات مفتوحة حتى 18 أغسطس.",
@@ -32,6 +44,15 @@ const Overview = () => {
   const schoolDuration = {
     en: "This school will be held in person at the New York University Abu Dhabi",
     ar: "ستُقام هذه المدرسة حضوريًا في جامعة نيويورك أبوظبي",
+=======
+  const applicationsDuration = {
+    en: "Applications are open until June 15.",
+    ar: "التقديمات مفتوحة حتى 15 يونيو.",
+  };
+  const schoolDuration = {
+    en: "This school will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates",
+    ar: "ستُقام هذه المدرسة حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة",
+>>>>>>> 3e50aa8 (fMRI and EEG update)
   };
 
   return (
@@ -41,17 +62,31 @@ const Overview = () => {
           <h1 className="lg:px-10 text-4xl font-extrabold text-cBlack">
             {ibnSinaNeurotech}
           </h1>
+<<<<<<< HEAD
+=======
+          <h1 className="lg:px-10 text-2xl font-extrabold text-cBlack">
+            {fMRIandEEG}
+          </h1>
+>>>>>>> 3e50aa8 (fMRI and EEG update)
           <p className="lg:px-10 text-lg font-extrabold italic text-cRed">
             {introNeuro}
           </p>
 
           <p className="lg:px-10 px-2 py-2 text-md text-cBlack">
             {programOverview}
+<<<<<<< HEAD
             <br/>
             <br/>
             {experimentalProtocols}
             <br/>
             <br/>
+=======
+            <br />
+            <br />
+            {experimentalProtocols}
+            <br />
+            <br />
+>>>>>>> 3e50aa8 (fMRI and EEG update)
             {dataAnalysisModeling}
           </p>
           <h3 className="lg:px-10 px-2 text-md font-extrabold text-cGreen">
@@ -74,10 +109,17 @@ const Overview = () => {
                 {studentsApplication}
               </h2>
               <p className="text-md font-bold text-cWhite pb-3">
+<<<<<<< HEAD
                 {applicationStatus[preferredLanguage]}
               </p>
 
               {/* <button
+=======
+                {applicationsDuration[preferredLanguage]}
+              </p>
+
+              <button
+>>>>>>> 3e50aa8 (fMRI and EEG update)
                 className="flex items-center bg-cWhite text-cBlack px-5 py-2 rounded-md h-10 mx-auto"
                 type="submit"
                 role="button"
@@ -88,7 +130,11 @@ const Overview = () => {
                   src="/icons/arrow-up-right.svg"
                   alt="arrow"
                 />
+<<<<<<< HEAD
               </button> */}
+=======
+              </button>
+>>>>>>> 3e50aa8 (fMRI and EEG update)
             </div>
           </Link>
         </div>

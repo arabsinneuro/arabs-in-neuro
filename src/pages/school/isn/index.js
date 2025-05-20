@@ -12,11 +12,19 @@ function IsnSchoolPage() {
       <Overview />
       <SchoolComposition />
       <CommingSoon />
+<<<<<<< HEAD
       {/* 
       <SchoolDescription />
       <Schedule />
       <PartnersSponsers /> */}
       <HistoryButton url="/school/isn/summer-2024"/>
+=======
+
+      {/* <SchoolDescription />
+      <Schedule /> */}
+      <PartnersSponsers />
+      <HistoryButton url="/school/isn/summer-2024" />
+>>>>>>> 3e50aa8 (fMRI and EEG update)
     </div>
   );
 }

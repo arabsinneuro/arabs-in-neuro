@@ -9,6 +9,10 @@ const PartnersSponsers = () => {
   const partnersSponsersData = [
     { image: "/assets/school/auc.png", alt: "AUC" },
     { image: "/assets/school/ibro.jpg", alt: "Ibro" },
+<<<<<<< HEAD
+=======
+    { image: "/assets/school/nyu.png", alt: "Nyu" },
+>>>>>>> 3e50aa8 (fMRI and EEG update)
   ];
 
   return (
@@ -21,11 +25,19 @@ const PartnersSponsers = () => {
           {partnersSponsersData &&
             partnersSponsersData.map((item, itemIndex) => (
               <img
+<<<<<<< HEAD
               key={itemIndex}
               src={item.image}
               alt={item.alt}
               className="md:w-1/3 w-full h-auto rounded-md object-contain"
             />
+=======
+                key={itemIndex}
+                src={item.image}
+                alt={item.alt}
+                className="md:w-1/3 w-full h-auto rounded-md object-contain"
+              />
+>>>>>>> 3e50aa8 (fMRI and EEG update)
             ))}
         </div>
       </div>
