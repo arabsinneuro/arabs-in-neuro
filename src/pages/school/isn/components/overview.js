@@ -8,8 +8,8 @@ const Overview = () => {
   const { preferredLanguage, currentContent } = languageContext;
   const {
     ibnSinaNeurotech,
-    fMRIandEEG,
     introNeuro,
+    fMRIandEEG,
     programOverview,
     experimentalProtocols,
     dataAnalysisModeling,
@@ -22,17 +22,18 @@ const Overview = () => {
   //   en: "Stay tuned for the application opening!",
   //   ar: "ترقبوا فتح التقديم!",
   // };
-  // const applicationStatus = {
-  //   en: "We are no longer accepting applications.",
-  //   ar: "لم نعد نقبل طلبات الالتحاق .",
-  // };
+  const applicationStatus = {
+    en: "Applications are open until june 15.",
+    ar: "التقديمات مفتوحة حتى 15 يونيو.",
+  };
   const applicationsDuration = {
     en: "Applications are open until June 15.",
     ar: "التقديمات مفتوحة حتى 15 يونيو.",
   };
   const schoolDuration = {
-    en: "This school will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates",
-    ar: "ستُقام هذه المدرسة حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة",
+    en: "This school will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates\n Event dates: 12 Oct 2025 - 18 Oct 2025\n Open to: Africa, Asia-Pacific, Pan-Europe\n Opens: 15 May 2025\n Deadline: 15 Jun 2025 ",
+
+    ar: "ستُقام هذه المدرسة  حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة.\n تواريخ الفعالية: ١٢ أكتوبر ٢٠٢٥ - ١٨ أكتوبر ٢٠٢٥.\n مفتوحة لـ: أفريقيا، آسيا والمحيط الهادئ، وأوروبا.\n تاريخ الافتتاح: ١٥ مايو ٢٠٢٥. الموعد النهائي: ١٥ يونيو ٢٠٢٥.",
   };
 
   return (
@@ -58,7 +59,7 @@ const Overview = () => {
             <br />
             {dataAnalysisModeling}
           </p>
-          <h3 className="lg:px-10 px-2 text-md font-extrabold text-cGreen">
+          <h3 className="lg:px-10 px-2 text-md font-extrabold text-cGreen whitespace-pre-line">
             {schoolDuration[preferredLanguage]}
           </h3>
           <p className="lg:px-10 px-2 text-md font-extrabold text-cGreen">
@@ -78,7 +79,7 @@ const Overview = () => {
                 {studentsApplication}
               </h2>
               <p className="text-md font-bold text-cWhite pb-3">
-                {applicationsDuration[preferredLanguage]}
+                {applicationStatus[preferredLanguage]}
               </p>
 
               <button
