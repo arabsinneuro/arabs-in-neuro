@@ -23,7 +23,7 @@ const Overview = () => {
   //   ar: "ترقبوا فتح التقديم!",
   // };
   const applicationStatus = {
-    en: "Applications are open until june 15.",
+    en: "Applications are open until june 15.",
     ar: "التقديمات مفتوحة حتى 15 يونيو.",
   };
   const applicationsDuration = {
@@ -31,10 +31,11 @@ const Overview = () => {
     ar: "التقديمات مفتوحة حتى 15 يونيو.",
   };
   const schoolDuration = {
-    en: "This school will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates\n Event dates: 12 Oct 2025 - 18 Oct 2025\n Open to: Africa, Asia-Pacific, Pan-Europe\n Opens: 15 May 2025\n Deadline: 15 Jun 2025 ",
-
-    ar: "ستُقام هذه المدرسة  حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة.\n تواريخ الفعالية: ١٢ أكتوبر ٢٠٢٥ - ١٨ أكتوبر ٢٠٢٥.\n مفتوحة لـ: أفريقيا، آسيا والمحيط الهادئ، وأوروبا.\n تاريخ الافتتاح: ١٥ مايو ٢٠٢٥. الموعد النهائي: ١٥ يونيو ٢٠٢٥.",
+    en: "This school will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates\nEvent dates: 12 Oct 2025 - 18 Oct 2025\nOpen to: Africa, Asia-Pacific, Pan-Europe",
+  
+    ar: "ستُقام هذه المدرسة حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة.\nتواريخ الفعالية: ١٢ أكتوبر ٢٠٢٥ - ١٨ أكتوبر ٢٠٢٥.\nمفتوحة لـ: أفريقيا، آسيا والمحيط الهادئ، وأوروبا.",
   };
+  
 
   return (
     <div>

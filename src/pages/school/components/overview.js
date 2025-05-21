@@ -18,17 +18,20 @@ const Overview = () => {
   } = currentContent.school;
 
   const applicationStatus = {
-    en: "Applications are closed",
-    ar: "استمارة تقديم الطالب",
+    en: "Applications are closed",
+    ar: "تم إغلاق باب التقديم",
   };
+  
   // const applicationsDuration = {
   //   en: "Applications will open from May 1 until May 15. ",
   //   ar: " سيتم فتح باب التقديم من 1 مايو حتى 15 مايو.",
   // };
   const applicationsDuration = {
-    en: "We are no longer accepting applications. ",
-    ar: "لم نعد نقبل طلبات الالتحاق .",
+    en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",
+    ar: "لم نعد نقبل طلبات الالتحاق، يرجى التحقق من بريدك الإلكتروني لمعرفة نتيجة القبول بحلول 15 يونيو.",
   };
+  
+  
   const schoolDuration = {
     en: "The school's duration is 3 weeks, starting from September 1 until September 19.",
     ar: "مدة المدرسة 3 أسابيع، تبدأ من 1 سبتمبر حتى 19 سبتمبر.",
