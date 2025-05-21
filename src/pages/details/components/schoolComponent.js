@@ -52,8 +52,8 @@ function SchoolComponent({
   const currentYear = new Date().getFullYear();
 
   const applicationStatus = {
-    en: "Applications close on May 15. Results will be announced via email on May 16. Stay tuned!",
-    ar: "سيتم إغلاق باب التقديم في 15 مايو، وستُعلن النتائج عبر البريد الإلكتروني في 16 مايو. ترقبوا!",
+    en: "Applications close on May 15. Results will be announced via email on june 15. Stay tuned!",
+    ar: "سيتم إغلاق باب التقديم في 15 مايو، وستُعلن النتائج عبر البريد الإلكتروني في 15 يونيو. ترقبوا!",
   };
 
   const schoolDuration = {
@@ -101,7 +101,7 @@ function SchoolComponent({
             </h3>
             <br />
             <div className="flex flex-wrap gap-10 justify-around w-full">
-              <Link
+              {/* <Link
                 href={studentsApplicationLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -148,7 +148,7 @@ function SchoolComponent({
                     />
                   </button>
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </div>
         )}
