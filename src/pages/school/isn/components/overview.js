@@ -58,7 +58,7 @@ const Overview = () => {
             <br />
             {dataAnalysisModeling}
           </p>
-          <h3 className="lg:px-10 px-2 text-md font-extrabold text-cGreen">
+          <h3 className="lg:px-10 px-2 text-md font-extrabold text-cGreen whitespace-pre-line">
             {schoolDuration[preferredLanguage]}
           </h3>
           <p className="lg:px-10 px-2 text-md font-extrabold text-cGreen">

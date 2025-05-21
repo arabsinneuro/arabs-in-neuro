@@ -18,13 +18,20 @@ const Overview = () => {
   } = currentContent.school;
 
   const applicationStatus = {
-    en: "Student's Application",
-    ar: "استمارة تقديم الطالب",
+    en: "Applications are closed",
+    ar: "تم إغلاق باب التقديم",
   };
+  
+  // const applicationsDuration = {
+  //   en: "Applications will open from May 1 until May 15. ",
+  //   ar: " سيتم فتح باب التقديم من 1 مايو حتى 15 مايو.",
+  // };
   const applicationsDuration = {
-    en: "Applications will open from May 1 until May 15. ",
-    ar: " سيتم فتح باب التقديم من 1 مايو حتى 15 مايو.",
+    en: "We are no longer accepting applications; please check your email for an acceptance notification by June 15.",
+    ar: "لم نعد نقبل طلبات الالتحاق، يرجى التحقق من بريدك الإلكتروني لمعرفة نتيجة القبول بحلول 15 يونيو.",
   };
+  
+  
   const schoolDuration = {
     en: "The school's duration is 3 weeks, starting from September 1 until September 19.",
     ar: "مدة المدرسة 3 أسابيع، تبدأ من 1 سبتمبر حتى 19 سبتمبر.",
@@ -57,13 +64,13 @@ const Overview = () => {
 
         {/* Banners Container */}
         <div className="md:col-span-1 flex flex-col justify-start items-start">
-          {/* <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
-            <h2 className="font-extrabold text-xl py-3 text-cWhite font-bold">
+          <div className="w-72 h-[fit-content] bg-cRed shadow-md px-4 rounded-md space-y-1 mt-10 ltr:ml-auto rtl:mr-auto">
+            <h2 className="font-extrabold text-x py-3 text-cWhite font-bold">
               {applicationStatus[preferredLanguage]}
             </h2>
-          </div> */}
+          </div>
 
-          <Link
+          {/* <Link
             href={studentsApplicationLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -112,7 +119,7 @@ const Overview = () => {
                 />
               </button>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
