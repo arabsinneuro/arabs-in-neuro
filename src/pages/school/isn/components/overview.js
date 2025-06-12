@@ -31,9 +31,9 @@ const Overview = () => {
     ar: "التقديمات مفتوحة حتى 15 يونيو.",
   };
   const schoolDuration = {
-    en: "This school will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates\nEvent dates: 12 Oct 2025 - 18 Oct 2025\nOpen to: Africa, Asia-Pacific, Pan-Europe",
-    ar: "ستُقام هذه المدرسة حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة.\nتواريخ الفعالية: ١٢ أكتوبر ٢٠٢٥ - ١٨ أكتوبر ٢٠٢٥.\nمفتوحة لـ: أفريقيا، آسيا والمحيط الهادئ، وأوروبا.",
-    };
+    en: "The program will be held in person at Saadiyat Island - Abu Dhabi - United Arab Emirates\nEvent dates: 12 Oct 2025 - 18 Oct 2025\nOpen to: Africa, Asia-Pacific, Pan-Europe\n\nSchool Fees:\n- USD 1200 for international participants\n- USD 400 for Abu Dhabi local residents\n\nFees include accommodation, meals, local transportation, and all program materials\n*Flight costs are not included*\n There will be scholarships for the most deserving students\n\n Language of Instruction:\nEnglish will be the main language of instruction",
+    ar: "سيُعقد البرنامج حضوريًا في جزيرة السعديات - أبوظبي - الإمارات العربية المتحدة\nتاريخ الفعالية: من 12 أكتوبر 2025 إلى 18 أكتوبر 2025\nمفتوح للمشاركين من: إفريقيا، آسيا والمحيط الهادئ، أوروبا\n\nرسوم البرنامج:\n- 1200 دولار أمريكي للمشاركين الدوليين\n- 400 دولار أمريكي للمقيمين المحليين في أبوظبي\n\n تشمل الرسوم الإقامة، الوجبات، المواصلات المحلية، وجميع مواد البرنامج\n*لا تشمل الرسوم تكاليف تذاكر الطيران* \nستُقدم منح دراسية للطلاب الأكثر استحقاقًا \n\nلغة التدريس:\nاللغة الإنجليزية ستكون اللغة الرئيسية للتدريس",
+  };
 
   return (
     <div>
