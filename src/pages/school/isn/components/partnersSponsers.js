@@ -10,6 +10,7 @@ const PartnersSponsers = () => {
     { image: "/assets/school/auc.png", alt: "AUC" },
     { image: "/assets/school/ibro.jpg", alt: "Ibro" },
     { image: "/assets/school/nyu.png", alt: "Nyu" },
+    { image: "/assets/school/nyu-brain-health.png", alt: "NYU Abu Dhabi Center for Brain and Health" },
   ];
 
   return (
