@@ -416,15 +416,16 @@
       }
     ],
     "sponsorsAndPartners": "Sponsors and Partners",
-    "requiredTimeCommitment": "All participants are required to commit to the school for its duration.",
+    "requiredTimeCommitment": "All participants were required to commit to the school for its duration.",
     "previousSchool": "View details for the previous ISN School",
     "latestSchool": "View details for the latest ISN school",
+    "futureCourses": "",
     "introNeuro": "Introduction to Neuroscience and Neurophysiology",
-    "fMRIandEEG":"fMRI and EEG as Windows to the Mind",
+    "fMRIandEEG":"EEG as a Window to the Mind",
     "ibnSinaNeurotech": "Ibn Sina Neurotech School",
     "scheduleDetailsComingSoon": "More details about the schedule and lectures are coming soon!",
-    "programOverview": "The school's program will cover three main areas: Introduction to Neuroscience and Neurophysiology, Experimental Protocols, and Data Analysis and Modeling. In the first, students will learn about the fundamentals of neurophysiology and electrophysiology, understanding how neural signals are generated and recorded. It includes theoretical lectures and case studies that illustrate real-world applications, as well as initial hands-on sessions to familiarize students with basic EEG and fMRI equipment, focusing on understanding the technology and basic data collection techniques. An overview of the complete workflow of a neuroimaging study, from hypothesis generation to data interpretation, will also be provided.",
-    "experimentalProtocols": "Experimental Protocols will focus on the practical aspects of neuroscience research. Students will gain hands-on experience with live EEG setups, data acquisition sessions, and fMRI demonstrations. This area focuses on designing and implementing experimental protocols, including subject preparation, equipment setup, and troubleshooting. Practical sessions will involve specific case scenarios to illustrate common experimental protocols and challenges in neuroscience research.",
-    "dataAnalysisModeling": "In Data Analysis and Modeling, students will focus on the analysis of experimental data gathered during hands-on sessions. This area covers signal processing, neural modeling, and the application of machine learning techniques to neuroimaging data. Students will analyze the experimental data they collected, applying various analytical methods to interpret the results."
+    "programOverview": "The school's program covered three main areas: Introduction to Neuroscience and Neurophysiology, Experimental Protocols, and Data Analysis and Modeling. In the first, students learned about the fundamentals of neurophysiology and electrophysiology, understanding how neural signals are generated and recorded. It included theoretical lectures and case studies that illustrated real-world applications, as well as initial hands-on sessions that familiarized students with basic EEG equipment, focusing on understanding the technology and basic data collection techniques. An overview of the complete workflow of a neuroimaging study, from hypothesis generation to data interpretation, was also provided.",
+    "experimentalProtocols": "Experimental Protocols focused on the practical aspects of neuroscience research. Students gained hands-on experience with live EEG setups and data acquisition sessions. This area focused on designing and implementing experimental protocols, including subject preparation, equipment setup, and troubleshooting. Practical sessions involved specific case scenarios that illustrated common experimental protocols and challenges in neuroscience research.",
+    "dataAnalysisModeling": "In Data Analysis and Modeling, students focused on the analysis of experimental data gathered during hands-on sessions. This area covered signal processing, neural modeling, and the application of machine learning techniques to neuroimaging data. Students analyzed the experimental data they collected, applying various analytical methods to interpret the results."
   }
 }
